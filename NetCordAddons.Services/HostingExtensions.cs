@@ -22,7 +22,6 @@ public static class HostingExtensions
             services.AddHostedService<GatewayClientBotService>();
             services.AddSingleton<IServiceCollection>(_ => services);
         });
-
         return hostBuilder;
     }
 
