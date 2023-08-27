@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCordAddons.Services", "NetCordAddons.Services\NetCordAddons.Services.csproj", "{0E4EDBFC-B62D-4CC0-AE37-237035408DC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCordAddons.EventHandler", "NetCordAddons.EventHandler\NetCordAddons.EventHandler.csproj", "{5C63EB0E-1447-4FEA-A318-3E0CEA342BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCordAddons.Examples", "NetCordAddons.Examples\NetCordAddons.Examples.csproj", "{3702919F-C1B5-4F9D-8C08-66089B47AA82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E4EDBFC-B62D-4CC0-AE37-237035408DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4EDBFC-B62D-4CC0-AE37-237035408DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4EDBFC-B62D-4CC0-AE37-237035408DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4EDBFC-B62D-4CC0-AE37-237035408DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C63EB0E-1447-4FEA-A318-3E0CEA342BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C63EB0E-1447-4FEA-A318-3E0CEA342BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C63EB0E-1447-4FEA-A318-3E0CEA342BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C63EB0E-1447-4FEA-A318-3E0CEA342BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3702919F-C1B5-4F9D-8C08-66089B47AA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3702919F-C1B5-4F9D-8C08-66089B47AA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3702919F-C1B5-4F9D-8C08-66089B47AA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3702919F-C1B5-4F9D-8C08-66089B47AA82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+name: Publish nuget packages
+on:
+  push:
+    paths:
+      - '${{ github.event.repository.name }}.Services/**.**'
+      - '${{ github.event.repository.name }}.EventHandler/**.**'
+  workflow_dispatch:
+
+jobs:
+  publish-nuget-packages:
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'stable')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Dotnet Setup
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.x
+        
+
+      - name: Restore
+        run: | 
+          dotnet restore ${{ github.event.repository.name }}.Services
+          dotnet restore ${{ github.event.repository.name }}.EventHandler
+
+      - name: Build
+        run: | 
+          dotnet build ${{ github.event.repository.name }}.Services -c Release --no-restore
+          dotnet build ${{ github.event.repository.name }}.EventHandler -c Release --no-restore
+
+      - name: Pack
+        run: |
+          dotnet pack ${{ github.event.repository.name }}.Services -c Release --no-build
+          dotnet pack ${{ github.event.repository.name }}.EventHandler -c Release --no-build
+
+      - name: Publish
+        run: |
+          dotnet nuget push ${{ github.event.repository.name }}.Services/**.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_KEY }} -n --skip-duplicate
+          dotnet nuget push ${{ github.event.repository.name }}.EventHandler/**.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_KEY }} -n --skip-duplicate
