@@ -9,7 +9,7 @@
         <PackageProjectUrl>https://github.com/Nes0x/NetCordAddons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/NetCordAddons</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageTags>netcord;netcordaddons;netcordaddons.common</PackageTags>
+        <PackageTags>netcord;netcordaddons;netcordaddons.services</PackageTags>
         <Version>1.0.1</Version>
     </PropertyGroup>
 
