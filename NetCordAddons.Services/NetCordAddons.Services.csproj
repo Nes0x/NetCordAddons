@@ -8,7 +8,7 @@
         <Description>Unofficial netcord helpers for better adding services using hosting.</Description>
         <RepositoryUrl>https://github.com/Nes0x/NetCord.Addons</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageTags>netcord;netcord.helpers;netcord.helpers.common</PackageTags>
+        <PackageTags>netcord;netcordaddons;netcordaddons.common</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
