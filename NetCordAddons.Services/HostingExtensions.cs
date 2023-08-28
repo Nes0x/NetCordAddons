@@ -12,15 +12,16 @@ namespace NetCordAddons.Services;
 public static class HostingExtensions
 {
     public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder,
-        Func<IServiceProvider, GatewayClientSettings> settingsFactory)
+        Func<IServiceProvider, GatewayClientSettings> settingsFactory, Action? beforeBotStart = null, Action? afterBotStart = null, Action? beforeBotClose = null, Action? afterBotClose = null)
     {
         hostBuilder.ConfigureServices(services =>
         {
             var settings = settingsFactory(services.BuildServiceProvider());
             services.AddSingleton<GatewayClient>(_ =>
                 new GatewayClient(settings.Token, settings.GatewayClientConfiguration));
-            services.AddHostedService<GatewayClientBotService>();
             services.AddSingleton<IServiceCollection>(_ => services);
+            services.AddSingleton<BotCallback>(_ => new BotCallback(beforeBotStart, afterBotStart, beforeBotClose, afterBotClose));
+            services.AddHostedService<GatewayClientBotService>();
         });
         
         return hostBuilder;

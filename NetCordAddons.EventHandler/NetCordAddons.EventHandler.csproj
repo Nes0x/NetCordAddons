@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <TargetFramework>net6.0</TargetFramework>
         <Authors>Nes0x</Authors>
-        <Description>Unofficial netcord helpers for better handling events using hosting.</Description>
+        <Description>Unofficial netcord addons for better handling events using hosting.</Description>
         <PackageProjectUrl>https://github.com/Nes0x/NetCordAddons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/NetCordAddons</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>

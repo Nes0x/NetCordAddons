@@ -23,6 +23,9 @@ host
                 Activities = new[] { new UserActivityProperties("Hey", UserActivityType.Streaming) }
             }
         });
+    }, beforeBotStart: () =>
+    {
+        Console.WriteLine("Working");
     })
     .AddEventHandler()
     .AddApplicationCommand<SlashCommandContext>()
