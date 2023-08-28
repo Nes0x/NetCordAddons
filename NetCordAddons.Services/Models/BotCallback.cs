@@ -2,12 +2,12 @@
 
 public class BotCallback
 {
-    public Action? BeforeBotStart { get; }
-    public Action? AfterBotStart { get; }
-    public Action? BeforeBotClose { get; }
-    public Action? AfterBotClose { get; }
+    public Action<IServiceProvider>? BeforeBotStart { get; }
+    public Action<IServiceProvider>? AfterBotStart { get; }
+    public Action<IServiceProvider>? BeforeBotClose { get; }
+    public Action<IServiceProvider>? AfterBotClose { get; }
     
-    public BotCallback(Action? beforeBotStart, Action? afterBotStart, Action? beforeBotClose, Action? afterBotClose)
+    public BotCallback(Action<IServiceProvider>? beforeBotStart, Action<IServiceProvider>? afterBotStart, Action<IServiceProvider>? beforeBotClose, Action<IServiceProvider>? afterBotClose)
     {
         BeforeBotStart = beforeBotStart;
         AfterBotStart = afterBotStart;

@@ -38,7 +38,7 @@ public class GatewayClientBotService : IHostedService
     public async Task StartAsync(CancellationToken cancellationToken)
     {
         ConfigureBot();
-        if (_botCallback.BeforeBotStart is not null) _botCallback.BeforeBotStart();
+        if (_botCallback.BeforeBotStart is not null) _botCallback.BeforeBotStart(_provider);
         await _client.StartAsync();
         await _client.ReadyAsync;
         if (_areCommands)
@@ -46,14 +46,14 @@ public class GatewayClientBotService : IHostedService
             var applicationCommandServiceManager = _provider.GetRequiredService<ApplicationCommandServiceManager>();
             await applicationCommandServiceManager.CreateCommandsAsync(_client.Rest, _client.ApplicationId!);
         }
-        if (_botCallback.AfterBotStart is not null) _botCallback.AfterBotStart();
+        if (_botCallback.AfterBotStart is not null) _botCallback.AfterBotStart(_provider);
     }
 
     public async Task StopAsync(CancellationToken cancellationToken)
     {
-        if (_botCallback.BeforeBotClose is not null) _botCallback.BeforeBotClose();
+        if (_botCallback.BeforeBotClose is not null) _botCallback.BeforeBotClose(_provider);
         await _client.CloseAsync();
-        if (_botCallback.AfterBotClose is not null) _botCallback.AfterBotClose();
+        if (_botCallback.AfterBotClose is not null) _botCallback.AfterBotClose(_provider);
     }
 
     private void ConfigureBot()

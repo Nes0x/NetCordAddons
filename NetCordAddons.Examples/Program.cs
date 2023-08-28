@@ -23,7 +23,7 @@ host
                 Activities = new[] { new UserActivityProperties("Hey", UserActivityType.Streaming) }
             }
         });
-    }, beforeBotStart: () =>
+    }, beforeBotStart: _ =>
     {
         Console.WriteLine("Working");
     })
