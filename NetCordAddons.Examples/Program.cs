@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using NetCord;
 using NetCord.Gateway;
 using NetCord.Services.ApplicationCommands;
+using NetCord.Services.Commands;
 using NetCordAddons.EventHandler;
 using NetCordAddons.Examples.Services;
 using NetCordAddons.Services;
@@ -23,11 +24,9 @@ host
                 Activities = new[] { new UserActivityProperties("Hey", UserActivityType.Streaming) }
             }
         });
-    }, beforeBotStart: _ =>
-    {
-        Console.WriteLine("Working");
-    })
-    .AddEventHandler()
+    }, _ => { Console.WriteLine("Working"); })
+    .AddEventHandler(ServiceLifetime.Singleton)
+    .AddCommand<CommandContext>(_ => new CommandSettings<CommandContext>("!"))
     .AddApplicationCommand<SlashCommandContext>()
     .AddApplicationCommand<UserCommandContext>();
 

@@ -12,7 +12,9 @@ namespace NetCordAddons.Services;
 public static class HostingExtensions
 {
     public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder,
-        Func<IServiceProvider, GatewayClientSettings> settingsFactory, Action<IServiceProvider>? beforeBotStart = null, Action<IServiceProvider>? afterBotStart = null, Action<IServiceProvider>? beforeBotClose = null, Action<IServiceProvider>? afterBotClose = null)
+        Func<IServiceProvider, GatewayClientSettings> settingsFactory, Action<IServiceProvider>? beforeBotStart = null,
+        Action<IServiceProvider>? afterBotStart = null, Action<IServiceProvider>? beforeBotClose = null,
+        Action<IServiceProvider>? afterBotClose = null)
     {
         hostBuilder.ConfigureServices(services =>
         {
@@ -20,10 +22,11 @@ public static class HostingExtensions
             services.AddSingleton<GatewayClient>(_ =>
                 new GatewayClient(settings.Token, settings.GatewayClientConfiguration));
             services.AddSingleton<IServiceCollection>(_ => services);
-            services.AddSingleton<BotCallback>(_ => new BotCallback(beforeBotStart, afterBotStart, beforeBotClose, afterBotClose));
+            services.AddSingleton<BotCallback>(_ =>
+                new BotCallback(beforeBotStart, afterBotStart, beforeBotClose, afterBotClose));
             services.AddHostedService<GatewayClientBotService>();
         });
-        
+
         return hostBuilder;
     }
 
@@ -84,18 +87,17 @@ public static class HostingExtensions
     }
 
     public static IHostBuilder AddCommand<TContext>(this IHostBuilder hostBuilder,
-        Func<IServiceProvider, CommandServiceConfiguration<TContext>>? configurationFactory = null)
+        Func<IServiceProvider, CommandSettings<TContext>> configurationFactory)
         where TContext : ICommandContext
     {
         hostBuilder
             .ConfigureServices(
                 services =>
                 {
-                    CommandServiceConfiguration<TContext>? commandServiceConfiguration = null;
-                    if (configurationFactory is not null)
-                        commandServiceConfiguration = configurationFactory(services.BuildServiceProvider());
+                    var commandSettings = configurationFactory(services.BuildServiceProvider());
+                    services.TryAddSingleton<CommandSettings<TContext>>(_ => commandSettings);
                     services.TryAddSingleton<CommandService<TContext>>(_ =>
-                        new CommandService<TContext>(commandServiceConfiguration));
+                        new CommandService<TContext>(commandSettings.CommandServiceConfiguration));
                 });
         return hostBuilder;
     }

@@ -13,11 +13,11 @@ namespace NetCordAddons.Services;
 public class GatewayClientBotService : IHostedService
 {
     private readonly bool _areCommands;
+    private readonly BotCallback _botCallback;
     private readonly GatewayClient _client;
     private readonly IServiceCollection _collection;
     private readonly ILogger<GatewayClientBotService> _logger;
     private readonly IServiceProvider _provider;
-    private readonly BotCallback _botCallback;
 
 
     public GatewayClientBotService(GatewayClient client, IServiceCollection collection, IServiceProvider provider,
@@ -46,6 +46,7 @@ public class GatewayClientBotService : IHostedService
             var applicationCommandServiceManager = _provider.GetRequiredService<ApplicationCommandServiceManager>();
             await applicationCommandServiceManager.CreateCommandsAsync(_client.Rest, _client.ApplicationId!);
         }
+
         if (_botCallback.AfterBotStart is not null) _botCallback.AfterBotStart(_provider);
     }
 
@@ -60,15 +61,28 @@ public class GatewayClientBotService : IHostedService
     {
         var interactions = new List<Interaction>();
         var assembly = Assembly.GetEntryAssembly()!;
+        string? commandPrefix = null;
+        Interaction? commandInteraction = null;
         foreach (var serviceDescriptor in _collection)
         {
             var serviceType = serviceDescriptor.ServiceType;
             var serviceName = serviceType.Name.ToLower();
             Type? type = null;
             if (serviceName.Contains("interactionservice"))
+            {
                 type = typeof(InteractionService<>).MakeGenericType(serviceType.GenericTypeArguments);
+            }
             else if (serviceName.Equals("commandservice`1"))
+            {
                 type = typeof(CommandService<>).MakeGenericType(serviceType.GenericTypeArguments);
+                commandInteraction = new Interaction(serviceType, serviceType.GenericTypeArguments.First(),
+                    _provider.GetRequiredService(type));
+            }
+            else if (serviceName.Equals("commandsettings`1"))
+            {
+                commandPrefix = serviceType.GetProperty("Prefix")!.GetValue(_provider.GetRequiredService(serviceType))!
+                    .ToString();
+            }
             else if (_areCommands && serviceType.GenericTypeArguments.Length != 0 &&
                      serviceName.Contains("applicationcommandservice"))
             {
@@ -80,7 +94,6 @@ public class GatewayClientBotService : IHostedService
                         new[] { _provider.GetRequiredService(type) });
             }
 
-         
 
             if (type is null) continue;
             var genericType = serviceType.GenericTypeArguments.First();
@@ -88,7 +101,32 @@ public class GatewayClientBotService : IHostedService
             type.GetMethod("AddModules")!.Invoke(service, new object[] { assembly });
             interactions.Add(new Interaction(type, genericType, service));
         }
+
+        if (commandPrefix is not null && commandInteraction is not null)
+            CreateCommandInteraction(commandPrefix, commandInteraction);
         CreateInteractions(interactions);
+    }
+
+
+    private void CreateCommandInteraction(string prefix, Interaction interaction)
+    {
+        _client.MessageCreate += message =>
+        {
+            if (message.Content.StartsWith(prefix))
+                try
+                {
+                    interaction.Type.GetMethod("ExecuteAsync")!.Invoke(interaction.Service, new[]
+                    {
+                        prefix.Length, Activator.CreateInstance(interaction.GenericType, message, _client), _provider
+                    });
+                }
+                catch (Exception e)
+                {
+                    _logger.LogError("{E}", e);
+                }
+
+            return ValueTask.CompletedTask;
+        };
     }
 
     private void CreateInteractions(List<Interaction> interactions)
@@ -106,7 +144,7 @@ public class GatewayClientBotService : IHostedService
                 }
                 catch (Exception e)
                 {
-                    _logger.LogError("{}", e);
+                    _logger.LogError("{E}", e);
                 }
 
                 return ValueTask.CompletedTask;
