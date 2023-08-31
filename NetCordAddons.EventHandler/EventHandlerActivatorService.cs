@@ -45,12 +45,14 @@ public class EventHandlerActivatorService : IHostedService
     {
         foreach (var eventModule in _eventModules)
         foreach (var @event in eventModule.Events)
+        {
+            var methodInfo = @event.MethodInfo;
             switch (@event.EventType)
             {
                 case EventType.Ready:
                     _client.Ready += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -59,7 +61,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.ApplicationCommandPermissionsUpdate:
                     _client.ApplicationCommandPermissionsUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -68,7 +70,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.AutoModerationRuleCreate:
                     _client.AutoModerationRuleCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -77,7 +79,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.AutoModerationRuleUpdate:
                     _client.AutoModerationRuleCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -86,7 +88,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.AutoModerationRuleDelete:
                     _client.AutoModerationRuleDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -95,7 +97,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.AutoModerationActionExecution:
                     _client.AutoModerationActionExecution += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -104,7 +106,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildChannelCreate:
                     _client.GuildChannelCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -113,7 +115,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildChannelUpdate:
                     _client.GuildChannelUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -122,7 +124,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildChannelDelete:
                     _client.GuildChannelDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -131,7 +133,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.ChannelPinsUpdate:
                     _client.ChannelPinsUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -140,7 +142,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildThreadCreate:
                     _client.GuildThreadCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -149,7 +151,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildThreadUpdate:
                     _client.GuildThreadUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -158,7 +160,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildThreadDelete:
                     _client.GuildThreadDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -167,7 +169,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildThreadListSync:
                     _client.GuildThreadListSync += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -176,7 +178,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildThreadUserUpdate:
                     _client.GuildThreadUserUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -185,7 +187,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildThreadUsersUpdate:
                     _client.GuildThreadUsersUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -194,7 +196,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildCreate:
                     _client.GuildCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -203,7 +205,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildUpdate:
                     _client.GuildUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -212,7 +214,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildDelete:
                     _client.GuildDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -221,7 +223,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildAuditLogEntryCreate:
                     _client.GuildAuditLogEntryCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -230,7 +232,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildBanAdd:
                     _client.GuildBanAdd += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -239,7 +241,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildBanRemove:
                     _client.GuildBanRemove += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -248,7 +250,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildEmojisUpdate:
                     _client.GuildEmojisUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -257,7 +259,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildStickersUpdate:
                     _client.GuildStickersUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -266,7 +268,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildIntegrationsUpdate:
                     _client.GuildIntegrationsUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -275,7 +277,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildUserAdd:
                     _client.GuildUserAdd += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -284,7 +286,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildUserUpdate:
                     _client.GuildUserUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -293,7 +295,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildUserRemove:
                     _client.GuildUserRemove += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -302,7 +304,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildUserChunk:
                     _client.GuildUserChunk += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -311,7 +313,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.RoleCreate:
                     _client.RoleCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -320,7 +322,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.RoleUpdate:
                     _client.RoleUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -329,7 +331,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.RoleDelete:
                     _client.RoleDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -338,7 +340,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildScheduledEventCreate:
                     _client.GuildScheduledEventCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -347,7 +349,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildScheduledEventUpdate:
                     _client.GuildScheduledEventUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -356,7 +358,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildScheduledEventDelete:
                     _client.GuildScheduledEventDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -365,7 +367,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildScheduledEventUserAdd:
                     _client.GuildScheduledEventUserAdd += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -374,7 +376,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildScheduledEventUserRemove:
                     _client.GuildScheduledEventUserRemove += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -383,7 +385,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildIntegrationCreate:
                     _client.GuildIntegrationCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -392,7 +394,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildIntegrationUpdate:
                     _client.GuildIntegrationUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -401,7 +403,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildIntegrationDelete:
                     _client.GuildIntegrationDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -410,7 +412,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildInviteCreate:
                     _client.GuildInviteCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -419,7 +421,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.GuildInviteDelete:
                     _client.GuildInviteDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -428,7 +430,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageCreate:
                     _client.MessageCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -437,7 +439,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageUpdate:
                     _client.MessageUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -446,7 +448,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageDelete:
                     _client.MessageDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -455,7 +457,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageDeleteBulk:
                     _client.MessageDeleteBulk += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -464,7 +466,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageReactionAdd:
                     _client.MessageReactionAdd += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -473,7 +475,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageReactionRemove:
                     _client.MessageReactionRemove += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -482,7 +484,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageReactionRemoveAll:
                     _client.MessageReactionRemoveAll += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -491,7 +493,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.MessageReactionRemoveEmoji:
                     _client.MessageReactionRemoveEmoji += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -500,7 +502,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.PresenceUpdate:
                     _client.PresenceUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -509,7 +511,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.TypingStart:
                     _client.TypingStart += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -518,7 +520,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.CurrentUserUpdate:
                     _client.CurrentUserUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -527,7 +529,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.VoiceStateUpdate:
                     _client.VoiceStateUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -536,7 +538,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.VoiceServerUpdate:
                     _client.VoiceServerUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -545,7 +547,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.WebhooksUpdate:
                     _client.WebhooksUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -554,7 +556,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.InteractionCreate:
                     _client.InteractionCreate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -563,7 +565,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.StageInstanceCreate:
                     _client.AutoModerationRuleDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -572,7 +574,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.StageInstanceUpdate:
                     _client.StageInstanceUpdate += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -581,7 +583,7 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.StageInstanceDelete:
                     _client.StageInstanceDelete += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
@@ -590,13 +592,15 @@ public class EventHandlerActivatorService : IHostedService
                 case EventType.UnknownEvent:
                     _client.UnknownEvent += args =>
                     {
-                        return (ValueTask)@event.MethodInfo.Invoke(eventModule, new[]
+                        return (ValueTask)methodInfo.Invoke(eventModule, new[]
                         {
                             args
                         });
                     };
                     break;
             }
+        }
+          
     }
 
     private void ModifyEventModules()
