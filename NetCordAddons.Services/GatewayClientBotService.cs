@@ -57,10 +57,10 @@ public class GatewayClientBotService : IHostedService
 
     private void ConfigureBot()
     {
-        var interactions = new List<Interaction>();
+        var services = new List<Service>();
         var assembly = Assembly.GetEntryAssembly()!;
         string? textCommandPrefix = null;
-        Interaction? textCommandInteraction = null;
+        Service? textCommandService = null;
         foreach (var serviceDescriptor in _collection)
         {
             var serviceType = serviceDescriptor.ServiceType;
@@ -68,19 +68,19 @@ public class GatewayClientBotService : IHostedService
             var addModules = ShouldBeAddedAsModules(serviceName, serviceType);
             if (addModules)
             {
-                UpdateCommandData(serviceType, serviceName, ref textCommandPrefix, ref textCommandInteraction);
+                UpdateCommandData(serviceType, serviceName, ref textCommandPrefix, ref textCommandService);
                 var addModulesMethod = serviceType.GetMethod("AddModules");
                 if (addModulesMethod is null) continue;
                 var genericType = serviceType.GenericTypeArguments.First();
                 var service = _provider.GetRequiredService(serviceType);
                 addModulesMethod.Invoke(service, new object[] { assembly });
-                interactions.Add(new Interaction(serviceType, genericType, service, genericType.Name.Replace("Context", "")));
+                services.Add(new Service(serviceType, genericType, service, genericType.Name.Replace("Context", "")));
             }
            
         }
-        if (textCommandPrefix is not null && textCommandInteraction is not null)
-            CreateTextCommandInteraction(textCommandPrefix, textCommandInteraction);
-        CreateInteractions(interactions);
+        if (textCommandPrefix is not null && textCommandService is not null)
+            CreateTextCommandInteraction(textCommandPrefix, textCommandService);
+        CreateInteractions(services);
     }
 
     private bool ShouldBeAddedAsModules(string serviceName, Type serviceType)
@@ -91,12 +91,12 @@ public class GatewayClientBotService : IHostedService
                serviceName.Contains("applicationcommandservice");
     }
 
-    private void UpdateCommandData(Type serviceType, string serviceName, ref string? commandPrefix, ref Interaction? commandInteraction)
+    private void UpdateCommandData(Type serviceType, string serviceName, ref string? textCommandPrefix, ref Service? textCommandService)
     {
-        if (serviceName.Equals("commandservice`1")) commandInteraction = new Interaction(serviceType, serviceType.GenericTypeArguments.First(),
+        if (serviceName.Equals("commandservice`1")) textCommandService = new Service(serviceType, serviceType.GenericTypeArguments.First(),
             _provider.GetRequiredService(serviceType));
         else if (serviceName.Equals("commandsettings`1"))
-            commandPrefix =
+            textCommandPrefix =
                 serviceType.GetProperty("Prefix")!.GetValue(_provider.GetRequiredService(serviceType))!
                     .ToString();
         else if (_areCommands && serviceType.GenericTypeArguments.Length != 0 &&
@@ -110,16 +110,16 @@ public class GatewayClientBotService : IHostedService
         }
     }
 
-    private void CreateTextCommandInteraction(string prefix, Interaction interaction)
+    private void CreateTextCommandInteraction(string prefix, Service service)
     {
         _client.MessageCreate += message =>
         {
             if (message.Content.StartsWith(prefix))
                 try
                 {
-                    interaction.Type.GetMethod("ExecuteAsync")!.Invoke(interaction.Service, new[]
+                    service.Type.GetMethod("ExecuteAsync")!.Invoke(service.ServiceInstance, new[]
                     {
-                        prefix.Length, Activator.CreateInstance(interaction.GenericType, message, _client), _provider
+                        prefix.Length, Activator.CreateInstance(service.GenericType, message, _client), _provider
                     });
                 }
                 catch (Exception e)
@@ -131,19 +131,19 @@ public class GatewayClientBotService : IHostedService
         };
     }
 
-    private void CreateInteractions(List<Interaction> interactions)
+    private void CreateInteractions(List<Service> services)
     {
-        interactions.ForEach(i =>
+        services.ForEach(s =>
         {
             _client.InteractionCreate += interaction =>
             {
                 try
                 {
-                     if (interaction.GetType().Name.StartsWith(i.InteractionName!))
+                     if (interaction.GetType().Name.StartsWith(s.InteractionName!))
                      {
-                         i.Type.GetMethod("ExecuteAsync")!.Invoke(i.Service, new[]
+                         s.Type.GetMethod("ExecuteAsync")!.Invoke(s.ServiceInstance, new[]
                          {
-                             Activator.CreateInstance(i.GenericType, interaction, _client), _provider
+                             Activator.CreateInstance(s.GenericType, interaction, _client), _provider
                          });
                      }
                 }

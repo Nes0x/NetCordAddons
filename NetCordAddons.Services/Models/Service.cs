@@ -1,17 +1,17 @@
 ﻿namespace NetCordAddons.Services.Models;
 
-public class Interaction
+public class Service
 {
-    public Interaction(Type type, Type genericType, object service, string? interactionName = null)
+    public Service(Type type, Type genericType, object serviceInstance, string? interactionName = null)
     {
         Type = type;
         GenericType = genericType;
-        Service = service;
+        ServiceInstance = serviceInstance;
         InteractionName = interactionName;
     }
 
     public Type Type { get; }
     public Type GenericType { get; }
-    public object Service { get; }
+    public object ServiceInstance { get; }
     public string? InteractionName { get; }
 }
