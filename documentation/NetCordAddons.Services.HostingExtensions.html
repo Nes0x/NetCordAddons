@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HostingExtensions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HostingExtensions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NetCordAddons.Services.HostingExtensions">
+
+
+
+  <h1 id="NetCordAddons_Services_HostingExtensions" data-uid="NetCordAddons.Services.HostingExtensions" class="text-break">
+    Class HostingExtensions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NetCordAddons.html">NetCordAddons</a>.<a class="xref" href="NetCordAddons.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>NetCordAddons.Services.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class HostingExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">HostingExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NetCordAddons_Services_HostingExtensions_AddApplicationCommand_" data-uid="NetCordAddons.Services.HostingExtensions.AddApplicationCommand*"></a>
+
+  <h3 id="NetCordAddons_Services_HostingExtensions_AddApplicationCommand__1_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCord_Services_ApplicationCommands_ApplicationCommandServiceConfiguration___0___" data-uid="NetCordAddons.Services.HostingExtensions.AddApplicationCommand``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCord.Services.ApplicationCommands.ApplicationCommandServiceConfiguration{``0}})">
+  AddApplicationCommand&lt;TContext&gt;(IHostBuilder, Func&lt;IServiceProvider, ApplicationCommandServiceConfiguration&lt;TContext&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IHostBuilder AddApplicationCommand&lt;TContext&gt;(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, ApplicationCommandServiceConfiguration&lt;TContext&gt;&gt;? configurationFactory = null) where TContext : IApplicationCommandContext</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+    <dt><code>configurationFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <span class="xref">ApplicationCommandServiceConfiguration</span>&lt;TContext&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContext</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="NetCordAddons_Services_HostingExtensions_AddApplicationCommand_" data-uid="NetCordAddons.Services.HostingExtensions.AddApplicationCommand*"></a>
+
+  <h3 id="NetCordAddons_Services_HostingExtensions_AddApplicationCommand__2_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCord_Services_ApplicationCommands_ApplicationCommandServiceConfiguration___0___" data-uid="NetCordAddons.Services.HostingExtensions.AddApplicationCommand``2(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCord.Services.ApplicationCommands.ApplicationCommandServiceConfiguration{``0}})">
+  AddApplicationCommand&lt;TContext, TAutocompleteContext&gt;(IHostBuilder, Func&lt;IServiceProvider, ApplicationCommandServiceConfiguration&lt;TContext&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IHostBuilder AddApplicationCommand&lt;TContext, TAutocompleteContext&gt;(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, ApplicationCommandServiceConfiguration&lt;TContext&gt;&gt;? configurationFactory = null) where TContext : IApplicationCommandContext where TAutocompleteContext : IAutocompleteInteractionContext</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+    <dt><code>configurationFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <span class="xref">ApplicationCommandServiceConfiguration</span>&lt;TContext&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContext</code></dt>
+    <dd></dd>
+    <dt><code>TAutocompleteContext</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="NetCordAddons_Services_HostingExtensions_AddCommand_" data-uid="NetCordAddons.Services.HostingExtensions.AddCommand*"></a>
+
+  <h3 id="NetCordAddons_Services_HostingExtensions_AddCommand__1_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_CommandSettings___0___" data-uid="NetCordAddons.Services.HostingExtensions.AddCommand``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.CommandSettings{``0}})">
+  AddCommand&lt;TContext&gt;(IHostBuilder, Func&lt;IServiceProvider, CommandSettings&lt;TContext&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IHostBuilder AddCommand&lt;TContext&gt;(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, CommandSettings&lt;TContext&gt;&gt; configurationFactory) where TContext : ICommandContext</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+    <dt><code>configurationFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="NetCordAddons.Services.Models.CommandSettings-1.html">CommandSettings</a>&lt;TContext&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContext</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="NetCordAddons_Services_HostingExtensions_AddGatewayClient_" data-uid="NetCordAddons.Services.HostingExtensions.AddGatewayClient*"></a>
+
+  <h3 id="NetCordAddons_Services_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__System_Action_System_IServiceProvider__System_Action_System_IServiceProvider__System_Action_System_IServiceProvider__System_Action_System_IServiceProvider__" data-uid="NetCordAddons.Services.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},System.Action{System.IServiceProvider},System.Action{System.IServiceProvider},System.Action{System.IServiceProvider},System.Action{System.IServiceProvider})">
+  AddGatewayClient(IHostBuilder, Func&lt;IServiceProvider, GatewayClientSettings&gt;, Action&lt;IServiceProvider&gt;?, Action&lt;IServiceProvider&gt;?, Action&lt;IServiceProvider&gt;?, Action&lt;IServiceProvider&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, GatewayClientSettings&gt; settingsFactory, Action&lt;IServiceProvider&gt;? beforeBotStart = null, Action&lt;IServiceProvider&gt;? afterBotStart = null, Action&lt;IServiceProvider&gt;? beforeBotClose = null, Action&lt;IServiceProvider&gt;? afterBotClose = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+    <dt><code>settingsFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="NetCordAddons.Services.Models.GatewayClientSettings.html">GatewayClientSettings</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>beforeBotStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>afterBotStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>beforeBotClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>afterBotClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NetCordAddons_Services_HostingExtensions_AddInteraction_" data-uid="NetCordAddons.Services.HostingExtensions.AddInteraction*"></a>
+
+  <h3 id="NetCordAddons_Services_HostingExtensions_AddInteraction__1_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCord_Services_Interactions_InteractionServiceConfiguration___0___" data-uid="NetCordAddons.Services.HostingExtensions.AddInteraction``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCord.Services.Interactions.InteractionServiceConfiguration{``0}})">
+  AddInteraction&lt;TContext&gt;(IHostBuilder, Func&lt;IServiceProvider, InteractionServiceConfiguration&lt;TContext&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IHostBuilder AddInteraction&lt;TContext&gt;(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, InteractionServiceConfiguration&lt;TContext&gt;&gt;? configurationFactory = null) where TContext : InteractionContext</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+    <dt><code>configurationFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <span class="xref">InteractionServiceConfiguration</span>&lt;TContext&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContext</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

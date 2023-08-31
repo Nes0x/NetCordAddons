@@ -1,0 +1,242 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/NetCordAddons/NetCordAddons/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Common.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Common.Event.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Common.EventAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Common.EventAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Common.EventModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Common.EventModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Common.EventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Common.EventType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.HostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.HostingExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.GatewayClientBotService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.GatewayClientBotService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.HostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.HostingExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Models.BotCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Models.BotCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Models.CommandSettings-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Models.CommandSettings-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Models.GatewayClientSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Models.GatewayClientSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Models.Service.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Models.Service.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "documentation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/toc.html"
+        },
+        ".json": {
+          "relative_path": "documentation/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
