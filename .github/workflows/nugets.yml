@@ -11,30 +11,29 @@ jobs:
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, 'stable')"
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Dotnet Setup
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 6.x
-        
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Dotnet Setup
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.x
 
-      - name: Restore
-        run: | 
-          dotnet restore NetCordAddons.Services
-          dotnet restore NetCordAddons.EventHandler
+    - name: Restore
+      run: | 
+        dotnet restore NetCordAddons.Services
+        dotnet restore NetCordAddons.EventHandler
 
-      - name: Build
-        run: | 
-          dotnet build NetCordAddons.Services -c Release --no-restore
-          dotnet build NetCordAddons.EventHandler -c Release --no-restore
+    - name: Build
+      run: | 
+        dotnet build NetCordAddons.Services -c Release --no-restore
+        dotnet build NetCordAddons.EventHandler -c Release --no-restore
 
-      - name: Pack
-        run: |
-          dotnet pack NetCordAddons.Services -c Release --no-build
-          dotnet pack NetCordAddons.EventHandler -c Release --no-build
+    - name: Pack
+      run: |
+        dotnet pack NetCordAddons.Services -c Release --no-build
+        dotnet pack NetCordAddons.EventHandler -c Release --no-build
 
-      - name: Publish
-        run: |
-          dotnet nuget push NetCordAddons.Services/**.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_KEY }} -n --skip-duplicate
-          dotnet nuget push NetCordAddons.EventHandler/**.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_KEY }} -n --skip-duplicate
+    - name: Publish
+      run: |
+        dotnet nuget push NetCordAddons.Services/**.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_KEY }} -n --skip-duplicate
+        dotnet nuget push NetCordAddons.EventHandler/**.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_KEY }} -n --skip-duplicate
