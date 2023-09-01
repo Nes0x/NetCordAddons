@@ -25,7 +25,7 @@ host
             }
         });
     }, _ => { Console.WriteLine("Working"); })
-    .AddEventHandler(ServiceLifetime.Singleton)
+    .AddEventHandler()
     .AddCommand<CommandContext>(_ => new CommandSettings<CommandContext>("!"))
     .AddApplicationCommand<SlashCommandContext>()
     .AddApplicationCommand<UserCommandContext>();
