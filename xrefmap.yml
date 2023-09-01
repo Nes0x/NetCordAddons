@@ -523,12 +523,12 @@ references:
   commentId: T:NetCordAddons.EventHandler.HostingExtensions
   fullName: NetCordAddons.EventHandler.HostingExtensions
   nameWithType: HostingExtensions
-- uid: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
-  name: AddEventHandler(IHostBuilder, ServiceLifetime)
-  href: documentation/NetCordAddons.EventHandler.HostingExtensions.html#NetCordAddons_EventHandler_HostingExtensions_AddEventHandler_Microsoft_Extensions_Hosting_IHostBuilder_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
-  commentId: M:NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
-  fullName: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
-  nameWithType: HostingExtensions.AddEventHandler(IHostBuilder, ServiceLifetime)
+- uid: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddEventHandler(IHostBuilder)
+  href: documentation/NetCordAddons.EventHandler.HostingExtensions.html#NetCordAddons_EventHandler_HostingExtensions_AddEventHandler_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: HostingExtensions.AddEventHandler(IHostBuilder)
 - uid: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler*
   name: AddEventHandler
   href: documentation/NetCordAddons.EventHandler.HostingExtensions.html#NetCordAddons_EventHandler_HostingExtensions_AddEventHandler_
