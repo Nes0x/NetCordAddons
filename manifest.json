@@ -1,5 +1,4 @@
 {
-  "homepages": [],
   "source_base_path": "/home/runner/work/NetCordAddons/NetCordAddons/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -108,20 +107,90 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.GatewayClientBotService.yml",
+      "source_relative_path": "documentation/NetCordAddons.Services.ClientBotService.yml",
       "output": {
         ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.GatewayClientBotService.html"
+          "relative_path": "documentation/NetCordAddons.Services.ClientBotService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.HostingExtensions.yml",
+      "source_relative_path": "documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.yml",
       "output": {
         ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.HostingExtensions.html"
+          "relative_path": "documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Creators.IInteractionCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Creators.IInteractionCreator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Creators.InteractionCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Creators.InteractionCreator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Creators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Creators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Extensions.HostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Extensions.HostingExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.GatewayClientBotService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.GatewayClientBotService.html"
         }
       },
       "version": ""
@@ -158,6 +227,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Models.IClientSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Models.IClientSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/NetCordAddons.Services.Models.Service.yml",
       "output": {
         ".html": {
@@ -168,10 +247,50 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Models.ShardedGatewayClientSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Models.ShardedGatewayClientSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/NetCordAddons.Services.Models.yml",
       "output": {
         ".html": {
           "relative_path": "documentation/NetCordAddons.Services.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.ShardedGatewayClientBotService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Validators.ServiceValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Validators.ServiceValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Validators.html"
         }
       },
       "version": ""
@@ -233,7 +352,6 @@
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

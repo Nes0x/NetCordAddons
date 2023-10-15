@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -150,8 +161,8 @@
 
   <a id="NetCordAddons_Services_GatewayClientBotService__ctor_" data-uid="NetCordAddons.Services.GatewayClientBotService.#ctor*"></a>
 
-  <h3 id="NetCordAddons_Services_GatewayClientBotService__ctor_NetCord_Gateway_GatewayClient_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_NetCordAddons_Services_GatewayClientBotService__NetCordAddons_Services_Models_BotCallback_" data-uid="NetCordAddons.Services.GatewayClientBotService.#ctor(NetCord.Gateway.GatewayClient,Microsoft.Extensions.DependencyInjection.IServiceCollection,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{NetCordAddons.Services.GatewayClientBotService},NetCordAddons.Services.Models.BotCallback)">
-  GatewayClientBotService(GatewayClient, IServiceCollection, IServiceProvider, ILogger&lt;GatewayClientBotService&gt;, BotCallback)
+  <h3 id="NetCordAddons_Services_GatewayClientBotService__ctor_NetCord_Gateway_GatewayClient_NetCordAddons_Services_ClientBotService_" data-uid="NetCordAddons.Services.GatewayClientBotService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.Services.ClientBotService)">
+  GatewayClientBotService(GatewayClient, ClientBotService)
   
   </h3>
 
@@ -159,20 +170,14 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GatewayClientBotService(GatewayClient client, IServiceCollection collection, IServiceProvider provider, ILogger&lt;GatewayClientBotService&gt; logger, BotCallback botCallback)</code></pre>
+    <pre><code class="lang-csharp hljs">public GatewayClientBotService(GatewayClient client, ClientBotService clientBot)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>client</code> <span class="xref">GatewayClient</span></dt>
     <dd></dd>
-    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
-    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
-    <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="NetCordAddons.Services.GatewayClientBotService.html">GatewayClientBotService</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>botCallback</code> <a class="xref" href="NetCordAddons.Services.Models.BotCallback.html">BotCallback</a></dt>
+    <dt><code>clientBot</code> <a class="xref" href="NetCordAddons.Services.ClientBotService.html">ClientBotService</a></dt>
     <dd></dd>
   </dl>
 

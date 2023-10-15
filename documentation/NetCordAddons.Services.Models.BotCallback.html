@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -144,8 +155,8 @@
 
   <a id="NetCordAddons_Services_Models_BotCallback__ctor_" data-uid="NetCordAddons.Services.Models.BotCallback.#ctor*"></a>
 
-  <h3 id="NetCordAddons_Services_Models_BotCallback__ctor_System_Action_System_IServiceProvider__System_Action_System_IServiceProvider__System_Action_System_IServiceProvider__System_Action_System_IServiceProvider__" data-uid="NetCordAddons.Services.Models.BotCallback.#ctor(System.Action{System.IServiceProvider},System.Action{System.IServiceProvider},System.Action{System.IServiceProvider},System.Action{System.IServiceProvider})">
-  BotCallback(Action&lt;IServiceProvider&gt;?, Action&lt;IServiceProvider&gt;?, Action&lt;IServiceProvider&gt;?, Action&lt;IServiceProvider&gt;?)
+  <h3 id="NetCordAddons_Services_Models_BotCallback__ctor" data-uid="NetCordAddons.Services.Models.BotCallback.#ctor">
+  BotCallback()
   
   </h3>
 
@@ -153,20 +164,9 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BotCallback(Action&lt;IServiceProvider&gt;? beforeBotStart, Action&lt;IServiceProvider&gt;? afterBotStart, Action&lt;IServiceProvider&gt;? beforeBotClose, Action&lt;IServiceProvider&gt;? afterBotClose)</code></pre>
+    <pre><code class="lang-csharp hljs">public BotCallback()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>beforeBotStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>afterBotStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>beforeBotClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>afterBotClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -194,7 +194,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Action&lt;IServiceProvider&gt;? AfterBotClose { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;IServiceProvider, Task&gt;? AfterBotClose { get; init; }</code></pre>
   </div>
 
 
@@ -203,7 +203,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -225,7 +225,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Action&lt;IServiceProvider&gt;? AfterBotStart { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;IServiceProvider, Task&gt;? AfterBotStart { get; init; }</code></pre>
   </div>
 
 
@@ -234,7 +234,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -256,7 +256,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Action&lt;IServiceProvider&gt;? BeforeBotClose { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;IServiceProvider, Task&gt;? BeforeBotClose { get; init; }</code></pre>
   </div>
 
 
@@ -265,7 +265,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -287,7 +287,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Action&lt;IServiceProvider&gt;? BeforeBotStart { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;IServiceProvider, Task&gt;? BeforeBotStart { get; init; }</code></pre>
   </div>
 
 
@@ -296,7 +296,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
     <dd></dd>
   </dl>
 
