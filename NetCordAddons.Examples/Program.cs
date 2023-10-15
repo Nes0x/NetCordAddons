@@ -6,7 +6,7 @@ using NetCord.Services.ApplicationCommands;
 using NetCord.Services.Commands;
 using NetCordAddons.EventHandler;
 using NetCordAddons.Examples.Services;
-using NetCordAddons.Services;
+using NetCordAddons.Services.Extensions;
 using NetCordAddons.Services.Models;
 
 var host = Host.CreateDefaultBuilder(args);
@@ -24,7 +24,14 @@ host
                 Activities = new[] { new UserActivityProperties("Hey", UserActivityType.Streaming) }
             }
         });
-    }, _ => { Console.WriteLine("Working"); })
+    }, new BotCallback()
+    {
+        BeforeBotStart = _ =>
+        {
+            Console.WriteLine("Working");
+            return Task.CompletedTask;
+        }
+    })
     .AddEventHandler()
     .AddCommand<CommandContext>(_ => new CommandSettings<CommandContext>("!"))
     .AddApplicationCommand<SlashCommandContext>()

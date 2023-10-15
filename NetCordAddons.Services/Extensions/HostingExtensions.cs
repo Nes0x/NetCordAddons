@@ -5,26 +5,49 @@ using NetCord.Gateway;
 using NetCord.Services.ApplicationCommands;
 using NetCord.Services.Commands;
 using NetCord.Services.Interactions;
+using NetCordAddons.Services.Creators;
 using NetCordAddons.Services.Models;
+using NetCordAddons.Services.Validators;
 
-namespace NetCordAddons.Services;
+namespace NetCordAddons.Services.Extensions;
 
 public static class HostingExtensions
 {
+    private static bool _isClientAdded; 
+    
     public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder,
-        Func<IServiceProvider, GatewayClientSettings> settingsFactory, Action<IServiceProvider>? beforeBotStart = null,
-        Action<IServiceProvider>? afterBotStart = null, Action<IServiceProvider>? beforeBotClose = null,
-        Action<IServiceProvider>? afterBotClose = null)
+        Func<IServiceProvider, GatewayClientSettings> settingsFactory, BotCallback botCallback)
     {
+        if (_isClientAdded) return hostBuilder;
+        _isClientAdded = !_isClientAdded;
         hostBuilder.ConfigureServices(services =>
         {
             var settings = settingsFactory(services.BuildServiceProvider());
             services.AddSingleton<GatewayClient>(_ =>
                 new GatewayClient(settings.Token, settings.GatewayClientConfiguration));
             services.AddSingleton<IServiceCollection>(_ => services);
-            services.AddSingleton<BotCallback>(_ =>
-                new BotCallback(beforeBotStart, afterBotStart, beforeBotClose, afterBotClose));
+            services.AddSingleton<BotCallback>(_ => botCallback);
+            services.AddSingleton<IInteractionCreator, GatewayInteractionCreator>();
             services.AddHostedService<GatewayClientBotService>();
+        });
+
+        return hostBuilder;
+    }
+    
+    public static IHostBuilder AddShardedGatewayClient(this IHostBuilder hostBuilder,
+        Func<IServiceProvider, ShardedGatewayClientSettings> settingsFactory, BotCallback botCallback)
+    {
+        if (_isClientAdded) return hostBuilder;
+        _isClientAdded = !_isClientAdded;
+        hostBuilder.ConfigureServices(services =>
+        {
+            var settings = settingsFactory(services.BuildServiceProvider());
+            services.AddSingleton<ShardedGatewayClient>(_ =>
+                new ShardedGatewayClient(settings.Token, settings.ShardedGatewayClientConfiguration));
+            services.AddSingleton<IServiceCollection>(_ => services);
+            services.AddSingleton<BotCallback>(_ => botCallback);
+            services.AddSingleton<IInteractionCreator, ShardedGatewayInteractionCreator>();
+            services.AddHostedService<ShardedGatewayClientBotService>();
         });
 
         return hostBuilder;
@@ -35,7 +58,7 @@ public static class HostingExtensions
         where TContext : IApplicationCommandContext
     {
         hostBuilder
-            .TryAddApplicationCommandManager()
+            .TryAddRequiredServices()
             .ConfigureServices(
                 services =>
                 {
@@ -55,7 +78,7 @@ public static class HostingExtensions
         where TAutocompleteContext : IAutocompleteInteractionContext
     {
         hostBuilder
-            .TryAddApplicationCommandManager()
+            .TryAddRequiredServices()
             .ConfigureServices(
                 services =>
                 {
@@ -74,6 +97,7 @@ public static class HostingExtensions
         where TContext : InteractionContext
     {
         hostBuilder
+            .TryAddRequiredServices()
             .ConfigureServices(
                 services =>
                 {
@@ -91,6 +115,7 @@ public static class HostingExtensions
         where TContext : ICommandContext
     {
         hostBuilder
+            .TryAddRequiredServices()
             .ConfigureServices(
                 services =>
                 {
@@ -102,12 +127,18 @@ public static class HostingExtensions
         return hostBuilder;
     }
 
-    private static IHostBuilder TryAddApplicationCommandManager(this IHostBuilder hostBuilder)
+    private static IHostBuilder TryAddRequiredServices(this IHostBuilder hostBuilder)
     {
         hostBuilder
             .ConfigureServices(
                 services =>
-                    services.TryAddSingleton<ApplicationCommandServiceManager>()
+                {
+                    services.TryAddSingleton<ApplicationCommandServiceManager>();
+                    services.TryAddSingleton<InteractionCreator>();
+                    services.TryAddSingleton<ClientBotService>();
+                    services.TryAddSingleton<ServiceValidator>();
+                }
+                    
             );
         return hostBuilder;
     }

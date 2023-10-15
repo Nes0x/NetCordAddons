@@ -3,7 +3,7 @@ using NetCord.Gateway;
 
 namespace NetCordAddons.Services.Models;
 
-public class GatewayClientSettings
+public class GatewayClientSettings : IClientSettings
 {
     public GatewayClientSettings(Token token, GatewayClientConfiguration? gatewayClientConfiguration = null)
     {
