@@ -14,15 +14,13 @@ public class GatewayClientBotService : IHostedService
         _clientBot = clientBot;
     }
 
-    public Task StartAsync(CancellationToken cancellationToken)
+    public async Task StartAsync(CancellationToken cancellationToken)
     {
-        _clientBot.StartAsync(_client);
-        return Task.CompletedTask;
+        await _clientBot.StartAsync(_client);
     }
 
-    public Task StopAsync(CancellationToken cancellationToken)
+    public async Task StopAsync(CancellationToken cancellationToken)
     {
-        _clientBot.StopAsync(_client);
-        return Task.CompletedTask;
+        await _clientBot.StopAsync(_client);
     }
 }
