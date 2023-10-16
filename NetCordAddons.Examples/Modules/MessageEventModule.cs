@@ -6,8 +6,9 @@ namespace NetCordAddons.Examples.Modules;
 public class MessageEventModule : EventModule
 {
     [Event(EventType.MessageCreate)]
-    public async ValueTask HandleMessageTyped(Message message)
+    public ValueTask HandleMessageTyped(Message message)
     {
-        if (!message.Author.IsBot) await message.ReplyAsync("Hi!");
+        Console.WriteLine(message.Content);
+        return ValueTask.CompletedTask;
     }
 }

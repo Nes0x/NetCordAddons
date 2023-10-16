@@ -11,16 +11,17 @@ namespace NetCordAddons.Services;
 
 public class ClientBotService
 {
-    private readonly bool _areCommands; 
+    private readonly bool _areCommands;
     private readonly BotCallback _botCallback;
     private readonly IServiceCollection _collection;
-    private readonly IServiceProvider _provider;
-    
-    private readonly IInteractionCreator _interactionCreator;
-    private readonly ServiceValidator _serviceValidator;
-        
 
-    public ClientBotService(IServiceCollection collection, IServiceProvider provider, BotCallback botCallback, IInteractionCreator interactionCreator, ServiceValidator serviceValidator)
+    private readonly IInteractionCreator _interactionCreator;
+    private readonly IServiceProvider _provider;
+    private readonly ServiceValidator _serviceValidator;
+
+
+    public ClientBotService(IServiceCollection collection, IServiceProvider provider, BotCallback botCallback,
+        IInteractionCreator interactionCreator, ServiceValidator serviceValidator)
     {
         _collection = collection;
         _provider = provider;
@@ -41,33 +42,23 @@ public class ClientBotService
         {
             await gatewayClient.StartAsync();
             await RunBot(gatewayClient);
-        } else if (client is ShardedGatewayClient shardedClient)
+        }
+        else if (client is ShardedGatewayClient shardedClient)
         {
             await shardedClient.StartAsync();
             await RunBot(shardedClient[0]);
         }
+
         if (_botCallback.AfterBotStart is not null) await _botCallback.AfterBotStart.Invoke(_provider);
     }
 
-    private async Task RunBot(GatewayClient client)
-    {
-        await client.ReadyAsync;
-        if (_areCommands)
-        {
-            var applicationCommandServiceManager = _provider.GetRequiredService<ApplicationCommandServiceManager>();
-            await applicationCommandServiceManager.CreateCommandsAsync(client.Rest, client.ApplicationId);
-        }
-    }
+
     public async Task StopAsync(object client)
     {
         if (_botCallback.BeforeBotClose is not null) await _botCallback.BeforeBotClose.Invoke(_provider);
         if (client is GatewayClient gatewayClient)
-        {
             await gatewayClient.CloseAsync();
-        } else if (client is ShardedGatewayClient shardedClient)
-        {
-            await shardedClient.CloseAsync();
-        }
+        else if (client is ShardedGatewayClient shardedClient) await shardedClient.CloseAsync();
         if (_botCallback.AfterBotClose is not null) await _botCallback.AfterBotClose.Invoke(_provider);
     }
 
@@ -90,6 +81,7 @@ public class ClientBotService
             addModulesMethod.Invoke(service, new object[] { assembly });
             services.Add(new Service(serviceType, genericType, service, genericType.Name.Replace("Context", "")));
         }
+
         if (textCommandPrefix is not null && textCommandService is not null)
             _interactionCreator.CreateTextCommandInteraction(textCommandPrefix, textCommandService);
         _interactionCreator.CreateInteractions(services);
@@ -98,13 +90,19 @@ public class ClientBotService
     private void UpdateCommandData(Type serviceType, ref string? textCommandPrefix, ref Service? textCommandService)
     {
         var genericTypeDefinition = serviceType.GetGenericTypeDefinition();
-        if (genericTypeDefinition.IsAssignableTo(typeof(CommandService<>).GetGenericTypeDefinition())) textCommandService = new Service(serviceType, serviceType.GenericTypeArguments.First(),
-            _provider.GetRequiredService(serviceType));
+        if (genericTypeDefinition.IsAssignableTo(typeof(CommandService<>).GetGenericTypeDefinition()))
+        {
+            textCommandService = new Service(serviceType, serviceType.GenericTypeArguments.First(),
+                _provider.GetRequiredService(serviceType));
+        }
         else if (genericTypeDefinition.IsAssignableTo(typeof(CommandSettings<>).GetGenericTypeDefinition()))
+        {
             textCommandPrefix =
                 serviceType.GetProperty("Prefix")!.GetValue(_provider.GetRequiredService(serviceType))!
                     .ToString();
-        else if (_areCommands && genericTypeDefinition.IsAssignableTo(typeof(ApplicationCommandService<>).GetGenericTypeDefinition()))
+        }
+        else if (_areCommands &&
+                 genericTypeDefinition.IsAssignableTo(typeof(ApplicationCommandService<>).GetGenericTypeDefinition()))
         {
             var applicationCommandServiceManager =
                 _provider.GetRequiredService<ApplicationCommandServiceManager>();
@@ -114,4 +112,13 @@ public class ClientBotService
         }
     }
 
+    private async Task RunBot(GatewayClient client)
+    {
+        await client.ReadyAsync;
+        if (_areCommands)
+        {
+            var applicationCommandServiceManager = _provider.GetRequiredService<ApplicationCommandServiceManager>();
+            await applicationCommandServiceManager.CreateCommandsAsync(client.Rest, client.ApplicationId);
+        }
+    }
 }

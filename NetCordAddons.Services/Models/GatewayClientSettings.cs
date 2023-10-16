@@ -11,6 +11,7 @@ public class GatewayClientSettings : IClientSettings
         GatewayClientConfiguration = gatewayClientConfiguration;
     }
 
-    public Token Token { get; }
     public GatewayClientConfiguration? GatewayClientConfiguration { get; }
+
+    public Token Token { get; }
 }

@@ -4,5 +4,4 @@ namespace NetCordAddons.Examples.Modules;
 
 public class CustomApplicationCommandModule : ApplicationCommandModule<SlashCommandContext>
 {
-    
 }

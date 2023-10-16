@@ -1,6 +1,4 @@
-using Microsoft.Extensions.Logging;
 using NetCord.Gateway;
-using NetCordAddons.Services.Creators;
 using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Services.Creators;

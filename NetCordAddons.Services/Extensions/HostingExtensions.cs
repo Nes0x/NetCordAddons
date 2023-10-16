@@ -13,8 +13,8 @@ namespace NetCordAddons.Services.Extensions;
 
 public static class HostingExtensions
 {
-    private static bool _isClientAdded; 
-    
+    private static bool _isClientAdded;
+
     public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder,
         Func<IServiceProvider, GatewayClientSettings> settingsFactory, BotCallback botCallback)
     {
@@ -33,7 +33,7 @@ public static class HostingExtensions
 
         return hostBuilder;
     }
-    
+
     public static IHostBuilder AddShardedGatewayClient(this IHostBuilder hostBuilder,
         Func<IServiceProvider, ShardedGatewayClientSettings> settingsFactory, BotCallback botCallback)
     {
@@ -138,7 +138,6 @@ public static class HostingExtensions
                     services.TryAddSingleton<ClientBotService>();
                     services.TryAddSingleton<ServiceValidator>();
                 }
-                    
             );
         return hostBuilder;
     }

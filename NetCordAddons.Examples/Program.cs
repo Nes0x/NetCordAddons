@@ -24,7 +24,7 @@ host
                 Activities = new[] { new UserActivityProperties("Hey", UserActivityType.Streaming) }
             }
         });
-    }, new BotCallback()
+    }, new BotCallback
     {
         BeforeBotStart = _ =>
         {
