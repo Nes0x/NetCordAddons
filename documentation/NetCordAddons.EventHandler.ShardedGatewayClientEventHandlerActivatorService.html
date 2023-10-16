@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class EventHandlerActivatorService
+      <title>Class ShardedGatewayClientEventHandlerActivatorService
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class EventHandlerActivatorService
+      <meta name="title" content="Class ShardedGatewayClientEventHandlerActivatorService
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService">
+        <article data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService">
 
 
 
-  <h1 id="NetCordAddons_EventHandler_EventHandlerActivatorService" data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService" class="text-break">
-    Class EventHandlerActivatorService
+  <h1 id="NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService" data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService" class="text-break">
+    Class ShardedGatewayClientEventHandlerActivatorService
   
   </h1>
 
@@ -102,7 +102,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EventHandlerActivatorService</code></pre>
+    <pre><code class="lang-csharp hljs">public class ShardedGatewayClientEventHandlerActivatorService : IHostedService</code></pre>
   </div>
 
 
@@ -112,10 +112,16 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">EventHandlerActivatorService</span></div>
+      <div><span class="xref">ShardedGatewayClientEventHandlerActivatorService</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice">IHostedService</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
@@ -153,10 +159,10 @@
 </h2>
 
 
-  <a id="NetCordAddons_EventHandler_EventHandlerActivatorService__ctor_" data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService.#ctor*"></a>
+  <a id="NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService__ctor_" data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.#ctor*"></a>
 
-  <h3 id="NetCordAddons_EventHandler_EventHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_NetCordAddons_EventHandler_Common_EventModule__Microsoft_Extensions_Logging_ILogger_NetCordAddons_EventHandler_EventHandlerActivatorService__" data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{NetCordAddons.EventHandler.Common.EventModule},Microsoft.Extensions.Logging.ILogger{NetCordAddons.EventHandler.EventHandlerActivatorService})">
-  EventHandlerActivatorService(IEnumerable&lt;EventModule&gt;, ILogger&lt;EventHandlerActivatorService&gt;)
+  <h3 id="NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService__ctor_NetCord_Gateway_ShardedGatewayClient_NetCordAddons_EventHandler_EventHandlerActivatorService_" data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.EventHandler.EventHandlerActivatorService)">
+  ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient, EventHandlerActivatorService)
   
   </h3>
 
@@ -164,14 +170,14 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EventHandlerActivatorService(IEnumerable&lt;EventModule&gt; eventModules, ILogger&lt;EventHandlerActivatorService&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient client, EventHandlerActivatorService handlerActivator)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>eventModules</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="NetCordAddons.EventHandler.Common.EventModule.html">EventModule</a>&gt;</dt>
+    <dt><code>client</code> <span class="xref">ShardedGatewayClient</span></dt>
     <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="NetCordAddons.EventHandler.EventHandlerActivatorService.html">EventHandlerActivatorService</a>&gt;</dt>
+    <dt><code>handlerActivator</code> <a class="xref" href="NetCordAddons.EventHandler.EventHandlerActivatorService.html">EventHandlerActivatorService</a></dt>
     <dd></dd>
   </dl>
 
@@ -190,24 +196,26 @@
 </h2>
 
 
-  <a id="NetCordAddons_EventHandler_EventHandlerActivatorService_StartAsync_" data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync*"></a>
+  <a id="NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StartAsync_" data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync*"></a>
 
-  <h3 id="NetCordAddons_EventHandler_EventHandlerActivatorService_StartAsync_System_Object_" data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync(System.Object)">
-  StartAsync(object)
+  <h3 id="NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_" data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)">
+  StartAsync(CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Triggered when the application host is ready to start the service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task StartAsync(object client)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task StartAsync(CancellationToken cancellationToken)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>client</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Indicates that the start process has been aborted.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -226,20 +234,27 @@
 
 
 
-  <a id="NetCordAddons_EventHandler_EventHandlerActivatorService_StopAsync_" data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync*"></a>
+  <a id="NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StopAsync_" data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync*"></a>
 
-  <h3 id="NetCordAddons_EventHandler_EventHandlerActivatorService_StopAsync" data-uid="NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync">
-  StopAsync()
+  <h3 id="NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_" data-uid="NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)">
+  StopAsync(CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Triggered when the application host is performing a graceful shutdown.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task StopAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task StopAsync(CancellationToken cancellationToken)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Indicates that the shutdown process should no longer be graceful.</p>
+</dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

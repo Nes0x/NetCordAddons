@@ -87,10 +87,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/NetCordAddons.EventHandler.HostingExtensions.yml",
       "output": {
         ".html": {
           "relative_path": "documentation/NetCordAddons.EventHandler.HostingExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html"
         }
       },
       "version": ""
