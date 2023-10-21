@@ -1,12 +1,159 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: NetCordAddons.EventHandler
-  name: NetCordAddons.EventHandler
-  href: documentation/NetCordAddons.EventHandler.html
-  commentId: N:NetCordAddons.EventHandler
-  fullName: NetCordAddons.EventHandler
-  nameWithType: NetCordAddons.EventHandler
+- uid: NetCordAddons.EventHandler.Activators
+  name: NetCordAddons.EventHandler.Activators
+  href: documentation/NetCordAddons.EventHandler.Activators.html
+  commentId: N:NetCordAddons.EventHandler.Activators
+  fullName: NetCordAddons.EventHandler.Activators
+  nameWithType: NetCordAddons.EventHandler.Activators
+- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService
+  name: EventHandlerActivatorService
+  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html
+  commentId: T:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService
+  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService
+  nameWithType: EventHandlerActivatorService
+- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{NetCordAddons.EventHandler.Common.EventModule},Microsoft.Extensions.Logging.ILogger{NetCordAddons.EventHandler.Activators.EventHandlerActivatorService})
+  name: EventHandlerActivatorService(IEnumerable<EventModule>, ILogger<EventHandlerActivatorService>)
+  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_NetCordAddons_EventHandler_Common_EventModule__Microsoft_Extensions_Logging_ILogger_NetCordAddons_EventHandler_Activators_EventHandlerActivatorService__
+  commentId: M:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{NetCordAddons.EventHandler.Common.EventModule},Microsoft.Extensions.Logging.ILogger{NetCordAddons.EventHandler.Activators.EventHandlerActivatorService})
+  name.vb: New(IEnumerable(Of EventModule), ILogger(Of EventHandlerActivatorService))
+  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.EventHandlerActivatorService(System.Collections.Generic.IEnumerable<NetCordAddons.EventHandler.Common.EventModule>, Microsoft.Extensions.Logging.ILogger<NetCordAddons.EventHandler.Activators.EventHandlerActivatorService>)
+  fullName.vb: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.New(System.Collections.Generic.IEnumerable(Of NetCordAddons.EventHandler.Common.EventModule), Microsoft.Extensions.Logging.ILogger(Of NetCordAddons.EventHandler.Activators.EventHandlerActivatorService))
+  nameWithType: EventHandlerActivatorService.EventHandlerActivatorService(IEnumerable<EventModule>, ILogger<EventHandlerActivatorService>)
+  nameWithType.vb: EventHandlerActivatorService.New(IEnumerable(Of EventModule), ILogger(Of EventHandlerActivatorService))
+- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor*
+  name: EventHandlerActivatorService
+  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService__ctor_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor
+  name.vb: New
+  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.EventHandlerActivatorService
+  fullName.vb: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.New
+  nameWithType: EventHandlerActivatorService.EventHandlerActivatorService
+  nameWithType.vb: EventHandlerActivatorService.New
+- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(System.Object)
+  name: StartAsync(object)
+  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StartAsync_System_Object_
+  commentId: M:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(System.Object)
+  name.vb: StartAsync(Object)
+  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(object)
+  fullName.vb: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(Object)
+  nameWithType: EventHandlerActivatorService.StartAsync(object)
+  nameWithType.vb: EventHandlerActivatorService.StartAsync(Object)
+- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync*
+  name: StartAsync
+  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StartAsync_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync
+  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync
+  nameWithType: EventHandlerActivatorService.StartAsync
+- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
+  name: StopAsync()
+  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StopAsync
+  commentId: M:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
+  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync()
+  nameWithType: EventHandlerActivatorService.StopAsync()
+- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync*
+  name: StopAsync
+  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StopAsync_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
+  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
+  nameWithType: EventHandlerActivatorService.StopAsync
+- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService
+  name: GatewayClientEventHandlerActivatorService
+  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html
+  commentId: T:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService
+  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService
+  nameWithType: GatewayClientEventHandlerActivatorService
+- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  name: GatewayClientEventHandlerActivatorService(GatewayClient, EventHandlerActivatorService)
+  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService__ctor_NetCord_Gateway_GatewayClient_NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_
+  commentId: M:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  name.vb: New(GatewayClient, EventHandlerActivatorService)
+  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService(NetCord.Gateway.GatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  fullName.vb: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.New(NetCord.Gateway.GatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  nameWithType: GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService(GatewayClient, EventHandlerActivatorService)
+  nameWithType.vb: GatewayClientEventHandlerActivatorService.New(GatewayClient, EventHandlerActivatorService)
+- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor*
+  name: GatewayClientEventHandlerActivatorService
+  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService__ctor_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor
+  name.vb: New
+  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService
+  fullName.vb: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.New
+  nameWithType: GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService
+  nameWithType.vb: GatewayClientEventHandlerActivatorService.New
+- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_
+  commentId: M:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  nameWithType: GatewayClientEventHandlerActivatorService.StartAsync(CancellationToken)
+- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync*
+  name: StartAsync
+  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StartAsync_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync
+  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync
+  nameWithType: GatewayClientEventHandlerActivatorService.StartAsync
+- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_
+  commentId: M:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  nameWithType: GatewayClientEventHandlerActivatorService.StopAsync(CancellationToken)
+- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync*
+  name: StopAsync
+  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StopAsync_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync
+  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync
+  nameWithType: GatewayClientEventHandlerActivatorService.StopAsync
+- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService
+  name: ShardedGatewayClientEventHandlerActivatorService
+  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html
+  commentId: T:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService
+  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService
+  nameWithType: ShardedGatewayClientEventHandlerActivatorService
+- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  name: ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient, EventHandlerActivatorService)
+  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService__ctor_NetCord_Gateway_ShardedGatewayClient_NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_
+  commentId: M:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  name.vb: New(ShardedGatewayClient, EventHandlerActivatorService)
+  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  fullName.vb: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.New(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
+  nameWithType: ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient, EventHandlerActivatorService)
+  nameWithType.vb: ShardedGatewayClientEventHandlerActivatorService.New(ShardedGatewayClient, EventHandlerActivatorService)
+- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor*
+  name: ShardedGatewayClientEventHandlerActivatorService
+  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService__ctor_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor
+  name.vb: New
+  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService
+  fullName.vb: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.New
+  nameWithType: ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService
+  nameWithType.vb: ShardedGatewayClientEventHandlerActivatorService.New
+- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_
+  commentId: M:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StartAsync(CancellationToken)
+- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync*
+  name: StartAsync
+  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StartAsync_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync
+  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync
+  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StartAsync
+- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_
+  commentId: M:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StopAsync(CancellationToken)
+- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync*
+  name: StopAsync
+  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StopAsync_
+  commentId: Overload:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync
+  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync
+  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StopAsync
 - uid: NetCordAddons.EventHandler.Common
   name: NetCordAddons.EventHandler.Common
   href: documentation/NetCordAddons.EventHandler.Common.html
@@ -469,171 +616,30 @@ references:
   commentId: F:NetCordAddons.EventHandler.Common.EventType.WebhooksUpdate
   fullName: NetCordAddons.EventHandler.Common.EventType.WebhooksUpdate
   nameWithType: EventType.WebhooksUpdate
-- uid: NetCordAddons.EventHandler.EventHandlerActivatorService
-  name: EventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html
-  commentId: T:NetCordAddons.EventHandler.EventHandlerActivatorService
-  fullName: NetCordAddons.EventHandler.EventHandlerActivatorService
-  nameWithType: EventHandlerActivatorService
-- uid: NetCordAddons.EventHandler.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{NetCordAddons.EventHandler.Common.EventModule},Microsoft.Extensions.Logging.ILogger{NetCordAddons.EventHandler.EventHandlerActivatorService})
-  name: EventHandlerActivatorService(IEnumerable<EventModule>, ILogger<EventHandlerActivatorService>)
-  href: documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html#NetCordAddons_EventHandler_EventHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_NetCordAddons_EventHandler_Common_EventModule__Microsoft_Extensions_Logging_ILogger_NetCordAddons_EventHandler_EventHandlerActivatorService__
-  commentId: M:NetCordAddons.EventHandler.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{NetCordAddons.EventHandler.Common.EventModule},Microsoft.Extensions.Logging.ILogger{NetCordAddons.EventHandler.EventHandlerActivatorService})
-  name.vb: New(IEnumerable(Of EventModule), ILogger(Of EventHandlerActivatorService))
-  fullName: NetCordAddons.EventHandler.EventHandlerActivatorService.EventHandlerActivatorService(System.Collections.Generic.IEnumerable<NetCordAddons.EventHandler.Common.EventModule>, Microsoft.Extensions.Logging.ILogger<NetCordAddons.EventHandler.EventHandlerActivatorService>)
-  fullName.vb: NetCordAddons.EventHandler.EventHandlerActivatorService.New(System.Collections.Generic.IEnumerable(Of NetCordAddons.EventHandler.Common.EventModule), Microsoft.Extensions.Logging.ILogger(Of NetCordAddons.EventHandler.EventHandlerActivatorService))
-  nameWithType: EventHandlerActivatorService.EventHandlerActivatorService(IEnumerable<EventModule>, ILogger<EventHandlerActivatorService>)
-  nameWithType.vb: EventHandlerActivatorService.New(IEnumerable(Of EventModule), ILogger(Of EventHandlerActivatorService))
-- uid: NetCordAddons.EventHandler.EventHandlerActivatorService.#ctor*
-  name: EventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html#NetCordAddons_EventHandler_EventHandlerActivatorService__ctor_
-  commentId: Overload:NetCordAddons.EventHandler.EventHandlerActivatorService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.EventHandler.EventHandlerActivatorService.EventHandlerActivatorService
-  fullName.vb: NetCordAddons.EventHandler.EventHandlerActivatorService.New
-  nameWithType: EventHandlerActivatorService.EventHandlerActivatorService
-  nameWithType.vb: EventHandlerActivatorService.New
-- uid: NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync(System.Object)
-  name: StartAsync(object)
-  href: documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html#NetCordAddons_EventHandler_EventHandlerActivatorService_StartAsync_System_Object_
-  commentId: M:NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync(System.Object)
-  name.vb: StartAsync(Object)
-  fullName: NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync(object)
-  fullName.vb: NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync(Object)
-  nameWithType: EventHandlerActivatorService.StartAsync(object)
-  nameWithType.vb: EventHandlerActivatorService.StartAsync(Object)
-- uid: NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html#NetCordAddons_EventHandler_EventHandlerActivatorService_StartAsync_
-  commentId: Overload:NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync
-  fullName: NetCordAddons.EventHandler.EventHandlerActivatorService.StartAsync
-  nameWithType: EventHandlerActivatorService.StartAsync
-- uid: NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync
-  name: StopAsync()
-  href: documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html#NetCordAddons_EventHandler_EventHandlerActivatorService_StopAsync
-  commentId: M:NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync()
-  nameWithType: EventHandlerActivatorService.StopAsync()
-- uid: NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html#NetCordAddons_EventHandler_EventHandlerActivatorService_StopAsync_
-  commentId: Overload:NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.EventHandlerActivatorService.StopAsync
-  nameWithType: EventHandlerActivatorService.StopAsync
-- uid: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService
-  name: GatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html
-  commentId: T:NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService
-  fullName: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService
-  nameWithType: GatewayClientEventHandlerActivatorService
-- uid: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.EventHandler.EventHandlerActivatorService)
-  name: GatewayClientEventHandlerActivatorService(GatewayClient, EventHandlerActivatorService)
-  href: documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_GatewayClientEventHandlerActivatorService__ctor_NetCord_Gateway_GatewayClient_NetCordAddons_EventHandler_EventHandlerActivatorService_
-  commentId: M:NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.EventHandler.EventHandlerActivatorService)
-  name.vb: New(GatewayClient, EventHandlerActivatorService)
-  fullName: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService(NetCord.Gateway.GatewayClient, NetCordAddons.EventHandler.EventHandlerActivatorService)
-  fullName.vb: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.New(NetCord.Gateway.GatewayClient, NetCordAddons.EventHandler.EventHandlerActivatorService)
-  nameWithType: GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService(GatewayClient, EventHandlerActivatorService)
-  nameWithType.vb: GatewayClientEventHandlerActivatorService.New(GatewayClient, EventHandlerActivatorService)
-- uid: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.#ctor*
-  name: GatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_GatewayClientEventHandlerActivatorService__ctor_
-  commentId: Overload:NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService
-  fullName.vb: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.New
-  nameWithType: GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService
-  nameWithType.vb: GatewayClientEventHandlerActivatorService.New
-- uid: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  name: StartAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_GatewayClientEventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  nameWithType: GatewayClientEventHandlerActivatorService.StartAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_GatewayClientEventHandlerActivatorService_StartAsync_
-  commentId: Overload:NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StartAsync
-  fullName: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StartAsync
-  nameWithType: GatewayClientEventHandlerActivatorService.StartAsync
-- uid: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_GatewayClientEventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  nameWithType: GatewayClientEventHandlerActivatorService.StopAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_GatewayClientEventHandlerActivatorService_StopAsync_
-  commentId: Overload:NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.StopAsync
-  nameWithType: GatewayClientEventHandlerActivatorService.StopAsync
-- uid: NetCordAddons.EventHandler.HostingExtensions
+- uid: NetCordAddons.EventHandler.Extensions
+  name: NetCordAddons.EventHandler.Extensions
+  href: documentation/NetCordAddons.EventHandler.Extensions.html
+  commentId: N:NetCordAddons.EventHandler.Extensions
+  fullName: NetCordAddons.EventHandler.Extensions
+  nameWithType: NetCordAddons.EventHandler.Extensions
+- uid: NetCordAddons.EventHandler.Extensions.HostingExtensions
   name: HostingExtensions
-  href: documentation/NetCordAddons.EventHandler.HostingExtensions.html
-  commentId: T:NetCordAddons.EventHandler.HostingExtensions
-  fullName: NetCordAddons.EventHandler.HostingExtensions
+  href: documentation/NetCordAddons.EventHandler.Extensions.HostingExtensions.html
+  commentId: T:NetCordAddons.EventHandler.Extensions.HostingExtensions
+  fullName: NetCordAddons.EventHandler.Extensions.HostingExtensions
   nameWithType: HostingExtensions
-- uid: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+- uid: NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
   name: AddEventHandler(IHostBuilder)
-  href: documentation/NetCordAddons.EventHandler.HostingExtensions.html#NetCordAddons_EventHandler_HostingExtensions_AddEventHandler_Microsoft_Extensions_Hosting_IHostBuilder_
-  commentId: M:NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
-  fullName: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+  href: documentation/NetCordAddons.EventHandler.Extensions.HostingExtensions.html#NetCordAddons_EventHandler_Extensions_HostingExtensions_AddEventHandler_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName: NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
   nameWithType: HostingExtensions.AddEventHandler(IHostBuilder)
-- uid: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler*
+- uid: NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler*
   name: AddEventHandler
-  href: documentation/NetCordAddons.EventHandler.HostingExtensions.html#NetCordAddons_EventHandler_HostingExtensions_AddEventHandler_
-  commentId: Overload:NetCordAddons.EventHandler.HostingExtensions.AddEventHandler
-  fullName: NetCordAddons.EventHandler.HostingExtensions.AddEventHandler
+  href: documentation/NetCordAddons.EventHandler.Extensions.HostingExtensions.html#NetCordAddons_EventHandler_Extensions_HostingExtensions_AddEventHandler_
+  commentId: Overload:NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler
+  fullName: NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler
   nameWithType: HostingExtensions.AddEventHandler
-- uid: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService
-  name: ShardedGatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html
-  commentId: T:NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService
-  fullName: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService
-- uid: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.EventHandler.EventHandlerActivatorService)
-  name: ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient, EventHandlerActivatorService)
-  href: documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService__ctor_NetCord_Gateway_ShardedGatewayClient_NetCordAddons_EventHandler_EventHandlerActivatorService_
-  commentId: M:NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.EventHandler.EventHandlerActivatorService)
-  name.vb: New(ShardedGatewayClient, EventHandlerActivatorService)
-  fullName: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.EventHandler.EventHandlerActivatorService)
-  fullName.vb: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.New(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.EventHandler.EventHandlerActivatorService)
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient, EventHandlerActivatorService)
-  nameWithType.vb: ShardedGatewayClientEventHandlerActivatorService.New(ShardedGatewayClient, EventHandlerActivatorService)
-- uid: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.#ctor*
-  name: ShardedGatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService__ctor_
-  commentId: Overload:NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService
-  fullName.vb: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.New
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService
-  nameWithType.vb: ShardedGatewayClientEventHandlerActivatorService.New
-- uid: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  name: StartAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StartAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StartAsync_
-  commentId: Overload:NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync
-  fullName: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StartAsync
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StartAsync
-- uid: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StopAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_ShardedGatewayClientEventHandlerActivatorService_StopAsync_
-  commentId: Overload:NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.StopAsync
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StopAsync
 - uid: NetCordAddons.Services
   name: NetCordAddons.Services
   href: documentation/NetCordAddons.Services.html
@@ -950,13 +956,13 @@ references:
   nameWithType: HostingExtensions.AddCommand<TContext>(IHostBuilder, Func<IServiceProvider, CommandSettings<TContext>>)
   nameWithType.vb: HostingExtensions.AddCommand(Of TContext)(IHostBuilder, Func(Of IServiceProvider, CommandSettings(Of TContext)))
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback)
-  name: AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback)
+  name: AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?)
   href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__NetCordAddons_Services_Models_BotCallback_
   commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback)
   name.vb: AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback)
-  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings>, NetCordAddons.Services.Models.BotCallback)
+  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?)
   fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings), NetCordAddons.Services.Models.BotCallback)
-  nameWithType: HostingExtensions.AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback)
+  nameWithType: HostingExtensions.AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?)
   nameWithType.vb: HostingExtensions.AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback)
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient*
   name: AddGatewayClient
@@ -980,13 +986,13 @@ references:
   nameWithType: HostingExtensions.AddInteraction<TContext>(IHostBuilder, Func<IServiceProvider, InteractionServiceConfiguration<TContext>>?)
   nameWithType.vb: HostingExtensions.AddInteraction(Of TContext)(IHostBuilder, Func(Of IServiceProvider, InteractionServiceConfiguration(Of TContext)))
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback)
-  name: AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback)
+  name: AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?)
   href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_ShardedGatewayClientSettings__NetCordAddons_Services_Models_BotCallback_
   commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback)
   name.vb: AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback)
-  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings>, NetCordAddons.Services.Models.BotCallback)
+  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?)
   fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings), NetCordAddons.Services.Models.BotCallback)
-  nameWithType: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback)
+  nameWithType: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?)
   nameWithType.vb: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback)
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient*
   name: AddShardedGatewayClient

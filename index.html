@@ -29,11 +29,7 @@
       <meta name="loc:copy" content="Copy">
   </head>
 
-  <script type="module">
-    import options from './public/main.js'
-    import { init } from './public/docfx.min.js'
-    init(options)
-  </script>
+  <script type="module" src="./public/docfx.min.js"></script>
 
   <script>
     const theme = localStorage.getItem('theme') || 'auto'
@@ -87,6 +83,7 @@
 
 <p>Unofficial addons for the <a href="https://github.com/KubaZ2/NetCord">NetCord</a> project created by <a href="https://github.com/KubaZ2">KubaZ2</a></p>
 <h1 id="start-your-adventure-from-articles">Start your adventure from articles</h1>
+
 </article>
 
         <div class="contribution d-print-none">
@@ -94,7 +91,7 @@
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
-        
+
       </div>
 
       <div class="affix">

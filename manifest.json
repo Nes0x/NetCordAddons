@@ -4,10 +4,70 @@
   "files": [
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "articles/event_handler/dependency_injection.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html"
+          "relative_path": "articles/event_handler/dependency_injection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/event_handler/event_modules.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/event_handler/event_modules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/event_handler/first_steps.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/event_handler/first_steps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/first_steps.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/first_steps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/services/bot_callback.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/services/bot_callback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/services/first_steps.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/services/first_steps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/services/service_provider.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/services/service_provider.html"
         }
       },
       "version": ""
@@ -21,6 +81,46 @@
         },
         ".json": {
           "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Activators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.EventHandler.Activators.html"
         }
       },
       "version": ""
@@ -77,50 +177,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.yml",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Extensions.HostingExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "documentation/NetCordAddons.EventHandler.EventHandlerActivatorService.html"
+          "relative_path": "documentation/NetCordAddons.EventHandler.Extensions.HostingExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.yml",
+      "source_relative_path": "documentation/NetCordAddons.EventHandler.Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "documentation/NetCordAddons.EventHandler.GatewayClientEventHandlerActivatorService.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.EventHandler.HostingExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.EventHandler.HostingExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.EventHandler.ShardedGatewayClientEventHandlerActivatorService.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.EventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.EventHandler.html"
+          "relative_path": "documentation/NetCordAddons.EventHandler.Extensions.html"
         }
       },
       "version": ""
