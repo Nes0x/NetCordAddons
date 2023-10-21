@@ -2,9 +2,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NetCord.Gateway;
+using NetCordAddons.EventHandler.Activators;
 using NetCordAddons.EventHandler.Common;
 
-namespace NetCordAddons.EventHandler;
+namespace NetCordAddons.EventHandler.Extensions;
 
 public static class HostingExtensions
 {
@@ -22,9 +23,10 @@ public static class HostingExtensions
                     services.AddScoped(targetType, type);
             services.AddSingleton<EventHandlerActivatorService>();
 
-            if (services.FirstOrDefault(s => s.ServiceType == typeof(GatewayClient)) is not null)
+            if (services.FirstOrDefault(s => s.ServiceType.IsAssignableTo(typeof(GatewayClient))) is not null)
                 services.AddHostedService<GatewayClientEventHandlerActivatorService>();
-            else if (services.FirstOrDefault(s => s.ServiceType == typeof(ShardedGatewayClient)) is not null)
+            else if (services.FirstOrDefault(s => s.ServiceType.IsAssignableTo(typeof(ShardedGatewayClient))) is not
+                     null)
                 services.AddHostedService<ShardedGatewayClientEventHandlerActivatorService>();
         });
 

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using NetCordAddons.EventHandler.Common;
 
-namespace NetCordAddons.EventHandler;
+namespace NetCordAddons.EventHandler.Activators;
 
 public class EventHandlerActivatorService
 {

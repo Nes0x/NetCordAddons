@@ -1,14 +1,14 @@
 using Microsoft.Extensions.Hosting;
 using NetCord.Gateway;
 
-namespace NetCordAddons.EventHandler;
+namespace NetCordAddons.EventHandler.Activators;
 
-public class GatewayClientEventHandlerActivatorService : IHostedService
+public class ShardedGatewayClientEventHandlerActivatorService : IHostedService
 {
-    private readonly GatewayClient _client;
+    private readonly ShardedGatewayClient _client;
     private readonly EventHandlerActivatorService _handlerActivator;
 
-    public GatewayClientEventHandlerActivatorService(GatewayClient client,
+    public ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient client,
         EventHandlerActivatorService handlerActivator)
     {
         _client = client;

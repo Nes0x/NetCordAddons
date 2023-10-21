@@ -16,17 +16,17 @@ public static class HostingExtensions
     private static bool _isClientAdded;
 
     public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder,
-        Func<IServiceProvider, GatewayClientSettings> settingsFactory, BotCallback botCallback)
+        Func<IServiceProvider, GatewayClientSettings> settingsFactory, BotCallback? botCallback = null)
     {
         if (_isClientAdded) return hostBuilder;
         _isClientAdded = !_isClientAdded;
         hostBuilder.ConfigureServices(services =>
         {
             var settings = settingsFactory(services.BuildServiceProvider());
+            botCallback ??= new BotCallback();
+            services.AddClientServices(botCallback);
             services.AddSingleton<GatewayClient>(_ =>
                 new GatewayClient(settings.Token, settings.GatewayClientConfiguration));
-            services.AddSingleton<IServiceCollection>(_ => services);
-            services.AddSingleton<BotCallback>(_ => botCallback);
             services.AddSingleton<IInteractionCreator, GatewayInteractionCreator>();
             services.AddHostedService<GatewayClientBotService>();
         });
@@ -35,17 +35,17 @@ public static class HostingExtensions
     }
 
     public static IHostBuilder AddShardedGatewayClient(this IHostBuilder hostBuilder,
-        Func<IServiceProvider, ShardedGatewayClientSettings> settingsFactory, BotCallback botCallback)
+        Func<IServiceProvider, ShardedGatewayClientSettings> settingsFactory, BotCallback? botCallback = null)
     {
         if (_isClientAdded) return hostBuilder;
         _isClientAdded = !_isClientAdded;
         hostBuilder.ConfigureServices(services =>
         {
             var settings = settingsFactory(services.BuildServiceProvider());
+            botCallback ??= new BotCallback();
+            services.AddClientServices(botCallback);
             services.AddSingleton<ShardedGatewayClient>(_ =>
                 new ShardedGatewayClient(settings.Token, settings.ShardedGatewayClientConfiguration));
-            services.AddSingleton<IServiceCollection>(_ => services);
-            services.AddSingleton<BotCallback>(_ => botCallback);
             services.AddSingleton<IInteractionCreator, ShardedGatewayInteractionCreator>();
             services.AddHostedService<ShardedGatewayClientBotService>();
         });
@@ -62,6 +62,7 @@ public static class HostingExtensions
             .ConfigureServices(
                 services =>
                 {
+                    services.TryAddSingleton<ApplicationCommandServiceManager>();
                     ApplicationCommandServiceConfiguration<TContext>? applicationCommandServiceConfiguration = null;
                     if (configurationFactory is not null)
                         applicationCommandServiceConfiguration = configurationFactory(services.BuildServiceProvider());
@@ -82,6 +83,7 @@ public static class HostingExtensions
             .ConfigureServices(
                 services =>
                 {
+                    services.TryAddSingleton<ApplicationCommandServiceManager>();
                     ApplicationCommandServiceConfiguration<TContext>? applicationCommandServiceConfiguration = null;
                     if (configurationFactory is not null)
                         applicationCommandServiceConfiguration = configurationFactory(services.BuildServiceProvider());
@@ -133,12 +135,18 @@ public static class HostingExtensions
             .ConfigureServices(
                 services =>
                 {
-                    services.TryAddSingleton<ApplicationCommandServiceManager>();
                     services.TryAddSingleton<InteractionCreator>();
-                    services.TryAddSingleton<ClientBotService>();
                     services.TryAddSingleton<ServiceValidator>();
                 }
             );
         return hostBuilder;
+    }
+
+    private static IServiceCollection AddClientServices(this IServiceCollection services, BotCallback botCallback)
+    {
+        services.AddSingleton<IServiceCollection>(_ => services);
+        services.AddSingleton<BotCallback>(_ => botCallback);
+        services.AddSingleton<ClientBotService>();
+        return services;
     }
 }

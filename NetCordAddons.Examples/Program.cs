@@ -4,7 +4,8 @@ using NetCord;
 using NetCord.Gateway;
 using NetCord.Services.ApplicationCommands;
 using NetCord.Services.Commands;
-using NetCordAddons.EventHandler;
+using NetCord.Services.Interactions;
+using NetCordAddons.EventHandler.Extensions;
 using NetCordAddons.Examples.Services;
 using NetCordAddons.Services.Extensions;
 using NetCordAddons.Services.Models;
@@ -33,6 +34,7 @@ host
         }
     })
     .AddEventHandler()
+    .AddInteraction<StringMenuInteractionContext>()
     .AddCommand<CommandContext>(_ => new CommandSettings<CommandContext>("!"))
     .AddApplicationCommand<SlashCommandContext>()
     .AddApplicationCommand<UserCommandContext>();
