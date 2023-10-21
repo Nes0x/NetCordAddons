@@ -12,3 +12,7 @@
   items:
     - name: First steps
       href: event_handler/first_steps.md
+    - name: Event modules
+      href: event_handler/event_modules.md
+    - name: Dependency injection
+      href: event_handler/dependency_injection.md
