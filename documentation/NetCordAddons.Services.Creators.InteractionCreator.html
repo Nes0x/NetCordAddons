@@ -151,8 +151,8 @@
 
   <a id="NetCordAddons_Services_Creators_InteractionCreator__ctor_" data-uid="NetCordAddons.Services.Creators.InteractionCreator.#ctor*"></a>
 
-  <h3 id="NetCordAddons_Services_Creators_InteractionCreator__ctor_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_NetCordAddons_Services_Creators_InteractionCreator__" data-uid="NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{NetCordAddons.Services.Creators.InteractionCreator})">
-  InteractionCreator(IServiceProvider, ILogger&lt;InteractionCreator&gt;)
+  <h3 id="NetCordAddons_Services_Creators_InteractionCreator__ctor_System_IServiceProvider_NetCordAddons_Services_GlobalErrorHandling_" data-uid="NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,NetCordAddons.Services.GlobalErrorHandling)">
+  InteractionCreator(IServiceProvider, GlobalErrorHandling)
   
   </h3>
 
@@ -160,14 +160,14 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InteractionCreator(IServiceProvider provider, ILogger&lt;InteractionCreator&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public InteractionCreator(IServiceProvider provider, GlobalErrorHandling globalErrorHandling)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="NetCordAddons.Services.Creators.InteractionCreator.html">InteractionCreator</a>&gt;</dt>
+    <dt><code>globalErrorHandling</code> <a class="xref" href="NetCordAddons.Services.GlobalErrorHandling.html">GlobalErrorHandling</a></dt>
     <dd></dd>
   </dl>
 
@@ -197,7 +197,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CreateInteraction(Interaction interaction, Service service, object client)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task CreateInteraction(Interaction interaction, Service service, object client)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -210,6 +210,11 @@
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -232,7 +237,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CreateTextCommandInteraction(Message message, string prefix, Service service, object client)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task CreateTextCommandInteraction(Message message, string prefix, Service service, object client)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -247,6 +252,11 @@
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

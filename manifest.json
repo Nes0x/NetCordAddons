@@ -287,6 +287,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.GlobalErrorHandling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.GlobalErrorHandling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/NetCordAddons.Services.Models.BotCallback.yml",
       "output": {
         ".html": {
