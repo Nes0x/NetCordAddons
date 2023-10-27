@@ -257,6 +257,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.ErrorHandling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.ErrorHandling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/NetCordAddons.Services.Extensions.HostingExtensions.yml",
       "output": {
         ".html": {
@@ -281,16 +301,6 @@
       "output": {
         ".html": {
           "relative_path": "documentation/NetCordAddons.Services.GatewayClientBotService.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.GlobalErrorHandling.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.GlobalErrorHandling.html"
         }
       },
       "version": ""

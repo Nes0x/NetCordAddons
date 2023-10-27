@@ -802,13 +802,13 @@ references:
   commentId: T:NetCordAddons.Services.Creators.InteractionCreator
   fullName: NetCordAddons.Services.Creators.InteractionCreator
   nameWithType: InteractionCreator
-- uid: NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,NetCordAddons.Services.GlobalErrorHandling)
+- uid: NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
   name: InteractionCreator(IServiceProvider, GlobalErrorHandling)
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator__ctor_System_IServiceProvider_NetCordAddons_Services_GlobalErrorHandling_
-  commentId: M:NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,NetCordAddons.Services.GlobalErrorHandling)
+  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator__ctor_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_
+  commentId: M:NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
   name.vb: New(IServiceProvider, GlobalErrorHandling)
-  fullName: NetCordAddons.Services.Creators.InteractionCreator.InteractionCreator(System.IServiceProvider, NetCordAddons.Services.GlobalErrorHandling)
-  fullName.vb: NetCordAddons.Services.Creators.InteractionCreator.New(System.IServiceProvider, NetCordAddons.Services.GlobalErrorHandling)
+  fullName: NetCordAddons.Services.Creators.InteractionCreator.InteractionCreator(System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
+  fullName.vb: NetCordAddons.Services.Creators.InteractionCreator.New(System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
   nameWithType: InteractionCreator.InteractionCreator(IServiceProvider, GlobalErrorHandling)
   nameWithType.vb: InteractionCreator.New(IServiceProvider, GlobalErrorHandling)
 - uid: NetCordAddons.Services.Creators.InteractionCreator.#ctor*
@@ -904,6 +904,78 @@ references:
   commentId: Overload:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction
   fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction
   nameWithType: ShardedGatewayInteractionCreator.CreateTextCommandInteraction
+- uid: NetCordAddons.Services.ErrorHandling
+  name: NetCordAddons.Services.ErrorHandling
+  href: documentation/NetCordAddons.Services.ErrorHandling.html
+  commentId: N:NetCordAddons.Services.ErrorHandling
+  fullName: NetCordAddons.Services.ErrorHandling
+  nameWithType: NetCordAddons.Services.ErrorHandling
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
+  name: GlobalErrorHandling
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html
+  commentId: T:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
+  nameWithType: GlobalErrorHandling
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties})
+  name: GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?)
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__ctor_System_IServiceProvider_System_String_System_Collections_Generic_IEnumerable_NetCord_Rest_EmbedProperties__
+  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties})
+  name.vb: New(IServiceProvider, String, IEnumerable(Of EmbedProperties))
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.GlobalErrorHandling(System.IServiceProvider, string?, System.Collections.Generic.IEnumerable<NetCord.Rest.EmbedProperties>?)
+  fullName.vb: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.New(System.IServiceProvider, String, System.Collections.Generic.IEnumerable(Of NetCord.Rest.EmbedProperties))
+  nameWithType: GlobalErrorHandling.GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?)
+  nameWithType.vb: GlobalErrorHandling.New(IServiceProvider, String, IEnumerable(Of EmbedProperties))
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor*
+  name: GlobalErrorHandling
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__ctor_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor
+  name.vb: New
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.GlobalErrorHandling
+  fullName.vb: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.New
+  nameWithType: GlobalErrorHandling.GlobalErrorHandling
+  nameWithType.vb: GlobalErrorHandling.New
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
+  name: EmbedProperties
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_EmbedProperties
+  commentId: P:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
+  nameWithType: GlobalErrorHandling.EmbedProperties
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties*
+  name: EmbedProperties
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_EmbedProperties_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
+  nameWithType: GlobalErrorHandling.EmbedProperties
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
+  name: Message
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_Message
+  commentId: P:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
+  nameWithType: GlobalErrorHandling.Message
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message*
+  name: Message
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_Message_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
+  nameWithType: GlobalErrorHandling.Message
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message,System.Exception)
+  name: SendAndLogError(Message, Exception)
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_SendAndLogError_NetCord_Gateway_Message_System_Exception_
+  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message,System.Exception)
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message, System.Exception)
+  nameWithType: GlobalErrorHandling.SendAndLogError(Message, Exception)
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Interaction,System.Exception)
+  name: SendAndLogError(Interaction, Exception)
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_SendAndLogError_NetCord_Interaction_System_Exception_
+  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Interaction,System.Exception)
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Interaction, System.Exception)
+  nameWithType: GlobalErrorHandling.SendAndLogError(Interaction, Exception)
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError*
+  name: SendAndLogError
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_SendAndLogError_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError
+  nameWithType: GlobalErrorHandling.SendAndLogError
 - uid: NetCordAddons.Services.Extensions
   name: NetCordAddons.Services.Extensions
   href: documentation/NetCordAddons.Services.Extensions.html
@@ -955,13 +1027,13 @@ references:
   fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddCommand(Of TContext)(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.CommandSettings(Of TContext)))
   nameWithType: HostingExtensions.AddCommand<TContext>(IHostBuilder, Func<IServiceProvider, CommandSettings<TContext>>)
   nameWithType.vb: HostingExtensions.AddCommand(Of TContext)(IHostBuilder, Func(Of IServiceProvider, CommandSettings(Of TContext)))
-- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.GlobalErrorHandling})
+- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
   name: AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
-  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_GlobalErrorHandling__
-  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.GlobalErrorHandling})
+  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__
+  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
   name.vb: AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
-  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.GlobalErrorHandling>?)
-  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.GlobalErrorHandling))
+  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling>?)
+  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling))
   nameWithType: HostingExtensions.AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
   nameWithType.vb: HostingExtensions.AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient*
@@ -985,13 +1057,13 @@ references:
   fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddInteraction(Of TContext)(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCord.Services.Interactions.InteractionServiceConfiguration(Of TContext)))
   nameWithType: HostingExtensions.AddInteraction<TContext>(IHostBuilder, Func<IServiceProvider, InteractionServiceConfiguration<TContext>>?)
   nameWithType.vb: HostingExtensions.AddInteraction(Of TContext)(IHostBuilder, Func(Of IServiceProvider, InteractionServiceConfiguration(Of TContext)))
-- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.GlobalErrorHandling})
+- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
   name: AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
-  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_ShardedGatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_GlobalErrorHandling__
-  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.GlobalErrorHandling})
+  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_ShardedGatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__
+  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
   name.vb: AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
-  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.GlobalErrorHandling>?)
-  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.GlobalErrorHandling))
+  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling>?)
+  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling))
   nameWithType: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
   nameWithType.vb: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient*
@@ -1048,72 +1120,6 @@ references:
   commentId: Overload:NetCordAddons.Services.GatewayClientBotService.StopAsync
   fullName: NetCordAddons.Services.GatewayClientBotService.StopAsync
   nameWithType: GatewayClientBotService.StopAsync
-- uid: NetCordAddons.Services.GlobalErrorHandling
-  name: GlobalErrorHandling
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html
-  commentId: T:NetCordAddons.Services.GlobalErrorHandling
-  fullName: NetCordAddons.Services.GlobalErrorHandling
-  nameWithType: GlobalErrorHandling
-- uid: NetCordAddons.Services.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties})
-  name: GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?)
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling__ctor_System_IServiceProvider_System_String_System_Collections_Generic_IEnumerable_NetCord_Rest_EmbedProperties__
-  commentId: M:NetCordAddons.Services.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties})
-  name.vb: New(IServiceProvider, String, IEnumerable(Of EmbedProperties))
-  fullName: NetCordAddons.Services.GlobalErrorHandling.GlobalErrorHandling(System.IServiceProvider, string?, System.Collections.Generic.IEnumerable<NetCord.Rest.EmbedProperties>?)
-  fullName.vb: NetCordAddons.Services.GlobalErrorHandling.New(System.IServiceProvider, String, System.Collections.Generic.IEnumerable(Of NetCord.Rest.EmbedProperties))
-  nameWithType: GlobalErrorHandling.GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?)
-  nameWithType.vb: GlobalErrorHandling.New(IServiceProvider, String, IEnumerable(Of EmbedProperties))
-- uid: NetCordAddons.Services.GlobalErrorHandling.#ctor*
-  name: GlobalErrorHandling
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling__ctor_
-  commentId: Overload:NetCordAddons.Services.GlobalErrorHandling.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.GlobalErrorHandling.GlobalErrorHandling
-  fullName.vb: NetCordAddons.Services.GlobalErrorHandling.New
-  nameWithType: GlobalErrorHandling.GlobalErrorHandling
-  nameWithType.vb: GlobalErrorHandling.New
-- uid: NetCordAddons.Services.GlobalErrorHandling.EmbedProperties
-  name: EmbedProperties
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling_EmbedProperties
-  commentId: P:NetCordAddons.Services.GlobalErrorHandling.EmbedProperties
-  fullName: NetCordAddons.Services.GlobalErrorHandling.EmbedProperties
-  nameWithType: GlobalErrorHandling.EmbedProperties
-- uid: NetCordAddons.Services.GlobalErrorHandling.EmbedProperties*
-  name: EmbedProperties
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling_EmbedProperties_
-  commentId: Overload:NetCordAddons.Services.GlobalErrorHandling.EmbedProperties
-  fullName: NetCordAddons.Services.GlobalErrorHandling.EmbedProperties
-  nameWithType: GlobalErrorHandling.EmbedProperties
-- uid: NetCordAddons.Services.GlobalErrorHandling.Message
-  name: Message
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling_Message
-  commentId: P:NetCordAddons.Services.GlobalErrorHandling.Message
-  fullName: NetCordAddons.Services.GlobalErrorHandling.Message
-  nameWithType: GlobalErrorHandling.Message
-- uid: NetCordAddons.Services.GlobalErrorHandling.Message*
-  name: Message
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling_Message_
-  commentId: Overload:NetCordAddons.Services.GlobalErrorHandling.Message
-  fullName: NetCordAddons.Services.GlobalErrorHandling.Message
-  nameWithType: GlobalErrorHandling.Message
-- uid: NetCordAddons.Services.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message,System.Exception)
-  name: SendAndLogError(Message, Exception)
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling_SendAndLogError_NetCord_Gateway_Message_System_Exception_
-  commentId: M:NetCordAddons.Services.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message,System.Exception)
-  fullName: NetCordAddons.Services.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message, System.Exception)
-  nameWithType: GlobalErrorHandling.SendAndLogError(Message, Exception)
-- uid: NetCordAddons.Services.GlobalErrorHandling.SendAndLogError(NetCord.Interaction,System.Exception)
-  name: SendAndLogError(Interaction, Exception)
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling_SendAndLogError_NetCord_Interaction_System_Exception_
-  commentId: M:NetCordAddons.Services.GlobalErrorHandling.SendAndLogError(NetCord.Interaction,System.Exception)
-  fullName: NetCordAddons.Services.GlobalErrorHandling.SendAndLogError(NetCord.Interaction, System.Exception)
-  nameWithType: GlobalErrorHandling.SendAndLogError(Interaction, Exception)
-- uid: NetCordAddons.Services.GlobalErrorHandling.SendAndLogError*
-  name: SendAndLogError
-  href: documentation/NetCordAddons.Services.GlobalErrorHandling.html#NetCordAddons_Services_GlobalErrorHandling_SendAndLogError_
-  commentId: Overload:NetCordAddons.Services.GlobalErrorHandling.SendAndLogError
-  fullName: NetCordAddons.Services.GlobalErrorHandling.SendAndLogError
-  nameWithType: GlobalErrorHandling.SendAndLogError
 - uid: NetCordAddons.Services.Models
   name: NetCordAddons.Services.Models
   href: documentation/NetCordAddons.Services.Models.html
