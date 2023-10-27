@@ -6,6 +6,7 @@ using NetCord.Services.ApplicationCommands;
 using NetCord.Services.Commands;
 using NetCord.Services.Interactions;
 using NetCordAddons.Services.Creators;
+using NetCordAddons.Services.ErrorHandling;
 using NetCordAddons.Services.Models;
 using NetCordAddons.Services.Validators;
 

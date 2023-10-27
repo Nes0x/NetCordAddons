@@ -4,7 +4,7 @@ using NetCord;
 using NetCord.Gateway;
 using NetCord.Rest;
 
-namespace NetCordAddons.Services;
+namespace NetCordAddons.Services.ErrorHandling;
 
 public class GlobalErrorHandling
 {

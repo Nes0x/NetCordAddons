@@ -9,6 +9,7 @@ using NetCord.Services.Interactions;
 using NetCordAddons.EventHandler.Extensions;
 using NetCordAddons.Examples.Services;
 using NetCordAddons.Services;
+using NetCordAddons.Services.ErrorHandling;
 using NetCordAddons.Services.Extensions;
 using NetCordAddons.Services.Models;
 

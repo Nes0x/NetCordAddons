@@ -1,5 +1,6 @@
 using NetCord;
 using NetCord.Gateway;
+using NetCordAddons.Services.ErrorHandling;
 using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Services.Creators;
