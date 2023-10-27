@@ -916,15 +916,15 @@ references:
   commentId: T:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
   fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
   nameWithType: GlobalErrorHandling
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties})
-  name: GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?)
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__ctor_System_IServiceProvider_System_String_System_Collections_Generic_IEnumerable_NetCord_Rest_EmbedProperties__
-  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties})
-  name.vb: New(IServiceProvider, String, IEnumerable(Of EmbedProperties))
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.GlobalErrorHandling(System.IServiceProvider, string?, System.Collections.Generic.IEnumerable<NetCord.Rest.EmbedProperties>?)
-  fullName.vb: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.New(System.IServiceProvider, String, System.Collections.Generic.IEnumerable(Of NetCord.Rest.EmbedProperties))
-  nameWithType: GlobalErrorHandling.GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?)
-  nameWithType.vb: GlobalErrorHandling.New(IServiceProvider, String, IEnumerable(Of EmbedProperties))
+- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties},System.Boolean)
+  name: GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?, bool)
+  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__ctor_System_IServiceProvider_System_String_System_Collections_Generic_IEnumerable_NetCord_Rest_EmbedProperties__System_Boolean_
+  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties},System.Boolean)
+  name.vb: New(IServiceProvider, String, IEnumerable(Of EmbedProperties), Boolean)
+  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.GlobalErrorHandling(System.IServiceProvider, string?, System.Collections.Generic.IEnumerable<NetCord.Rest.EmbedProperties>?, bool)
+  fullName.vb: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.New(System.IServiceProvider, String, System.Collections.Generic.IEnumerable(Of NetCord.Rest.EmbedProperties), Boolean)
+  nameWithType: GlobalErrorHandling.GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?, bool)
+  nameWithType.vb: GlobalErrorHandling.New(IServiceProvider, String, IEnumerable(Of EmbedProperties), Boolean)
 - uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor*
   name: GlobalErrorHandling
   href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__ctor_
