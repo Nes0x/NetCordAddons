@@ -36,7 +36,7 @@ host
                 Console.WriteLine("Working");
                 return Task.CompletedTask;
             }
-        }, provider => new GlobalErrorHandling(provider, "Exception was thrown: %exception%", new[]
+        }, provider => new GlobalErrorHandling(provider, embedProperties: new[]
         {
             new EmbedProperties().WithColor(new Color(255, 0, 0)).WithTitle("Error!")
                 .WithDescription("Exception was thrown: %exception%")

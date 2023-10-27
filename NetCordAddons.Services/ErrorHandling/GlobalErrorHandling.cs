@@ -9,13 +9,16 @@ namespace NetCordAddons.Services.ErrorHandling;
 public class GlobalErrorHandling
 {
     private readonly ILogger<GlobalErrorHandling> _logger;
+    private readonly MessageFlags _messageFlags;
 
     public GlobalErrorHandling(IServiceProvider provider, string? message = null,
-        IEnumerable<EmbedProperties>? embedProperties = null)
+        IEnumerable<EmbedProperties>? embedProperties = null, bool ephemeral = false)
     {
         _logger = provider.GetRequiredService<ILogger<GlobalErrorHandling>>();
         Message = message;
         EmbedProperties = embedProperties;
+        if (!ephemeral) return;
+        _messageFlags = MessageFlags.Ephemeral;
     }
 
     public string? Message { get; }
@@ -25,11 +28,11 @@ public class GlobalErrorHandling
     {
         _logger.LogError("{exception}", exception);
         if (string.IsNullOrWhiteSpace(Message) && EmbedProperties is null) return Task.CompletedTask;
-
         var exceptionMessage = exception.Message;
         message.Channel.SendMessageAsync(new MessageProperties().WithContent(GetChangedMessage(exceptionMessage))
             .WithEmbeds(GetChangedEmbedProperties(exceptionMessage))
-            .WithMessageReference(new MessageReferenceProperties(message.Id)));
+            .WithMessageReference(new MessageReferenceProperties(message.Id))
+        );
         return Task.CompletedTask;
     }
 
@@ -41,18 +44,18 @@ public class GlobalErrorHandling
         var exceptionMessage = exception.Message;
         interaction.SendResponseAsync(InteractionCallback.ChannelMessageWithSource(
             new InteractionMessageProperties().WithContent(GetChangedMessage(exceptionMessage))
-                .WithEmbeds(GetChangedEmbedProperties(exceptionMessage))));
+                .WithEmbeds(GetChangedEmbedProperties(exceptionMessage)).WithFlags(_messageFlags)));
         return Task.CompletedTask;
     }
 
-    private string GetChangedMessage(string exceptionMessage)
+    private string? GetChangedMessage(string exceptionMessage)
     {
-        return Message.Replace("%exception%", exceptionMessage);
+        return Message?.Replace("%exception%", exceptionMessage);
     }
 
-    private IEnumerable<EmbedProperties> GetChangedEmbedProperties(string exceptionMessage)
+    private IEnumerable<EmbedProperties>? GetChangedEmbedProperties(string exceptionMessage)
     {
-        return EmbedProperties.Select(e => new EmbedProperties
+        return EmbedProperties?.Select(e => new EmbedProperties
         {
             Description = string.IsNullOrWhiteSpace(e.Description)
                 ? e.Description

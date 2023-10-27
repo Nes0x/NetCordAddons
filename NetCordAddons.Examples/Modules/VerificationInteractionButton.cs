@@ -9,6 +9,7 @@ public class VerificationInteractionButton : InteractionModule<ButtonInteraction
     [Interaction("verification")]
     public async Task HandleAsync()
     {
+ 
         await RespondAsync(InteractionCallback.ChannelMessageWithSource(
             new InteractionMessageProperties().WithContent("Verification").WithFlags(MessageFlags.Ephemeral)));
     }
