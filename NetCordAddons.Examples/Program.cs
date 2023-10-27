@@ -2,11 +2,13 @@
 using Microsoft.Extensions.Hosting;
 using NetCord;
 using NetCord.Gateway;
+using NetCord.Rest;
 using NetCord.Services.ApplicationCommands;
 using NetCord.Services.Commands;
 using NetCord.Services.Interactions;
 using NetCordAddons.EventHandler.Extensions;
 using NetCordAddons.Examples.Services;
+using NetCordAddons.Services;
 using NetCordAddons.Services.Extensions;
 using NetCordAddons.Services.Models;
 
@@ -14,25 +16,30 @@ var host = Host.CreateDefaultBuilder(args);
 host
     .ConfigureServices(services => services.AddSingleton(ConfigService.Create()))
     .AddGatewayClient(provider =>
-    {
-        var config = provider.GetRequiredService<ConfigService>();
-        return new GatewayClientSettings(new Token(TokenType.Bot, config.Token), new GatewayClientConfiguration
         {
-            Intents = GatewayIntents.All,
-            ConnectionProperties = ConnectionPropertiesProperties.IOS,
-            Presence = new PresenceProperties(UserStatusType.Online)
+            var config = provider.GetRequiredService<ConfigService>();
+            return new GatewayClientSettings(new Token(TokenType.Bot, config.Token), new GatewayClientConfiguration
             {
-                Activities = new[] { new UserActivityProperties("Hey", UserActivityType.Streaming) }
-            }
-        });
-    }, new BotCallback
-    {
-        BeforeBotStart = _ =>
+                Intents = GatewayIntents.All,
+                ConnectionProperties = ConnectionPropertiesProperties.IOS,
+                Presence = new PresenceProperties(UserStatusType.Online)
+                {
+                    Activities = new[] { new UserActivityProperties("Hey", UserActivityType.Streaming) }
+                }
+            });
+        },
+        new BotCallback
         {
-            Console.WriteLine("Working");
-            return Task.CompletedTask;
-        }
-    })
+            BeforeBotStart = _ =>
+            {
+                Console.WriteLine("Working");
+                return Task.CompletedTask;
+            }
+        }, provider => new GlobalErrorHandling(provider, "Exception was thrown: %exception%", new[]
+        {
+            new EmbedProperties().WithColor(new Color(255, 0, 0)).WithTitle("Error!")
+                .WithDescription("Exception was thrown: %exception%")
+        }))
     .AddEventHandler()
     .AddInteraction<StringMenuInteractionContext>()
     .AddCommand<CommandContext>(_ => new CommandSettings<CommandContext>("!"))
