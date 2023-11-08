@@ -742,15 +742,15 @@ references:
   commentId: Overload:NetCordAddons.Services.Models.BaseModal.CustomId
   fullName: NetCordAddons.Services.Models.BaseModal.CustomId
   nameWithType: BaseModal.CustomId
-- uid: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable{NetCord.TextInput},System.Object)
-  name: Load(IEnumerable<TextInput>, object)
-  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_Load_System_Collections_Generic_IEnumerable_NetCord_TextInput__System_Object_
-  commentId: M:NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable{NetCord.TextInput},System.Object)
-  name.vb: Load(IEnumerable(Of TextInput), Object)
-  fullName: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable<NetCord.TextInput>, object)
-  fullName.vb: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable(Of NetCord.TextInput), Object)
-  nameWithType: BaseModal.Load(IEnumerable<TextInput>, object)
-  nameWithType.vb: BaseModal.Load(IEnumerable(Of TextInput), Object)
+- uid: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable{NetCord.TextInput})
+  name: Load(IEnumerable<TextInput>)
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_Load_System_Collections_Generic_IEnumerable_NetCord_TextInput__
+  commentId: M:NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable{NetCord.TextInput})
+  name.vb: Load(IEnumerable(Of TextInput))
+  fullName: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable<NetCord.TextInput>)
+  fullName.vb: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable(Of NetCord.TextInput))
+  nameWithType: BaseModal.Load(IEnumerable<TextInput>)
+  nameWithType.vb: BaseModal.Load(IEnumerable(Of TextInput))
 - uid: NetCordAddons.Services.Models.BaseModal.Load*
   name: Load
   href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_Load_
