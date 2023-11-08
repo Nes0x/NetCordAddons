@@ -769,12 +769,15 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.BaseModal.Title
   fullName: NetCordAddons.Services.Modal.BaseModal.Title
   nameWithType: BaseModal.Title
-- uid: NetCordAddons.Services.Modal.BaseModal.ToModalProperties
-  name: ToModalProperties()
-  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_ToModalProperties
-  commentId: M:NetCordAddons.Services.Modal.BaseModal.ToModalProperties
-  fullName: NetCordAddons.Services.Modal.BaseModal.ToModalProperties()
-  nameWithType: BaseModal.ToModalProperties()
+- uid: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable{NetCord.Rest.TextInputProperties})
+  name: ToModalProperties(IEnumerable<TextInputProperties>?)
+  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_ToModalProperties_System_Collections_Generic_IEnumerable_NetCord_Rest_TextInputProperties__
+  commentId: M:NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable{NetCord.Rest.TextInputProperties})
+  name.vb: ToModalProperties(IEnumerable(Of TextInputProperties))
+  fullName: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable<NetCord.Rest.TextInputProperties>?)
+  fullName.vb: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable(Of NetCord.Rest.TextInputProperties))
+  nameWithType: BaseModal.ToModalProperties(IEnumerable<TextInputProperties>?)
+  nameWithType.vb: BaseModal.ToModalProperties(IEnumerable(Of TextInputProperties))
 - uid: NetCordAddons.Services.Modal.BaseModal.ToModalProperties*
   name: ToModalProperties
   href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_ToModalProperties_
