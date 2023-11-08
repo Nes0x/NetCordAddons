@@ -1,159 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: NetCordAddons.EventHandler.Activators
-  name: NetCordAddons.EventHandler.Activators
-  href: documentation/NetCordAddons.EventHandler.Activators.html
-  commentId: N:NetCordAddons.EventHandler.Activators
-  fullName: NetCordAddons.EventHandler.Activators
-  nameWithType: NetCordAddons.EventHandler.Activators
-- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService
-  name: EventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html
-  commentId: T:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService
-  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService
-  nameWithType: EventHandlerActivatorService
-- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{NetCordAddons.EventHandler.Common.EventModule},Microsoft.Extensions.Logging.ILogger{NetCordAddons.EventHandler.Activators.EventHandlerActivatorService})
-  name: EventHandlerActivatorService(IEnumerable<EventModule>, ILogger<EventHandlerActivatorService>)
-  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_NetCordAddons_EventHandler_Common_EventModule__Microsoft_Extensions_Logging_ILogger_NetCordAddons_EventHandler_Activators_EventHandlerActivatorService__
-  commentId: M:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{NetCordAddons.EventHandler.Common.EventModule},Microsoft.Extensions.Logging.ILogger{NetCordAddons.EventHandler.Activators.EventHandlerActivatorService})
-  name.vb: New(IEnumerable(Of EventModule), ILogger(Of EventHandlerActivatorService))
-  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.EventHandlerActivatorService(System.Collections.Generic.IEnumerable<NetCordAddons.EventHandler.Common.EventModule>, Microsoft.Extensions.Logging.ILogger<NetCordAddons.EventHandler.Activators.EventHandlerActivatorService>)
-  fullName.vb: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.New(System.Collections.Generic.IEnumerable(Of NetCordAddons.EventHandler.Common.EventModule), Microsoft.Extensions.Logging.ILogger(Of NetCordAddons.EventHandler.Activators.EventHandlerActivatorService))
-  nameWithType: EventHandlerActivatorService.EventHandlerActivatorService(IEnumerable<EventModule>, ILogger<EventHandlerActivatorService>)
-  nameWithType.vb: EventHandlerActivatorService.New(IEnumerable(Of EventModule), ILogger(Of EventHandlerActivatorService))
-- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor*
-  name: EventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService__ctor_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.EventHandlerActivatorService
-  fullName.vb: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.New
-  nameWithType: EventHandlerActivatorService.EventHandlerActivatorService
-  nameWithType.vb: EventHandlerActivatorService.New
-- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(System.Object)
-  name: StartAsync(object)
-  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StartAsync_System_Object_
-  commentId: M:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(System.Object)
-  name.vb: StartAsync(Object)
-  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(object)
-  fullName.vb: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync(Object)
-  nameWithType: EventHandlerActivatorService.StartAsync(object)
-  nameWithType.vb: EventHandlerActivatorService.StartAsync(Object)
-- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StartAsync_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync
-  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StartAsync
-  nameWithType: EventHandlerActivatorService.StartAsync
-- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
-  name: StopAsync()
-  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StopAsync
-  commentId: M:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync()
-  nameWithType: EventHandlerActivatorService.StopAsync()
-- uid: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_StopAsync_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.Activators.EventHandlerActivatorService.StopAsync
-  nameWithType: EventHandlerActivatorService.StopAsync
-- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService
-  name: GatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html
-  commentId: T:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService
-  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService
-  nameWithType: GatewayClientEventHandlerActivatorService
-- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  name: GatewayClientEventHandlerActivatorService(GatewayClient, EventHandlerActivatorService)
-  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService__ctor_NetCord_Gateway_GatewayClient_NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_
-  commentId: M:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  name.vb: New(GatewayClient, EventHandlerActivatorService)
-  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService(NetCord.Gateway.GatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  fullName.vb: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.New(NetCord.Gateway.GatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  nameWithType: GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService(GatewayClient, EventHandlerActivatorService)
-  nameWithType.vb: GatewayClientEventHandlerActivatorService.New(GatewayClient, EventHandlerActivatorService)
-- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor*
-  name: GatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService__ctor_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService
-  fullName.vb: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.New
-  nameWithType: GatewayClientEventHandlerActivatorService.GatewayClientEventHandlerActivatorService
-  nameWithType.vb: GatewayClientEventHandlerActivatorService.New
-- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  name: StartAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  nameWithType: GatewayClientEventHandlerActivatorService.StartAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StartAsync_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync
-  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StartAsync
-  nameWithType: GatewayClientEventHandlerActivatorService.StartAsync
-- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  nameWithType: GatewayClientEventHandlerActivatorService.StopAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_GatewayClientEventHandlerActivatorService_StopAsync_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.Activators.GatewayClientEventHandlerActivatorService.StopAsync
-  nameWithType: GatewayClientEventHandlerActivatorService.StopAsync
-- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService
-  name: ShardedGatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html
-  commentId: T:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService
-  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService
-- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  name: ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient, EventHandlerActivatorService)
-  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService__ctor_NetCord_Gateway_ShardedGatewayClient_NetCordAddons_EventHandler_Activators_EventHandlerActivatorService_
-  commentId: M:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  name.vb: New(ShardedGatewayClient, EventHandlerActivatorService)
-  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  fullName.vb: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.New(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.EventHandler.Activators.EventHandlerActivatorService)
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService(ShardedGatewayClient, EventHandlerActivatorService)
-  nameWithType.vb: ShardedGatewayClientEventHandlerActivatorService.New(ShardedGatewayClient, EventHandlerActivatorService)
-- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor*
-  name: ShardedGatewayClientEventHandlerActivatorService
-  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService__ctor_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService
-  fullName.vb: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.New
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.ShardedGatewayClientEventHandlerActivatorService
-  nameWithType.vb: ShardedGatewayClientEventHandlerActivatorService.New
-- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  name: StartAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StartAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StartAsync_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync
-  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StartAsync
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StartAsync
-- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StopAsync(CancellationToken)
-- uid: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.html#NetCordAddons_EventHandler_Activators_ShardedGatewayClientEventHandlerActivatorService_StopAsync_
-  commentId: Overload:NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync
-  fullName: NetCordAddons.EventHandler.Activators.ShardedGatewayClientEventHandlerActivatorService.StopAsync
-  nameWithType: ShardedGatewayClientEventHandlerActivatorService.StopAsync
 - uid: NetCordAddons.EventHandler.Common
   name: NetCordAddons.EventHandler.Common
   href: documentation/NetCordAddons.EventHandler.Common.html
@@ -640,342 +487,108 @@ references:
   commentId: Overload:NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler
   fullName: NetCordAddons.EventHandler.Extensions.HostingExtensions.AddEventHandler
   nameWithType: HostingExtensions.AddEventHandler
-- uid: NetCordAddons.Services
-  name: NetCordAddons.Services
-  href: documentation/NetCordAddons.Services.html
-  commentId: N:NetCordAddons.Services
-  fullName: NetCordAddons.Services
-  nameWithType: NetCordAddons.Services
-- uid: NetCordAddons.Services.ClientBotService
-  name: ClientBotService
-  href: documentation/NetCordAddons.Services.ClientBotService.html
-  commentId: T:NetCordAddons.Services.ClientBotService
-  fullName: NetCordAddons.Services.ClientBotService
-  nameWithType: ClientBotService
-- uid: NetCordAddons.Services.ClientBotService.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.IServiceProvider,NetCordAddons.Services.Models.BotCallback,NetCordAddons.Services.Creators.IInteractionCreator,NetCordAddons.Services.Validators.ServiceValidator)
-  name: ClientBotService(IServiceCollection, IServiceProvider, BotCallback, IInteractionCreator, ServiceValidator)
-  href: documentation/NetCordAddons.Services.ClientBotService.html#NetCordAddons_Services_ClientBotService__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_IServiceProvider_NetCordAddons_Services_Models_BotCallback_NetCordAddons_Services_Creators_IInteractionCreator_NetCordAddons_Services_Validators_ServiceValidator_
-  commentId: M:NetCordAddons.Services.ClientBotService.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.IServiceProvider,NetCordAddons.Services.Models.BotCallback,NetCordAddons.Services.Creators.IInteractionCreator,NetCordAddons.Services.Validators.ServiceValidator)
-  name.vb: New(IServiceCollection, IServiceProvider, BotCallback, IInteractionCreator, ServiceValidator)
-  fullName: NetCordAddons.Services.ClientBotService.ClientBotService(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.IServiceProvider, NetCordAddons.Services.Models.BotCallback, NetCordAddons.Services.Creators.IInteractionCreator, NetCordAddons.Services.Validators.ServiceValidator)
-  fullName.vb: NetCordAddons.Services.ClientBotService.New(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.IServiceProvider, NetCordAddons.Services.Models.BotCallback, NetCordAddons.Services.Creators.IInteractionCreator, NetCordAddons.Services.Validators.ServiceValidator)
-  nameWithType: ClientBotService.ClientBotService(IServiceCollection, IServiceProvider, BotCallback, IInteractionCreator, ServiceValidator)
-  nameWithType.vb: ClientBotService.New(IServiceCollection, IServiceProvider, BotCallback, IInteractionCreator, ServiceValidator)
-- uid: NetCordAddons.Services.ClientBotService.#ctor*
-  name: ClientBotService
-  href: documentation/NetCordAddons.Services.ClientBotService.html#NetCordAddons_Services_ClientBotService__ctor_
-  commentId: Overload:NetCordAddons.Services.ClientBotService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.ClientBotService.ClientBotService
-  fullName.vb: NetCordAddons.Services.ClientBotService.New
-  nameWithType: ClientBotService.ClientBotService
-  nameWithType.vb: ClientBotService.New
-- uid: NetCordAddons.Services.ClientBotService.StartAsync(System.Object)
-  name: StartAsync(object)
-  href: documentation/NetCordAddons.Services.ClientBotService.html#NetCordAddons_Services_ClientBotService_StartAsync_System_Object_
-  commentId: M:NetCordAddons.Services.ClientBotService.StartAsync(System.Object)
-  name.vb: StartAsync(Object)
-  fullName: NetCordAddons.Services.ClientBotService.StartAsync(object)
-  fullName.vb: NetCordAddons.Services.ClientBotService.StartAsync(Object)
-  nameWithType: ClientBotService.StartAsync(object)
-  nameWithType.vb: ClientBotService.StartAsync(Object)
-- uid: NetCordAddons.Services.ClientBotService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.Services.ClientBotService.html#NetCordAddons_Services_ClientBotService_StartAsync_
-  commentId: Overload:NetCordAddons.Services.ClientBotService.StartAsync
-  fullName: NetCordAddons.Services.ClientBotService.StartAsync
-  nameWithType: ClientBotService.StartAsync
-- uid: NetCordAddons.Services.ClientBotService.StopAsync(System.Object)
-  name: StopAsync(object)
-  href: documentation/NetCordAddons.Services.ClientBotService.html#NetCordAddons_Services_ClientBotService_StopAsync_System_Object_
-  commentId: M:NetCordAddons.Services.ClientBotService.StopAsync(System.Object)
-  name.vb: StopAsync(Object)
-  fullName: NetCordAddons.Services.ClientBotService.StopAsync(object)
-  fullName.vb: NetCordAddons.Services.ClientBotService.StopAsync(Object)
-  nameWithType: ClientBotService.StopAsync(object)
-  nameWithType.vb: ClientBotService.StopAsync(Object)
-- uid: NetCordAddons.Services.ClientBotService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.Services.ClientBotService.html#NetCordAddons_Services_ClientBotService_StopAsync_
-  commentId: Overload:NetCordAddons.Services.ClientBotService.StopAsync
-  fullName: NetCordAddons.Services.ClientBotService.StopAsync
-  nameWithType: ClientBotService.StopAsync
-- uid: NetCordAddons.Services.Creators
-  name: NetCordAddons.Services.Creators
-  href: documentation/NetCordAddons.Services.Creators.html
-  commentId: N:NetCordAddons.Services.Creators
-  fullName: NetCordAddons.Services.Creators
-  nameWithType: NetCordAddons.Services.Creators
-- uid: NetCordAddons.Services.Creators.GatewayInteractionCreator
-  name: GatewayInteractionCreator
-  href: documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html
-  commentId: T:NetCordAddons.Services.Creators.GatewayInteractionCreator
-  fullName: NetCordAddons.Services.Creators.GatewayInteractionCreator
-  nameWithType: GatewayInteractionCreator
-- uid: NetCordAddons.Services.Creators.GatewayInteractionCreator.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.Services.Creators.InteractionCreator)
-  name: GatewayInteractionCreator(GatewayClient, InteractionCreator)
-  href: documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html#NetCordAddons_Services_Creators_GatewayInteractionCreator__ctor_NetCord_Gateway_GatewayClient_NetCordAddons_Services_Creators_InteractionCreator_
-  commentId: M:NetCordAddons.Services.Creators.GatewayInteractionCreator.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.Services.Creators.InteractionCreator)
-  name.vb: New(GatewayClient, InteractionCreator)
-  fullName: NetCordAddons.Services.Creators.GatewayInteractionCreator.GatewayInteractionCreator(NetCord.Gateway.GatewayClient, NetCordAddons.Services.Creators.InteractionCreator)
-  fullName.vb: NetCordAddons.Services.Creators.GatewayInteractionCreator.New(NetCord.Gateway.GatewayClient, NetCordAddons.Services.Creators.InteractionCreator)
-  nameWithType: GatewayInteractionCreator.GatewayInteractionCreator(GatewayClient, InteractionCreator)
-  nameWithType.vb: GatewayInteractionCreator.New(GatewayClient, InteractionCreator)
-- uid: NetCordAddons.Services.Creators.GatewayInteractionCreator.#ctor*
-  name: GatewayInteractionCreator
-  href: documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html#NetCordAddons_Services_Creators_GatewayInteractionCreator__ctor_
-  commentId: Overload:NetCordAddons.Services.Creators.GatewayInteractionCreator.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.Creators.GatewayInteractionCreator.GatewayInteractionCreator
-  fullName.vb: NetCordAddons.Services.Creators.GatewayInteractionCreator.New
-  nameWithType: GatewayInteractionCreator.GatewayInteractionCreator
-  nameWithType.vb: GatewayInteractionCreator.New
-- uid: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List{NetCordAddons.Services.Models.Service})
-  name: CreateInteractions(List<Service>)
-  href: documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html#NetCordAddons_Services_Creators_GatewayInteractionCreator_CreateInteractions_System_Collections_Generic_List_NetCordAddons_Services_Models_Service__
-  commentId: M:NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List{NetCordAddons.Services.Models.Service})
-  name.vb: CreateInteractions(List(Of Service))
-  fullName: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List<NetCordAddons.Services.Models.Service>)
-  fullName.vb: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List(Of NetCordAddons.Services.Models.Service))
-  nameWithType: GatewayInteractionCreator.CreateInteractions(List<Service>)
-  nameWithType.vb: GatewayInteractionCreator.CreateInteractions(List(Of Service))
-- uid: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateInteractions*
-  name: CreateInteractions
-  href: documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html#NetCordAddons_Services_Creators_GatewayInteractionCreator_CreateInteractions_
-  commentId: Overload:NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateInteractions
-  fullName: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateInteractions
-  nameWithType: GatewayInteractionCreator.CreateInteractions
-- uid: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateTextCommandInteraction(System.String,NetCordAddons.Services.Models.Service)
-  name: CreateTextCommandInteraction(string, Service)
-  href: documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html#NetCordAddons_Services_Creators_GatewayInteractionCreator_CreateTextCommandInteraction_System_String_NetCordAddons_Services_Models_Service_
-  commentId: M:NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateTextCommandInteraction(System.String,NetCordAddons.Services.Models.Service)
-  name.vb: CreateTextCommandInteraction(String, Service)
-  fullName: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateTextCommandInteraction(string, NetCordAddons.Services.Models.Service)
-  fullName.vb: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateTextCommandInteraction(String, NetCordAddons.Services.Models.Service)
-  nameWithType: GatewayInteractionCreator.CreateTextCommandInteraction(string, Service)
-  nameWithType.vb: GatewayInteractionCreator.CreateTextCommandInteraction(String, Service)
-- uid: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateTextCommandInteraction*
-  name: CreateTextCommandInteraction
-  href: documentation/NetCordAddons.Services.Creators.GatewayInteractionCreator.html#NetCordAddons_Services_Creators_GatewayInteractionCreator_CreateTextCommandInteraction_
-  commentId: Overload:NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateTextCommandInteraction
-  fullName: NetCordAddons.Services.Creators.GatewayInteractionCreator.CreateTextCommandInteraction
-  nameWithType: GatewayInteractionCreator.CreateTextCommandInteraction
-- uid: NetCordAddons.Services.Creators.IInteractionCreator
-  name: IInteractionCreator
-  href: documentation/NetCordAddons.Services.Creators.IInteractionCreator.html
-  commentId: T:NetCordAddons.Services.Creators.IInteractionCreator
-  fullName: NetCordAddons.Services.Creators.IInteractionCreator
-  nameWithType: IInteractionCreator
-- uid: NetCordAddons.Services.Creators.IInteractionCreator.CreateInteractions(System.Collections.Generic.List{NetCordAddons.Services.Models.Service})
-  name: CreateInteractions(List<Service>)
-  href: documentation/NetCordAddons.Services.Creators.IInteractionCreator.html#NetCordAddons_Services_Creators_IInteractionCreator_CreateInteractions_System_Collections_Generic_List_NetCordAddons_Services_Models_Service__
-  commentId: M:NetCordAddons.Services.Creators.IInteractionCreator.CreateInteractions(System.Collections.Generic.List{NetCordAddons.Services.Models.Service})
-  name.vb: CreateInteractions(List(Of Service))
-  fullName: NetCordAddons.Services.Creators.IInteractionCreator.CreateInteractions(System.Collections.Generic.List<NetCordAddons.Services.Models.Service>)
-  fullName.vb: NetCordAddons.Services.Creators.IInteractionCreator.CreateInteractions(System.Collections.Generic.List(Of NetCordAddons.Services.Models.Service))
-  nameWithType: IInteractionCreator.CreateInteractions(List<Service>)
-  nameWithType.vb: IInteractionCreator.CreateInteractions(List(Of Service))
-- uid: NetCordAddons.Services.Creators.IInteractionCreator.CreateInteractions*
-  name: CreateInteractions
-  href: documentation/NetCordAddons.Services.Creators.IInteractionCreator.html#NetCordAddons_Services_Creators_IInteractionCreator_CreateInteractions_
-  commentId: Overload:NetCordAddons.Services.Creators.IInteractionCreator.CreateInteractions
-  fullName: NetCordAddons.Services.Creators.IInteractionCreator.CreateInteractions
-  nameWithType: IInteractionCreator.CreateInteractions
-- uid: NetCordAddons.Services.Creators.IInteractionCreator.CreateTextCommandInteraction(System.String,NetCordAddons.Services.Models.Service)
-  name: CreateTextCommandInteraction(string, Service)
-  href: documentation/NetCordAddons.Services.Creators.IInteractionCreator.html#NetCordAddons_Services_Creators_IInteractionCreator_CreateTextCommandInteraction_System_String_NetCordAddons_Services_Models_Service_
-  commentId: M:NetCordAddons.Services.Creators.IInteractionCreator.CreateTextCommandInteraction(System.String,NetCordAddons.Services.Models.Service)
-  name.vb: CreateTextCommandInteraction(String, Service)
-  fullName: NetCordAddons.Services.Creators.IInteractionCreator.CreateTextCommandInteraction(string, NetCordAddons.Services.Models.Service)
-  fullName.vb: NetCordAddons.Services.Creators.IInteractionCreator.CreateTextCommandInteraction(String, NetCordAddons.Services.Models.Service)
-  nameWithType: IInteractionCreator.CreateTextCommandInteraction(string, Service)
-  nameWithType.vb: IInteractionCreator.CreateTextCommandInteraction(String, Service)
-- uid: NetCordAddons.Services.Creators.IInteractionCreator.CreateTextCommandInteraction*
-  name: CreateTextCommandInteraction
-  href: documentation/NetCordAddons.Services.Creators.IInteractionCreator.html#NetCordAddons_Services_Creators_IInteractionCreator_CreateTextCommandInteraction_
-  commentId: Overload:NetCordAddons.Services.Creators.IInteractionCreator.CreateTextCommandInteraction
-  fullName: NetCordAddons.Services.Creators.IInteractionCreator.CreateTextCommandInteraction
-  nameWithType: IInteractionCreator.CreateTextCommandInteraction
-- uid: NetCordAddons.Services.Creators.InteractionCreator
-  name: InteractionCreator
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html
-  commentId: T:NetCordAddons.Services.Creators.InteractionCreator
-  fullName: NetCordAddons.Services.Creators.InteractionCreator
-  nameWithType: InteractionCreator
-- uid: NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
-  name: InteractionCreator(IServiceProvider, GlobalErrorHandling)
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator__ctor_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_
-  commentId: M:NetCordAddons.Services.Creators.InteractionCreator.#ctor(System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
-  name.vb: New(IServiceProvider, GlobalErrorHandling)
-  fullName: NetCordAddons.Services.Creators.InteractionCreator.InteractionCreator(System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
-  fullName.vb: NetCordAddons.Services.Creators.InteractionCreator.New(System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling)
-  nameWithType: InteractionCreator.InteractionCreator(IServiceProvider, GlobalErrorHandling)
-  nameWithType.vb: InteractionCreator.New(IServiceProvider, GlobalErrorHandling)
-- uid: NetCordAddons.Services.Creators.InteractionCreator.#ctor*
-  name: InteractionCreator
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator__ctor_
-  commentId: Overload:NetCordAddons.Services.Creators.InteractionCreator.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.Creators.InteractionCreator.InteractionCreator
-  fullName.vb: NetCordAddons.Services.Creators.InteractionCreator.New
-  nameWithType: InteractionCreator.InteractionCreator
-  nameWithType.vb: InteractionCreator.New
-- uid: NetCordAddons.Services.Creators.InteractionCreator.CreateInteraction(NetCord.Interaction,NetCordAddons.Services.Models.Service,System.Object)
-  name: CreateInteraction(Interaction, Service, object)
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator_CreateInteraction_NetCord_Interaction_NetCordAddons_Services_Models_Service_System_Object_
-  commentId: M:NetCordAddons.Services.Creators.InteractionCreator.CreateInteraction(NetCord.Interaction,NetCordAddons.Services.Models.Service,System.Object)
-  name.vb: CreateInteraction(Interaction, Service, Object)
-  fullName: NetCordAddons.Services.Creators.InteractionCreator.CreateInteraction(NetCord.Interaction, NetCordAddons.Services.Models.Service, object)
-  fullName.vb: NetCordAddons.Services.Creators.InteractionCreator.CreateInteraction(NetCord.Interaction, NetCordAddons.Services.Models.Service, Object)
-  nameWithType: InteractionCreator.CreateInteraction(Interaction, Service, object)
-  nameWithType.vb: InteractionCreator.CreateInteraction(Interaction, Service, Object)
-- uid: NetCordAddons.Services.Creators.InteractionCreator.CreateInteraction*
-  name: CreateInteraction
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator_CreateInteraction_
-  commentId: Overload:NetCordAddons.Services.Creators.InteractionCreator.CreateInteraction
-  fullName: NetCordAddons.Services.Creators.InteractionCreator.CreateInteraction
-  nameWithType: InteractionCreator.CreateInteraction
-- uid: NetCordAddons.Services.Creators.InteractionCreator.CreateTextCommandInteraction(NetCord.Gateway.Message,System.String,NetCordAddons.Services.Models.Service,System.Object)
-  name: CreateTextCommandInteraction(Message, string, Service, object)
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator_CreateTextCommandInteraction_NetCord_Gateway_Message_System_String_NetCordAddons_Services_Models_Service_System_Object_
-  commentId: M:NetCordAddons.Services.Creators.InteractionCreator.CreateTextCommandInteraction(NetCord.Gateway.Message,System.String,NetCordAddons.Services.Models.Service,System.Object)
-  name.vb: CreateTextCommandInteraction(Message, String, Service, Object)
-  fullName: NetCordAddons.Services.Creators.InteractionCreator.CreateTextCommandInteraction(NetCord.Gateway.Message, string, NetCordAddons.Services.Models.Service, object)
-  fullName.vb: NetCordAddons.Services.Creators.InteractionCreator.CreateTextCommandInteraction(NetCord.Gateway.Message, String, NetCordAddons.Services.Models.Service, Object)
-  nameWithType: InteractionCreator.CreateTextCommandInteraction(Message, string, Service, object)
-  nameWithType.vb: InteractionCreator.CreateTextCommandInteraction(Message, String, Service, Object)
-- uid: NetCordAddons.Services.Creators.InteractionCreator.CreateTextCommandInteraction*
-  name: CreateTextCommandInteraction
-  href: documentation/NetCordAddons.Services.Creators.InteractionCreator.html#NetCordAddons_Services_Creators_InteractionCreator_CreateTextCommandInteraction_
-  commentId: Overload:NetCordAddons.Services.Creators.InteractionCreator.CreateTextCommandInteraction
-  fullName: NetCordAddons.Services.Creators.InteractionCreator.CreateTextCommandInteraction
-  nameWithType: InteractionCreator.CreateTextCommandInteraction
-- uid: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator
-  name: ShardedGatewayInteractionCreator
-  href: documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html
-  commentId: T:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator
-  fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator
-  nameWithType: ShardedGatewayInteractionCreator
-- uid: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.Services.Creators.InteractionCreator)
-  name: ShardedGatewayInteractionCreator(ShardedGatewayClient, InteractionCreator)
-  href: documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html#NetCordAddons_Services_Creators_ShardedGatewayInteractionCreator__ctor_NetCord_Gateway_ShardedGatewayClient_NetCordAddons_Services_Creators_InteractionCreator_
-  commentId: M:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.Services.Creators.InteractionCreator)
-  name.vb: New(ShardedGatewayClient, InteractionCreator)
-  fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.ShardedGatewayInteractionCreator(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.Services.Creators.InteractionCreator)
-  fullName.vb: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.New(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.Services.Creators.InteractionCreator)
-  nameWithType: ShardedGatewayInteractionCreator.ShardedGatewayInteractionCreator(ShardedGatewayClient, InteractionCreator)
-  nameWithType.vb: ShardedGatewayInteractionCreator.New(ShardedGatewayClient, InteractionCreator)
-- uid: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.#ctor*
-  name: ShardedGatewayInteractionCreator
-  href: documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html#NetCordAddons_Services_Creators_ShardedGatewayInteractionCreator__ctor_
-  commentId: Overload:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.ShardedGatewayInteractionCreator
-  fullName.vb: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.New
-  nameWithType: ShardedGatewayInteractionCreator.ShardedGatewayInteractionCreator
-  nameWithType.vb: ShardedGatewayInteractionCreator.New
-- uid: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List{NetCordAddons.Services.Models.Service})
-  name: CreateInteractions(List<Service>)
-  href: documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html#NetCordAddons_Services_Creators_ShardedGatewayInteractionCreator_CreateInteractions_System_Collections_Generic_List_NetCordAddons_Services_Models_Service__
-  commentId: M:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List{NetCordAddons.Services.Models.Service})
-  name.vb: CreateInteractions(List(Of Service))
-  fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List<NetCordAddons.Services.Models.Service>)
-  fullName.vb: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateInteractions(System.Collections.Generic.List(Of NetCordAddons.Services.Models.Service))
-  nameWithType: ShardedGatewayInteractionCreator.CreateInteractions(List<Service>)
-  nameWithType.vb: ShardedGatewayInteractionCreator.CreateInteractions(List(Of Service))
-- uid: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateInteractions*
-  name: CreateInteractions
-  href: documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html#NetCordAddons_Services_Creators_ShardedGatewayInteractionCreator_CreateInteractions_
-  commentId: Overload:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateInteractions
-  fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateInteractions
-  nameWithType: ShardedGatewayInteractionCreator.CreateInteractions
-- uid: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction(System.String,NetCordAddons.Services.Models.Service)
-  name: CreateTextCommandInteraction(string, Service)
-  href: documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html#NetCordAddons_Services_Creators_ShardedGatewayInteractionCreator_CreateTextCommandInteraction_System_String_NetCordAddons_Services_Models_Service_
-  commentId: M:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction(System.String,NetCordAddons.Services.Models.Service)
-  name.vb: CreateTextCommandInteraction(String, Service)
-  fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction(string, NetCordAddons.Services.Models.Service)
-  fullName.vb: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction(String, NetCordAddons.Services.Models.Service)
-  nameWithType: ShardedGatewayInteractionCreator.CreateTextCommandInteraction(string, Service)
-  nameWithType.vb: ShardedGatewayInteractionCreator.CreateTextCommandInteraction(String, Service)
-- uid: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction*
-  name: CreateTextCommandInteraction
-  href: documentation/NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.html#NetCordAddons_Services_Creators_ShardedGatewayInteractionCreator_CreateTextCommandInteraction_
-  commentId: Overload:NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction
-  fullName: NetCordAddons.Services.Creators.ShardedGatewayInteractionCreator.CreateTextCommandInteraction
-  nameWithType: ShardedGatewayInteractionCreator.CreateTextCommandInteraction
 - uid: NetCordAddons.Services.ErrorHandling
   name: NetCordAddons.Services.ErrorHandling
   href: documentation/NetCordAddons.Services.ErrorHandling.html
   commentId: N:NetCordAddons.Services.ErrorHandling
   fullName: NetCordAddons.Services.ErrorHandling
   nameWithType: NetCordAddons.Services.ErrorHandling
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
-  name: GlobalErrorHandling
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html
-  commentId: T:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling
-  nameWithType: GlobalErrorHandling
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties},System.Boolean)
-  name: GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?, bool)
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__ctor_System_IServiceProvider_System_String_System_Collections_Generic_IEnumerable_NetCord_Rest_EmbedProperties__System_Boolean_
-  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties},System.Boolean)
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler
+  name: BaseErrorHandler
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html
+  commentId: T:NetCordAddons.Services.ErrorHandling.BaseErrorHandler
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler
+  nameWithType: BaseErrorHandler
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties},System.Boolean)
+  name: BaseErrorHandler(IServiceProvider, string?, IEnumerable<EmbedProperties>?, bool)
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html#NetCordAddons_Services_ErrorHandling_BaseErrorHandler__ctor_System_IServiceProvider_System_String_System_Collections_Generic_IEnumerable_NetCord_Rest_EmbedProperties__System_Boolean_
+  commentId: M:NetCordAddons.Services.ErrorHandling.BaseErrorHandler.#ctor(System.IServiceProvider,System.String,System.Collections.Generic.IEnumerable{NetCord.Rest.EmbedProperties},System.Boolean)
   name.vb: New(IServiceProvider, String, IEnumerable(Of EmbedProperties), Boolean)
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.GlobalErrorHandling(System.IServiceProvider, string?, System.Collections.Generic.IEnumerable<NetCord.Rest.EmbedProperties>?, bool)
-  fullName.vb: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.New(System.IServiceProvider, String, System.Collections.Generic.IEnumerable(Of NetCord.Rest.EmbedProperties), Boolean)
-  nameWithType: GlobalErrorHandling.GlobalErrorHandling(IServiceProvider, string?, IEnumerable<EmbedProperties>?, bool)
-  nameWithType.vb: GlobalErrorHandling.New(IServiceProvider, String, IEnumerable(Of EmbedProperties), Boolean)
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor*
-  name: GlobalErrorHandling
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__ctor_
-  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.#ctor
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.BaseErrorHandler(System.IServiceProvider, string?, System.Collections.Generic.IEnumerable<NetCord.Rest.EmbedProperties>?, bool)
+  fullName.vb: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.New(System.IServiceProvider, String, System.Collections.Generic.IEnumerable(Of NetCord.Rest.EmbedProperties), Boolean)
+  nameWithType: BaseErrorHandler.BaseErrorHandler(IServiceProvider, string?, IEnumerable<EmbedProperties>?, bool)
+  nameWithType.vb: BaseErrorHandler.New(IServiceProvider, String, IEnumerable(Of EmbedProperties), Boolean)
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.#ctor*
+  name: BaseErrorHandler
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html#NetCordAddons_Services_ErrorHandling_BaseErrorHandler__ctor_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.BaseErrorHandler.#ctor
   name.vb: New
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.GlobalErrorHandling
-  fullName.vb: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.New
-  nameWithType: GlobalErrorHandling.GlobalErrorHandling
-  nameWithType.vb: GlobalErrorHandling.New
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
-  name: EmbedProperties
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_EmbedProperties
-  commentId: P:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
-  nameWithType: GlobalErrorHandling.EmbedProperties
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties*
-  name: EmbedProperties
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_EmbedProperties_
-  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.EmbedProperties
-  nameWithType: GlobalErrorHandling.EmbedProperties
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
-  name: Message
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_Message
-  commentId: P:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
-  nameWithType: GlobalErrorHandling.Message
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message*
-  name: Message
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_Message_
-  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.Message
-  nameWithType: GlobalErrorHandling.Message
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message,System.Exception)
-  name: SendAndLogError(Message, Exception)
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_SendAndLogError_NetCord_Gateway_Message_System_Exception_
-  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message,System.Exception)
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Gateway.Message, System.Exception)
-  nameWithType: GlobalErrorHandling.SendAndLogError(Message, Exception)
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Interaction,System.Exception)
-  name: SendAndLogError(Interaction, Exception)
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_SendAndLogError_NetCord_Interaction_System_Exception_
-  commentId: M:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Interaction,System.Exception)
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError(NetCord.Interaction, System.Exception)
-  nameWithType: GlobalErrorHandling.SendAndLogError(Interaction, Exception)
-- uid: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError*
-  name: SendAndLogError
-  href: documentation/NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html#NetCordAddons_Services_ErrorHandling_GlobalErrorHandling_SendAndLogError_
-  commentId: Overload:NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError
-  fullName: NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.SendAndLogError
-  nameWithType: GlobalErrorHandling.SendAndLogError
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.BaseErrorHandler
+  fullName.vb: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.New
+  nameWithType: BaseErrorHandler.BaseErrorHandler
+  nameWithType.vb: BaseErrorHandler.New
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.LogError(System.String)
+  name: LogError(string)
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html#NetCordAddons_Services_ErrorHandling_BaseErrorHandler_LogError_System_String_
+  commentId: M:NetCordAddons.Services.ErrorHandling.BaseErrorHandler.LogError(System.String)
+  name.vb: LogError(String)
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.LogError(string)
+  fullName.vb: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.LogError(String)
+  nameWithType: BaseErrorHandler.LogError(string)
+  nameWithType.vb: BaseErrorHandler.LogError(String)
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.LogError*
+  name: LogError
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html#NetCordAddons_Services_ErrorHandling_BaseErrorHandler_LogError_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.BaseErrorHandler.LogError
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.LogError
+  nameWithType: BaseErrorHandler.LogError
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError(NetCord.Gateway.Message,System.Exception)
+  name: SendError(Message, Exception)
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html#NetCordAddons_Services_ErrorHandling_BaseErrorHandler_SendError_NetCord_Gateway_Message_System_Exception_
+  commentId: M:NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError(NetCord.Gateway.Message,System.Exception)
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError(NetCord.Gateway.Message, System.Exception)
+  nameWithType: BaseErrorHandler.SendError(Message, Exception)
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError(NetCord.Interaction,System.Exception)
+  name: SendError(Interaction, Exception)
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html#NetCordAddons_Services_ErrorHandling_BaseErrorHandler_SendError_NetCord_Interaction_System_Exception_
+  commentId: M:NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError(NetCord.Interaction,System.Exception)
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError(NetCord.Interaction, System.Exception)
+  nameWithType: BaseErrorHandler.SendError(Interaction, Exception)
+- uid: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError*
+  name: SendError
+  href: documentation/NetCordAddons.Services.ErrorHandling.BaseErrorHandler.html#NetCordAddons_Services_ErrorHandling_BaseErrorHandler_SendError_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError
+  fullName: NetCordAddons.Services.ErrorHandling.BaseErrorHandler.SendError
+  nameWithType: BaseErrorHandler.SendError
+- uid: NetCordAddons.Services.ErrorHandling.IErrorHandler
+  name: IErrorHandler
+  href: documentation/NetCordAddons.Services.ErrorHandling.IErrorHandler.html
+  commentId: T:NetCordAddons.Services.ErrorHandling.IErrorHandler
+  fullName: NetCordAddons.Services.ErrorHandling.IErrorHandler
+  nameWithType: IErrorHandler
+- uid: NetCordAddons.Services.ErrorHandling.IErrorHandler.LogError(System.String)
+  name: LogError(string)
+  href: documentation/NetCordAddons.Services.ErrorHandling.IErrorHandler.html#NetCordAddons_Services_ErrorHandling_IErrorHandler_LogError_System_String_
+  commentId: M:NetCordAddons.Services.ErrorHandling.IErrorHandler.LogError(System.String)
+  name.vb: LogError(String)
+  fullName: NetCordAddons.Services.ErrorHandling.IErrorHandler.LogError(string)
+  fullName.vb: NetCordAddons.Services.ErrorHandling.IErrorHandler.LogError(String)
+  nameWithType: IErrorHandler.LogError(string)
+  nameWithType.vb: IErrorHandler.LogError(String)
+- uid: NetCordAddons.Services.ErrorHandling.IErrorHandler.LogError*
+  name: LogError
+  href: documentation/NetCordAddons.Services.ErrorHandling.IErrorHandler.html#NetCordAddons_Services_ErrorHandling_IErrorHandler_LogError_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.IErrorHandler.LogError
+  fullName: NetCordAddons.Services.ErrorHandling.IErrorHandler.LogError
+  nameWithType: IErrorHandler.LogError
+- uid: NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError(NetCord.Gateway.Message,System.Exception)
+  name: SendError(Message, Exception)
+  href: documentation/NetCordAddons.Services.ErrorHandling.IErrorHandler.html#NetCordAddons_Services_ErrorHandling_IErrorHandler_SendError_NetCord_Gateway_Message_System_Exception_
+  commentId: M:NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError(NetCord.Gateway.Message,System.Exception)
+  fullName: NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError(NetCord.Gateway.Message, System.Exception)
+  nameWithType: IErrorHandler.SendError(Message, Exception)
+- uid: NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError(NetCord.Interaction,System.Exception)
+  name: SendError(Interaction, Exception)
+  href: documentation/NetCordAddons.Services.ErrorHandling.IErrorHandler.html#NetCordAddons_Services_ErrorHandling_IErrorHandler_SendError_NetCord_Interaction_System_Exception_
+  commentId: M:NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError(NetCord.Interaction,System.Exception)
+  fullName: NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError(NetCord.Interaction, System.Exception)
+  nameWithType: IErrorHandler.SendError(Interaction, Exception)
+- uid: NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError*
+  name: SendError
+  href: documentation/NetCordAddons.Services.ErrorHandling.IErrorHandler.html#NetCordAddons_Services_ErrorHandling_IErrorHandler_SendError_
+  commentId: Overload:NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError
+  fullName: NetCordAddons.Services.ErrorHandling.IErrorHandler.SendError
+  nameWithType: IErrorHandler.SendError
 - uid: NetCordAddons.Services.Extensions
   name: NetCordAddons.Services.Extensions
   href: documentation/NetCordAddons.Services.Extensions.html
@@ -1027,15 +640,15 @@ references:
   fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddCommand(Of TContext)(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.CommandSettings(Of TContext)))
   nameWithType: HostingExtensions.AddCommand<TContext>(IHostBuilder, Func<IServiceProvider, CommandSettings<TContext>>)
   nameWithType.vb: HostingExtensions.AddCommand(Of TContext)(IHostBuilder, Func(Of IServiceProvider, CommandSettings(Of TContext)))
-- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
-  name: AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
-  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__
-  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
-  name.vb: AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
-  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling>?)
-  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling))
-  nameWithType: HostingExtensions.AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
-  nameWithType.vb: HostingExtensions.AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
+- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.IErrorHandler})
+  name: AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?, Func<IServiceProvider, IErrorHandler>?)
+  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_IErrorHandler__
+  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.IErrorHandler})
+  name.vb: AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback, Func(Of IServiceProvider, IErrorHandler))
+  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.ErrorHandling.IErrorHandler>?)
+  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.GatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.ErrorHandling.IErrorHandler))
+  nameWithType: HostingExtensions.AddGatewayClient(IHostBuilder, Func<IServiceProvider, GatewayClientSettings>, BotCallback?, Func<IServiceProvider, IErrorHandler>?)
+  nameWithType.vb: HostingExtensions.AddGatewayClient(IHostBuilder, Func(Of IServiceProvider, GatewayClientSettings), BotCallback, Func(Of IServiceProvider, IErrorHandler))
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient*
   name: AddGatewayClient
   href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_
@@ -1057,75 +670,117 @@ references:
   fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddInteraction(Of TContext)(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCord.Services.Interactions.InteractionServiceConfiguration(Of TContext)))
   nameWithType: HostingExtensions.AddInteraction<TContext>(IHostBuilder, Func<IServiceProvider, InteractionServiceConfiguration<TContext>>?)
   nameWithType.vb: HostingExtensions.AddInteraction(Of TContext)(IHostBuilder, Func(Of IServiceProvider, InteractionServiceConfiguration(Of TContext)))
-- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
-  name: AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
-  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_ShardedGatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__
-  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})
-  name.vb: AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
-  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling>?)
-  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.ErrorHandling.GlobalErrorHandling))
-  nameWithType: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?, Func<IServiceProvider, GlobalErrorHandling>?)
-  nameWithType.vb: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback, Func(Of IServiceProvider, GlobalErrorHandling))
+- uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.IErrorHandler})
+  name: AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?, Func<IServiceProvider, IErrorHandler>?)
+  href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_ShardedGatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_IErrorHandler__
+  commentId: M:NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.IErrorHandler})
+  name.vb: AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback, Func(Of IServiceProvider, IErrorHandler))
+  fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func<System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings>, NetCordAddons.Services.Models.BotCallback?, System.Func<System.IServiceProvider, NetCordAddons.Services.ErrorHandling.IErrorHandler>?)
+  fullName.vb: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder, System.Func(Of System.IServiceProvider, NetCordAddons.Services.Models.ShardedGatewayClientSettings), NetCordAddons.Services.Models.BotCallback, System.Func(Of System.IServiceProvider, NetCordAddons.Services.ErrorHandling.IErrorHandler))
+  nameWithType: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func<IServiceProvider, ShardedGatewayClientSettings>, BotCallback?, Func<IServiceProvider, IErrorHandler>?)
+  nameWithType.vb: HostingExtensions.AddShardedGatewayClient(IHostBuilder, Func(Of IServiceProvider, ShardedGatewayClientSettings), BotCallback, Func(Of IServiceProvider, IErrorHandler))
 - uid: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient*
   name: AddShardedGatewayClient
   href: documentation/NetCordAddons.Services.Extensions.HostingExtensions.html#NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_
   commentId: Overload:NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient
   fullName: NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient
   nameWithType: HostingExtensions.AddShardedGatewayClient
-- uid: NetCordAddons.Services.GatewayClientBotService
-  name: GatewayClientBotService
-  href: documentation/NetCordAddons.Services.GatewayClientBotService.html
-  commentId: T:NetCordAddons.Services.GatewayClientBotService
-  fullName: NetCordAddons.Services.GatewayClientBotService
-  nameWithType: GatewayClientBotService
-- uid: NetCordAddons.Services.GatewayClientBotService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.Services.ClientBotService)
-  name: GatewayClientBotService(GatewayClient, ClientBotService)
-  href: documentation/NetCordAddons.Services.GatewayClientBotService.html#NetCordAddons_Services_GatewayClientBotService__ctor_NetCord_Gateway_GatewayClient_NetCordAddons_Services_ClientBotService_
-  commentId: M:NetCordAddons.Services.GatewayClientBotService.#ctor(NetCord.Gateway.GatewayClient,NetCordAddons.Services.ClientBotService)
-  name.vb: New(GatewayClient, ClientBotService)
-  fullName: NetCordAddons.Services.GatewayClientBotService.GatewayClientBotService(NetCord.Gateway.GatewayClient, NetCordAddons.Services.ClientBotService)
-  fullName.vb: NetCordAddons.Services.GatewayClientBotService.New(NetCord.Gateway.GatewayClient, NetCordAddons.Services.ClientBotService)
-  nameWithType: GatewayClientBotService.GatewayClientBotService(GatewayClient, ClientBotService)
-  nameWithType.vb: GatewayClientBotService.New(GatewayClient, ClientBotService)
-- uid: NetCordAddons.Services.GatewayClientBotService.#ctor*
-  name: GatewayClientBotService
-  href: documentation/NetCordAddons.Services.GatewayClientBotService.html#NetCordAddons_Services_GatewayClientBotService__ctor_
-  commentId: Overload:NetCordAddons.Services.GatewayClientBotService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.GatewayClientBotService.GatewayClientBotService
-  fullName.vb: NetCordAddons.Services.GatewayClientBotService.New
-  nameWithType: GatewayClientBotService.GatewayClientBotService
-  nameWithType.vb: GatewayClientBotService.New
-- uid: NetCordAddons.Services.GatewayClientBotService.StartAsync(System.Threading.CancellationToken)
-  name: StartAsync(CancellationToken)
-  href: documentation/NetCordAddons.Services.GatewayClientBotService.html#NetCordAddons_Services_GatewayClientBotService_StartAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.Services.GatewayClientBotService.StartAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.Services.GatewayClientBotService.StartAsync(System.Threading.CancellationToken)
-  nameWithType: GatewayClientBotService.StartAsync(CancellationToken)
-- uid: NetCordAddons.Services.GatewayClientBotService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.Services.GatewayClientBotService.html#NetCordAddons_Services_GatewayClientBotService_StartAsync_
-  commentId: Overload:NetCordAddons.Services.GatewayClientBotService.StartAsync
-  fullName: NetCordAddons.Services.GatewayClientBotService.StartAsync
-  nameWithType: GatewayClientBotService.StartAsync
-- uid: NetCordAddons.Services.GatewayClientBotService.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: documentation/NetCordAddons.Services.GatewayClientBotService.html#NetCordAddons_Services_GatewayClientBotService_StopAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.Services.GatewayClientBotService.StopAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.Services.GatewayClientBotService.StopAsync(System.Threading.CancellationToken)
-  nameWithType: GatewayClientBotService.StopAsync(CancellationToken)
-- uid: NetCordAddons.Services.GatewayClientBotService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.Services.GatewayClientBotService.html#NetCordAddons_Services_GatewayClientBotService_StopAsync_
-  commentId: Overload:NetCordAddons.Services.GatewayClientBotService.StopAsync
-  fullName: NetCordAddons.Services.GatewayClientBotService.StopAsync
-  nameWithType: GatewayClientBotService.StopAsync
 - uid: NetCordAddons.Services.Models
   name: NetCordAddons.Services.Models
   href: documentation/NetCordAddons.Services.Models.html
   commentId: N:NetCordAddons.Services.Models
   fullName: NetCordAddons.Services.Models
   nameWithType: NetCordAddons.Services.Models
+- uid: NetCordAddons.Services.Models.BaseModal
+  name: BaseModal
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html
+  commentId: T:NetCordAddons.Services.Models.BaseModal
+  fullName: NetCordAddons.Services.Models.BaseModal
+  nameWithType: BaseModal
+- uid: NetCordAddons.Services.Models.BaseModal.#ctor
+  name: BaseModal()
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal__ctor
+  commentId: M:NetCordAddons.Services.Models.BaseModal.#ctor
+  name.vb: New()
+  fullName: NetCordAddons.Services.Models.BaseModal.BaseModal()
+  fullName.vb: NetCordAddons.Services.Models.BaseModal.New()
+  nameWithType: BaseModal.BaseModal()
+  nameWithType.vb: BaseModal.New()
+- uid: NetCordAddons.Services.Models.BaseModal.#ctor*
+  name: BaseModal
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal__ctor_
+  commentId: Overload:NetCordAddons.Services.Models.BaseModal.#ctor
+  name.vb: New
+  fullName: NetCordAddons.Services.Models.BaseModal.BaseModal
+  fullName.vb: NetCordAddons.Services.Models.BaseModal.New
+  nameWithType: BaseModal.BaseModal
+  nameWithType.vb: BaseModal.New
+- uid: NetCordAddons.Services.Models.BaseModal.AddParameterToId(System.Object)
+  name: AddParameterToId(object)
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_AddParameterToId_System_Object_
+  commentId: M:NetCordAddons.Services.Models.BaseModal.AddParameterToId(System.Object)
+  name.vb: AddParameterToId(Object)
+  fullName: NetCordAddons.Services.Models.BaseModal.AddParameterToId(object)
+  fullName.vb: NetCordAddons.Services.Models.BaseModal.AddParameterToId(Object)
+  nameWithType: BaseModal.AddParameterToId(object)
+  nameWithType.vb: BaseModal.AddParameterToId(Object)
+- uid: NetCordAddons.Services.Models.BaseModal.AddParameterToId*
+  name: AddParameterToId
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_AddParameterToId_
+  commentId: Overload:NetCordAddons.Services.Models.BaseModal.AddParameterToId
+  fullName: NetCordAddons.Services.Models.BaseModal.AddParameterToId
+  nameWithType: BaseModal.AddParameterToId
+- uid: NetCordAddons.Services.Models.BaseModal.CustomId
+  name: CustomId
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_CustomId
+  commentId: P:NetCordAddons.Services.Models.BaseModal.CustomId
+  fullName: NetCordAddons.Services.Models.BaseModal.CustomId
+  nameWithType: BaseModal.CustomId
+- uid: NetCordAddons.Services.Models.BaseModal.CustomId*
+  name: CustomId
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_CustomId_
+  commentId: Overload:NetCordAddons.Services.Models.BaseModal.CustomId
+  fullName: NetCordAddons.Services.Models.BaseModal.CustomId
+  nameWithType: BaseModal.CustomId
+- uid: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable{NetCord.TextInput},System.Object)
+  name: Load(IEnumerable<TextInput>, object)
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_Load_System_Collections_Generic_IEnumerable_NetCord_TextInput__System_Object_
+  commentId: M:NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable{NetCord.TextInput},System.Object)
+  name.vb: Load(IEnumerable(Of TextInput), Object)
+  fullName: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable<NetCord.TextInput>, object)
+  fullName.vb: NetCordAddons.Services.Models.BaseModal.Load(System.Collections.Generic.IEnumerable(Of NetCord.TextInput), Object)
+  nameWithType: BaseModal.Load(IEnumerable<TextInput>, object)
+  nameWithType.vb: BaseModal.Load(IEnumerable(Of TextInput), Object)
+- uid: NetCordAddons.Services.Models.BaseModal.Load*
+  name: Load
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_Load_
+  commentId: Overload:NetCordAddons.Services.Models.BaseModal.Load
+  fullName: NetCordAddons.Services.Models.BaseModal.Load
+  nameWithType: BaseModal.Load
+- uid: NetCordAddons.Services.Models.BaseModal.Title
+  name: Title
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_Title
+  commentId: P:NetCordAddons.Services.Models.BaseModal.Title
+  fullName: NetCordAddons.Services.Models.BaseModal.Title
+  nameWithType: BaseModal.Title
+- uid: NetCordAddons.Services.Models.BaseModal.Title*
+  name: Title
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_Title_
+  commentId: Overload:NetCordAddons.Services.Models.BaseModal.Title
+  fullName: NetCordAddons.Services.Models.BaseModal.Title
+  nameWithType: BaseModal.Title
+- uid: NetCordAddons.Services.Models.BaseModal.ToModalProperties(System.Type)
+  name: ToModalProperties(Type)
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_ToModalProperties_System_Type_
+  commentId: M:NetCordAddons.Services.Models.BaseModal.ToModalProperties(System.Type)
+  fullName: NetCordAddons.Services.Models.BaseModal.ToModalProperties(System.Type)
+  nameWithType: BaseModal.ToModalProperties(Type)
+- uid: NetCordAddons.Services.Models.BaseModal.ToModalProperties*
+  name: ToModalProperties
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_ToModalProperties_
+  commentId: Overload:NetCordAddons.Services.Models.BaseModal.ToModalProperties
+  fullName: NetCordAddons.Services.Models.BaseModal.ToModalProperties
+  nameWithType: BaseModal.ToModalProperties
 - uid: NetCordAddons.Services.Models.BotCallback
   name: BotCallback
   href: documentation/NetCordAddons.Services.Models.BotCallback.html
@@ -1323,78 +978,174 @@ references:
   commentId: Overload:NetCordAddons.Services.Models.IClientSettings.Token
   fullName: NetCordAddons.Services.Models.IClientSettings.Token
   nameWithType: IClientSettings.Token
-- uid: NetCordAddons.Services.Models.Service
-  name: Service
-  href: documentation/NetCordAddons.Services.Models.Service.html
-  commentId: T:NetCordAddons.Services.Models.Service
-  fullName: NetCordAddons.Services.Models.Service
-  nameWithType: Service
-- uid: NetCordAddons.Services.Models.Service.#ctor(System.Type,System.Type,System.Object,System.String)
-  name: Service(Type, Type, object, string?)
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service__ctor_System_Type_System_Type_System_Object_System_String_
-  commentId: M:NetCordAddons.Services.Models.Service.#ctor(System.Type,System.Type,System.Object,System.String)
-  name.vb: New(Type, Type, Object, String)
-  fullName: NetCordAddons.Services.Models.Service.Service(System.Type, System.Type, object, string?)
-  fullName.vb: NetCordAddons.Services.Models.Service.New(System.Type, System.Type, Object, String)
-  nameWithType: Service.Service(Type, Type, object, string?)
-  nameWithType.vb: Service.New(Type, Type, Object, String)
-- uid: NetCordAddons.Services.Models.Service.#ctor*
-  name: Service
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service__ctor_
-  commentId: Overload:NetCordAddons.Services.Models.Service.#ctor
+- uid: NetCordAddons.Services.Models.MaxLengthAttribute
+  name: MaxLengthAttribute
+  href: documentation/NetCordAddons.Services.Models.MaxLengthAttribute.html
+  commentId: T:NetCordAddons.Services.Models.MaxLengthAttribute
+  fullName: NetCordAddons.Services.Models.MaxLengthAttribute
+  nameWithType: MaxLengthAttribute
+- uid: NetCordAddons.Services.Models.MaxLengthAttribute.#ctor(System.Nullable{System.Int32})
+  name: MaxLengthAttribute(int?)
+  href: documentation/NetCordAddons.Services.Models.MaxLengthAttribute.html#NetCordAddons_Services_Models_MaxLengthAttribute__ctor_System_Nullable_System_Int32__
+  commentId: M:NetCordAddons.Services.Models.MaxLengthAttribute.#ctor(System.Nullable{System.Int32})
+  name.vb: New(Integer?)
+  fullName: NetCordAddons.Services.Models.MaxLengthAttribute.MaxLengthAttribute(int?)
+  fullName.vb: NetCordAddons.Services.Models.MaxLengthAttribute.New(Integer?)
+  nameWithType: MaxLengthAttribute.MaxLengthAttribute(int?)
+  nameWithType.vb: MaxLengthAttribute.New(Integer?)
+- uid: NetCordAddons.Services.Models.MaxLengthAttribute.#ctor*
+  name: MaxLengthAttribute
+  href: documentation/NetCordAddons.Services.Models.MaxLengthAttribute.html#NetCordAddons_Services_Models_MaxLengthAttribute__ctor_
+  commentId: Overload:NetCordAddons.Services.Models.MaxLengthAttribute.#ctor
   name.vb: New
-  fullName: NetCordAddons.Services.Models.Service.Service
-  fullName.vb: NetCordAddons.Services.Models.Service.New
-  nameWithType: Service.Service
-  nameWithType.vb: Service.New
-- uid: NetCordAddons.Services.Models.Service.GenericType
-  name: GenericType
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_GenericType
-  commentId: P:NetCordAddons.Services.Models.Service.GenericType
-  fullName: NetCordAddons.Services.Models.Service.GenericType
-  nameWithType: Service.GenericType
-- uid: NetCordAddons.Services.Models.Service.GenericType*
-  name: GenericType
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_GenericType_
-  commentId: Overload:NetCordAddons.Services.Models.Service.GenericType
-  fullName: NetCordAddons.Services.Models.Service.GenericType
-  nameWithType: Service.GenericType
-- uid: NetCordAddons.Services.Models.Service.InteractionName
-  name: InteractionName
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_InteractionName
-  commentId: P:NetCordAddons.Services.Models.Service.InteractionName
-  fullName: NetCordAddons.Services.Models.Service.InteractionName
-  nameWithType: Service.InteractionName
-- uid: NetCordAddons.Services.Models.Service.InteractionName*
-  name: InteractionName
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_InteractionName_
-  commentId: Overload:NetCordAddons.Services.Models.Service.InteractionName
-  fullName: NetCordAddons.Services.Models.Service.InteractionName
-  nameWithType: Service.InteractionName
-- uid: NetCordAddons.Services.Models.Service.ServiceInstance
-  name: ServiceInstance
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_ServiceInstance
-  commentId: P:NetCordAddons.Services.Models.Service.ServiceInstance
-  fullName: NetCordAddons.Services.Models.Service.ServiceInstance
-  nameWithType: Service.ServiceInstance
-- uid: NetCordAddons.Services.Models.Service.ServiceInstance*
-  name: ServiceInstance
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_ServiceInstance_
-  commentId: Overload:NetCordAddons.Services.Models.Service.ServiceInstance
-  fullName: NetCordAddons.Services.Models.Service.ServiceInstance
-  nameWithType: Service.ServiceInstance
-- uid: NetCordAddons.Services.Models.Service.Type
-  name: Type
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_Type
-  commentId: P:NetCordAddons.Services.Models.Service.Type
-  fullName: NetCordAddons.Services.Models.Service.Type
-  nameWithType: Service.Type
-- uid: NetCordAddons.Services.Models.Service.Type*
-  name: Type
-  href: documentation/NetCordAddons.Services.Models.Service.html#NetCordAddons_Services_Models_Service_Type_
-  commentId: Overload:NetCordAddons.Services.Models.Service.Type
-  fullName: NetCordAddons.Services.Models.Service.Type
-  nameWithType: Service.Type
+  fullName: NetCordAddons.Services.Models.MaxLengthAttribute.MaxLengthAttribute
+  fullName.vb: NetCordAddons.Services.Models.MaxLengthAttribute.New
+  nameWithType: MaxLengthAttribute.MaxLengthAttribute
+  nameWithType.vb: MaxLengthAttribute.New
+- uid: NetCordAddons.Services.Models.MaxLengthAttribute.Max
+  name: Max
+  href: documentation/NetCordAddons.Services.Models.MaxLengthAttribute.html#NetCordAddons_Services_Models_MaxLengthAttribute_Max
+  commentId: P:NetCordAddons.Services.Models.MaxLengthAttribute.Max
+  fullName: NetCordAddons.Services.Models.MaxLengthAttribute.Max
+  nameWithType: MaxLengthAttribute.Max
+- uid: NetCordAddons.Services.Models.MaxLengthAttribute.Max*
+  name: Max
+  href: documentation/NetCordAddons.Services.Models.MaxLengthAttribute.html#NetCordAddons_Services_Models_MaxLengthAttribute_Max_
+  commentId: Overload:NetCordAddons.Services.Models.MaxLengthAttribute.Max
+  fullName: NetCordAddons.Services.Models.MaxLengthAttribute.Max
+  nameWithType: MaxLengthAttribute.Max
+- uid: NetCordAddons.Services.Models.MinLengthAttribute
+  name: MinLengthAttribute
+  href: documentation/NetCordAddons.Services.Models.MinLengthAttribute.html
+  commentId: T:NetCordAddons.Services.Models.MinLengthAttribute
+  fullName: NetCordAddons.Services.Models.MinLengthAttribute
+  nameWithType: MinLengthAttribute
+- uid: NetCordAddons.Services.Models.MinLengthAttribute.#ctor(System.Nullable{System.Int32})
+  name: MinLengthAttribute(int?)
+  href: documentation/NetCordAddons.Services.Models.MinLengthAttribute.html#NetCordAddons_Services_Models_MinLengthAttribute__ctor_System_Nullable_System_Int32__
+  commentId: M:NetCordAddons.Services.Models.MinLengthAttribute.#ctor(System.Nullable{System.Int32})
+  name.vb: New(Integer?)
+  fullName: NetCordAddons.Services.Models.MinLengthAttribute.MinLengthAttribute(int?)
+  fullName.vb: NetCordAddons.Services.Models.MinLengthAttribute.New(Integer?)
+  nameWithType: MinLengthAttribute.MinLengthAttribute(int?)
+  nameWithType.vb: MinLengthAttribute.New(Integer?)
+- uid: NetCordAddons.Services.Models.MinLengthAttribute.#ctor*
+  name: MinLengthAttribute
+  href: documentation/NetCordAddons.Services.Models.MinLengthAttribute.html#NetCordAddons_Services_Models_MinLengthAttribute__ctor_
+  commentId: Overload:NetCordAddons.Services.Models.MinLengthAttribute.#ctor
+  name.vb: New
+  fullName: NetCordAddons.Services.Models.MinLengthAttribute.MinLengthAttribute
+  fullName.vb: NetCordAddons.Services.Models.MinLengthAttribute.New
+  nameWithType: MinLengthAttribute.MinLengthAttribute
+  nameWithType.vb: MinLengthAttribute.New
+- uid: NetCordAddons.Services.Models.MinLengthAttribute.Min
+  name: Min
+  href: documentation/NetCordAddons.Services.Models.MinLengthAttribute.html#NetCordAddons_Services_Models_MinLengthAttribute_Min
+  commentId: P:NetCordAddons.Services.Models.MinLengthAttribute.Min
+  fullName: NetCordAddons.Services.Models.MinLengthAttribute.Min
+  nameWithType: MinLengthAttribute.Min
+- uid: NetCordAddons.Services.Models.MinLengthAttribute.Min*
+  name: Min
+  href: documentation/NetCordAddons.Services.Models.MinLengthAttribute.html#NetCordAddons_Services_Models_MinLengthAttribute_Min_
+  commentId: Overload:NetCordAddons.Services.Models.MinLengthAttribute.Min
+  fullName: NetCordAddons.Services.Models.MinLengthAttribute.Min
+  nameWithType: MinLengthAttribute.Min
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute
+  name: ModalPropertyAttribute
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html
+  commentId: T:NetCordAddons.Services.Models.ModalPropertyAttribute
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute
+  nameWithType: ModalPropertyAttribute
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.#ctor(System.String,NetCord.Rest.TextInputStyle)
+  name: ModalPropertyAttribute(string, TextInputStyle)
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute__ctor_System_String_NetCord_Rest_TextInputStyle_
+  commentId: M:NetCordAddons.Services.Models.ModalPropertyAttribute.#ctor(System.String,NetCord.Rest.TextInputStyle)
+  name.vb: New(String, TextInputStyle)
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.ModalPropertyAttribute(string, NetCord.Rest.TextInputStyle)
+  fullName.vb: NetCordAddons.Services.Models.ModalPropertyAttribute.New(String, NetCord.Rest.TextInputStyle)
+  nameWithType: ModalPropertyAttribute.ModalPropertyAttribute(string, TextInputStyle)
+  nameWithType.vb: ModalPropertyAttribute.New(String, TextInputStyle)
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.#ctor*
+  name: ModalPropertyAttribute
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute__ctor_
+  commentId: Overload:NetCordAddons.Services.Models.ModalPropertyAttribute.#ctor
+  name.vb: New
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.ModalPropertyAttribute
+  fullName.vb: NetCordAddons.Services.Models.ModalPropertyAttribute.New
+  nameWithType: ModalPropertyAttribute.ModalPropertyAttribute
+  nameWithType.vb: ModalPropertyAttribute.New
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.Label
+  name: Label
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_Label
+  commentId: P:NetCordAddons.Services.Models.ModalPropertyAttribute.Label
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.Label
+  nameWithType: ModalPropertyAttribute.Label
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.Label*
+  name: Label
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_Label_
+  commentId: Overload:NetCordAddons.Services.Models.ModalPropertyAttribute.Label
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.Label
+  nameWithType: ModalPropertyAttribute.Label
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.Placeholder
+  name: Placeholder
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_Placeholder
+  commentId: P:NetCordAddons.Services.Models.ModalPropertyAttribute.Placeholder
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.Placeholder
+  nameWithType: ModalPropertyAttribute.Placeholder
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.Placeholder*
+  name: Placeholder
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_Placeholder_
+  commentId: Overload:NetCordAddons.Services.Models.ModalPropertyAttribute.Placeholder
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.Placeholder
+  nameWithType: ModalPropertyAttribute.Placeholder
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.TextInputStyle
+  name: TextInputStyle
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_TextInputStyle
+  commentId: P:NetCordAddons.Services.Models.ModalPropertyAttribute.TextInputStyle
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.TextInputStyle
+  nameWithType: ModalPropertyAttribute.TextInputStyle
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.TextInputStyle*
+  name: TextInputStyle
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_TextInputStyle_
+  commentId: Overload:NetCordAddons.Services.Models.ModalPropertyAttribute.TextInputStyle
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.TextInputStyle
+  nameWithType: ModalPropertyAttribute.TextInputStyle
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.Value
+  name: Value
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_Value
+  commentId: P:NetCordAddons.Services.Models.ModalPropertyAttribute.Value
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.Value
+  nameWithType: ModalPropertyAttribute.Value
+- uid: NetCordAddons.Services.Models.ModalPropertyAttribute.Value*
+  name: Value
+  href: documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html#NetCordAddons_Services_Models_ModalPropertyAttribute_Value_
+  commentId: Overload:NetCordAddons.Services.Models.ModalPropertyAttribute.Value
+  fullName: NetCordAddons.Services.Models.ModalPropertyAttribute.Value
+  nameWithType: ModalPropertyAttribute.Value
+- uid: NetCordAddons.Services.Models.RequiredAttribute
+  name: RequiredAttribute
+  href: documentation/NetCordAddons.Services.Models.RequiredAttribute.html
+  commentId: T:NetCordAddons.Services.Models.RequiredAttribute
+  fullName: NetCordAddons.Services.Models.RequiredAttribute
+  nameWithType: RequiredAttribute
+- uid: NetCordAddons.Services.Models.RequiredAttribute.#ctor
+  name: RequiredAttribute()
+  href: documentation/NetCordAddons.Services.Models.RequiredAttribute.html#NetCordAddons_Services_Models_RequiredAttribute__ctor
+  commentId: M:NetCordAddons.Services.Models.RequiredAttribute.#ctor
+  name.vb: New()
+  fullName: NetCordAddons.Services.Models.RequiredAttribute.RequiredAttribute()
+  fullName.vb: NetCordAddons.Services.Models.RequiredAttribute.New()
+  nameWithType: RequiredAttribute.RequiredAttribute()
+  nameWithType.vb: RequiredAttribute.New()
+- uid: NetCordAddons.Services.Models.RequiredAttribute.#ctor*
+  name: RequiredAttribute
+  href: documentation/NetCordAddons.Services.Models.RequiredAttribute.html#NetCordAddons_Services_Models_RequiredAttribute__ctor_
+  commentId: Overload:NetCordAddons.Services.Models.RequiredAttribute.#ctor
+  name.vb: New
+  fullName: NetCordAddons.Services.Models.RequiredAttribute.RequiredAttribute
+  fullName.vb: NetCordAddons.Services.Models.RequiredAttribute.New
+  nameWithType: RequiredAttribute.RequiredAttribute
+  nameWithType.vb: RequiredAttribute.New
 - uid: NetCordAddons.Services.Models.ShardedGatewayClientSettings
   name: ShardedGatewayClientSettings
   href: documentation/NetCordAddons.Services.Models.ShardedGatewayClientSettings.html
@@ -1443,96 +1194,3 @@ references:
   commentId: Overload:NetCordAddons.Services.Models.ShardedGatewayClientSettings.Token
   fullName: NetCordAddons.Services.Models.ShardedGatewayClientSettings.Token
   nameWithType: ShardedGatewayClientSettings.Token
-- uid: NetCordAddons.Services.ShardedGatewayClientBotService
-  name: ShardedGatewayClientBotService
-  href: documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html
-  commentId: T:NetCordAddons.Services.ShardedGatewayClientBotService
-  fullName: NetCordAddons.Services.ShardedGatewayClientBotService
-  nameWithType: ShardedGatewayClientBotService
-- uid: NetCordAddons.Services.ShardedGatewayClientBotService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.Services.ClientBotService)
-  name: ShardedGatewayClientBotService(ShardedGatewayClient, ClientBotService)
-  href: documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html#NetCordAddons_Services_ShardedGatewayClientBotService__ctor_NetCord_Gateway_ShardedGatewayClient_NetCordAddons_Services_ClientBotService_
-  commentId: M:NetCordAddons.Services.ShardedGatewayClientBotService.#ctor(NetCord.Gateway.ShardedGatewayClient,NetCordAddons.Services.ClientBotService)
-  name.vb: New(ShardedGatewayClient, ClientBotService)
-  fullName: NetCordAddons.Services.ShardedGatewayClientBotService.ShardedGatewayClientBotService(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.Services.ClientBotService)
-  fullName.vb: NetCordAddons.Services.ShardedGatewayClientBotService.New(NetCord.Gateway.ShardedGatewayClient, NetCordAddons.Services.ClientBotService)
-  nameWithType: ShardedGatewayClientBotService.ShardedGatewayClientBotService(ShardedGatewayClient, ClientBotService)
-  nameWithType.vb: ShardedGatewayClientBotService.New(ShardedGatewayClient, ClientBotService)
-- uid: NetCordAddons.Services.ShardedGatewayClientBotService.#ctor*
-  name: ShardedGatewayClientBotService
-  href: documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html#NetCordAddons_Services_ShardedGatewayClientBotService__ctor_
-  commentId: Overload:NetCordAddons.Services.ShardedGatewayClientBotService.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.ShardedGatewayClientBotService.ShardedGatewayClientBotService
-  fullName.vb: NetCordAddons.Services.ShardedGatewayClientBotService.New
-  nameWithType: ShardedGatewayClientBotService.ShardedGatewayClientBotService
-  nameWithType.vb: ShardedGatewayClientBotService.New
-- uid: NetCordAddons.Services.ShardedGatewayClientBotService.StartAsync(System.Threading.CancellationToken)
-  name: StartAsync(CancellationToken)
-  href: documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html#NetCordAddons_Services_ShardedGatewayClientBotService_StartAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.Services.ShardedGatewayClientBotService.StartAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.Services.ShardedGatewayClientBotService.StartAsync(System.Threading.CancellationToken)
-  nameWithType: ShardedGatewayClientBotService.StartAsync(CancellationToken)
-- uid: NetCordAddons.Services.ShardedGatewayClientBotService.StartAsync*
-  name: StartAsync
-  href: documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html#NetCordAddons_Services_ShardedGatewayClientBotService_StartAsync_
-  commentId: Overload:NetCordAddons.Services.ShardedGatewayClientBotService.StartAsync
-  fullName: NetCordAddons.Services.ShardedGatewayClientBotService.StartAsync
-  nameWithType: ShardedGatewayClientBotService.StartAsync
-- uid: NetCordAddons.Services.ShardedGatewayClientBotService.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html#NetCordAddons_Services_ShardedGatewayClientBotService_StopAsync_System_Threading_CancellationToken_
-  commentId: M:NetCordAddons.Services.ShardedGatewayClientBotService.StopAsync(System.Threading.CancellationToken)
-  fullName: NetCordAddons.Services.ShardedGatewayClientBotService.StopAsync(System.Threading.CancellationToken)
-  nameWithType: ShardedGatewayClientBotService.StopAsync(CancellationToken)
-- uid: NetCordAddons.Services.ShardedGatewayClientBotService.StopAsync*
-  name: StopAsync
-  href: documentation/NetCordAddons.Services.ShardedGatewayClientBotService.html#NetCordAddons_Services_ShardedGatewayClientBotService_StopAsync_
-  commentId: Overload:NetCordAddons.Services.ShardedGatewayClientBotService.StopAsync
-  fullName: NetCordAddons.Services.ShardedGatewayClientBotService.StopAsync
-  nameWithType: ShardedGatewayClientBotService.StopAsync
-- uid: NetCordAddons.Services.Validators
-  name: NetCordAddons.Services.Validators
-  href: documentation/NetCordAddons.Services.Validators.html
-  commentId: N:NetCordAddons.Services.Validators
-  fullName: NetCordAddons.Services.Validators
-  nameWithType: NetCordAddons.Services.Validators
-- uid: NetCordAddons.Services.Validators.ServiceValidator
-  name: ServiceValidator
-  href: documentation/NetCordAddons.Services.Validators.ServiceValidator.html
-  commentId: T:NetCordAddons.Services.Validators.ServiceValidator
-  fullName: NetCordAddons.Services.Validators.ServiceValidator
-  nameWithType: ServiceValidator
-- uid: NetCordAddons.Services.Validators.ServiceValidator.#ctor
-  name: ServiceValidator()
-  href: documentation/NetCordAddons.Services.Validators.ServiceValidator.html#NetCordAddons_Services_Validators_ServiceValidator__ctor
-  commentId: M:NetCordAddons.Services.Validators.ServiceValidator.#ctor
-  name.vb: New()
-  fullName: NetCordAddons.Services.Validators.ServiceValidator.ServiceValidator()
-  fullName.vb: NetCordAddons.Services.Validators.ServiceValidator.New()
-  nameWithType: ServiceValidator.ServiceValidator()
-  nameWithType.vb: ServiceValidator.New()
-- uid: NetCordAddons.Services.Validators.ServiceValidator.#ctor*
-  name: ServiceValidator
-  href: documentation/NetCordAddons.Services.Validators.ServiceValidator.html#NetCordAddons_Services_Validators_ServiceValidator__ctor_
-  commentId: Overload:NetCordAddons.Services.Validators.ServiceValidator.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.Validators.ServiceValidator.ServiceValidator
-  fullName.vb: NetCordAddons.Services.Validators.ServiceValidator.New
-  nameWithType: ServiceValidator.ServiceValidator
-  nameWithType.vb: ServiceValidator.New
-- uid: NetCordAddons.Services.Validators.ServiceValidator.ShouldBeAddedAsModules(System.Type,System.Boolean)
-  name: ShouldBeAddedAsModules(Type, bool)
-  href: documentation/NetCordAddons.Services.Validators.ServiceValidator.html#NetCordAddons_Services_Validators_ServiceValidator_ShouldBeAddedAsModules_System_Type_System_Boolean_
-  commentId: M:NetCordAddons.Services.Validators.ServiceValidator.ShouldBeAddedAsModules(System.Type,System.Boolean)
-  name.vb: ShouldBeAddedAsModules(Type, Boolean)
-  fullName: NetCordAddons.Services.Validators.ServiceValidator.ShouldBeAddedAsModules(System.Type, bool)
-  fullName.vb: NetCordAddons.Services.Validators.ServiceValidator.ShouldBeAddedAsModules(System.Type, Boolean)
-  nameWithType: ServiceValidator.ShouldBeAddedAsModules(Type, bool)
-  nameWithType.vb: ServiceValidator.ShouldBeAddedAsModules(Type, Boolean)
-- uid: NetCordAddons.Services.Validators.ServiceValidator.ShouldBeAddedAsModules*
-  name: ShouldBeAddedAsModules
-  href: documentation/NetCordAddons.Services.Validators.ServiceValidator.html#NetCordAddons_Services_Validators_ServiceValidator_ShouldBeAddedAsModules_
-  commentId: Overload:NetCordAddons.Services.Validators.ServiceValidator.ShouldBeAddedAsModules
-  fullName: NetCordAddons.Services.Validators.ServiceValidator.ShouldBeAddedAsModules
-  nameWithType: ServiceValidator.ShouldBeAddedAsModules

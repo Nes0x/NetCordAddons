@@ -29,6 +29,7 @@
       <meta name="loc:themeAuto" content="Auto">
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
 
   <script type="module" src="./../public/docfx.min.js"></script>
@@ -282,8 +283,8 @@
 
   <a id="NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_" data-uid="NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient*"></a>
 
-  <h3 id="NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__" data-uid="NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})">
-  AddGatewayClient(IHostBuilder, Func&lt;IServiceProvider, GatewayClientSettings&gt;, BotCallback?, Func&lt;IServiceProvider, GlobalErrorHandling&gt;?)
+  <h3 id="NetCordAddons_Services_Extensions_HostingExtensions_AddGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_GatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_IErrorHandler__" data-uid="NetCordAddons.Services.Extensions.HostingExtensions.AddGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.GatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.IErrorHandler})">
+  AddGatewayClient(IHostBuilder, Func&lt;IServiceProvider, GatewayClientSettings&gt;, BotCallback?, Func&lt;IServiceProvider, IErrorHandler&gt;?)
   
   </h3>
 
@@ -291,7 +292,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, GatewayClientSettings&gt; settingsFactory, BotCallback? botCallback = null, Func&lt;IServiceProvider, GlobalErrorHandling&gt;? globalErrorHandling = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, GatewayClientSettings&gt; settingsFactory, BotCallback? botCallback = null, Func&lt;IServiceProvider, IErrorHandler&gt;? errorHandler = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -302,7 +303,7 @@
     <dd></dd>
     <dt><code>botCallback</code> <a class="xref" href="NetCordAddons.Services.Models.BotCallback.html">BotCallback</a></dt>
     <dd></dd>
-    <dt><code>globalErrorHandling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html">GlobalErrorHandling</a>&gt;</dt>
+    <dt><code>errorHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="NetCordAddons.Services.ErrorHandling.IErrorHandler.html">IErrorHandler</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -367,8 +368,8 @@
 
   <a id="NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_" data-uid="NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient*"></a>
 
-  <h3 id="NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_ShardedGatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_GlobalErrorHandling__" data-uid="NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.GlobalErrorHandling})">
-  AddShardedGatewayClient(IHostBuilder, Func&lt;IServiceProvider, ShardedGatewayClientSettings&gt;, BotCallback?, Func&lt;IServiceProvider, GlobalErrorHandling&gt;?)
+  <h3 id="NetCordAddons_Services_Extensions_HostingExtensions_AddShardedGatewayClient_Microsoft_Extensions_Hosting_IHostBuilder_System_Func_System_IServiceProvider_NetCordAddons_Services_Models_ShardedGatewayClientSettings__NetCordAddons_Services_Models_BotCallback_System_Func_System_IServiceProvider_NetCordAddons_Services_ErrorHandling_IErrorHandler__" data-uid="NetCordAddons.Services.Extensions.HostingExtensions.AddShardedGatewayClient(Microsoft.Extensions.Hosting.IHostBuilder,System.Func{System.IServiceProvider,NetCordAddons.Services.Models.ShardedGatewayClientSettings},NetCordAddons.Services.Models.BotCallback,System.Func{System.IServiceProvider,NetCordAddons.Services.ErrorHandling.IErrorHandler})">
+  AddShardedGatewayClient(IHostBuilder, Func&lt;IServiceProvider, ShardedGatewayClientSettings&gt;, BotCallback?, Func&lt;IServiceProvider, IErrorHandler&gt;?)
   
   </h3>
 
@@ -376,7 +377,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IHostBuilder AddShardedGatewayClient(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, ShardedGatewayClientSettings&gt; settingsFactory, BotCallback? botCallback = null, Func&lt;IServiceProvider, GlobalErrorHandling&gt;? globalErrorHandling = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IHostBuilder AddShardedGatewayClient(this IHostBuilder hostBuilder, Func&lt;IServiceProvider, ShardedGatewayClientSettings&gt; settingsFactory, BotCallback? botCallback = null, Func&lt;IServiceProvider, IErrorHandler&gt;? globalErrorHandling = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -387,7 +388,7 @@
     <dd></dd>
     <dt><code>botCallback</code> <a class="xref" href="NetCordAddons.Services.Models.BotCallback.html">BotCallback</a></dt>
     <dd></dd>
-    <dt><code>globalErrorHandling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="NetCordAddons.Services.ErrorHandling.GlobalErrorHandling.html">GlobalErrorHandling</a>&gt;</dt>
+    <dt><code>globalErrorHandling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="NetCordAddons.Services.ErrorHandling.IErrorHandler.html">IErrorHandler</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -422,7 +423,7 @@
     </main>
 
 
-    <footer class="border-top">
+    <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
           <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
