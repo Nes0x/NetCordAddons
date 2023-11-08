@@ -769,12 +769,12 @@ references:
   commentId: Overload:NetCordAddons.Services.Models.BaseModal.Title
   fullName: NetCordAddons.Services.Models.BaseModal.Title
   nameWithType: BaseModal.Title
-- uid: NetCordAddons.Services.Models.BaseModal.ToModalProperties(System.Type)
-  name: ToModalProperties(Type)
-  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_ToModalProperties_System_Type_
-  commentId: M:NetCordAddons.Services.Models.BaseModal.ToModalProperties(System.Type)
-  fullName: NetCordAddons.Services.Models.BaseModal.ToModalProperties(System.Type)
-  nameWithType: BaseModal.ToModalProperties(Type)
+- uid: NetCordAddons.Services.Models.BaseModal.ToModalProperties
+  name: ToModalProperties()
+  href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_ToModalProperties
+  commentId: M:NetCordAddons.Services.Models.BaseModal.ToModalProperties
+  fullName: NetCordAddons.Services.Models.BaseModal.ToModalProperties()
+  nameWithType: BaseModal.ToModalProperties()
 - uid: NetCordAddons.Services.Models.BaseModal.ToModalProperties*
   name: ToModalProperties
   href: documentation/NetCordAddons.Services.Models.BaseModal.html#NetCordAddons_Services_Models_BaseModal_ToModalProperties_
