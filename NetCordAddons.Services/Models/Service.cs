@@ -1,6 +1,6 @@
 ﻿namespace NetCordAddons.Services.Models;
 
-public class Service
+internal class Service
 {
     public Service(Type type, Type genericType, object serviceInstance, string? interactionName = null)
     {

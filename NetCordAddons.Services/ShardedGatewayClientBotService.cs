@@ -3,7 +3,7 @@ using NetCord.Gateway;
 
 namespace NetCordAddons.Services;
 
-public class ShardedGatewayClientBotService : IHostedService
+internal class ShardedGatewayClientBotService : IHostedService
 {
     private readonly ShardedGatewayClient _client;
     private readonly ClientBotService _clientBot;

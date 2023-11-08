@@ -18,14 +18,14 @@ public static class HostingExtensions
 
     public static IHostBuilder AddGatewayClient(this IHostBuilder hostBuilder,
         Func<IServiceProvider, GatewayClientSettings> settingsFactory, BotCallback? botCallback = null,
-        Func<IServiceProvider, GlobalErrorHandling>? globalErrorHandling = null)
+        Func<IServiceProvider, IErrorHandler>? errorHandler = null)
     {
         if (_isClientAdded) return hostBuilder;
         _isClientAdded = !_isClientAdded;
         hostBuilder.ConfigureServices(services =>
         {
             var settings = settingsFactory(services.BuildServiceProvider());
-            services.AddClientServices(botCallback, globalErrorHandling);
+            services.AddClientServices(botCallback, errorHandler);
             services.AddSingleton<GatewayClient>(_ =>
                 new GatewayClient(settings.Token, settings.GatewayClientConfiguration));
             services.AddSingleton<IInteractionCreator, GatewayInteractionCreator>();
@@ -37,7 +37,7 @@ public static class HostingExtensions
 
     public static IHostBuilder AddShardedGatewayClient(this IHostBuilder hostBuilder,
         Func<IServiceProvider, ShardedGatewayClientSettings> settingsFactory,
-        BotCallback? botCallback = null, Func<IServiceProvider, GlobalErrorHandling>? globalErrorHandling = null)
+        BotCallback? botCallback = null, Func<IServiceProvider, IErrorHandler>? globalErrorHandling = null)
     {
         if (_isClientAdded) return hostBuilder;
         _isClientAdded = !_isClientAdded;
@@ -58,6 +58,7 @@ public static class HostingExtensions
         Func<IServiceProvider, ApplicationCommandServiceConfiguration<TContext>>? configurationFactory = null)
         where TContext : IApplicationCommandContext
     {
+        if (!_isClientAdded) return hostBuilder;
         hostBuilder
             .TryAddRequiredServices()
             .ConfigureServices(
@@ -79,6 +80,7 @@ public static class HostingExtensions
         where TContext : IApplicationCommandContext
         where TAutocompleteContext : IAutocompleteInteractionContext
     {
+        if (!_isClientAdded) return hostBuilder;
         hostBuilder
             .TryAddRequiredServices()
             .ConfigureServices(
@@ -99,6 +101,7 @@ public static class HostingExtensions
         Func<IServiceProvider, InteractionServiceConfiguration<TContext>>? configurationFactory = null)
         where TContext : InteractionContext
     {
+        if (!_isClientAdded) return hostBuilder;
         hostBuilder
             .TryAddRequiredServices()
             .ConfigureServices(
@@ -117,6 +120,7 @@ public static class HostingExtensions
         Func<IServiceProvider, CommandSettings<TContext>> configurationFactory)
         where TContext : ICommandContext
     {
+        if (!_isClientAdded) return hostBuilder;
         hostBuilder
             .TryAddRequiredServices()
             .ConfigureServices(
@@ -137,20 +141,20 @@ public static class HostingExtensions
                 services =>
                 {
                     services.TryAddSingleton<InteractionCreator>();
-                    services.TryAddSingleton<ServiceValidator>();
+                    services.TryAddSingleton<IServiceValidator, ServiceValidator>();
                 }
             );
         return hostBuilder;
     }
 
     private static IServiceCollection AddClientServices(this IServiceCollection services, BotCallback? botCallback,
-        Func<IServiceProvider, GlobalErrorHandling>? globalErrorHandlingFunc)
+        Func<IServiceProvider, IErrorHandler>? errorHandlerFunc)
     {
         botCallback ??= new BotCallback();
         services.AddSingleton<IServiceCollection>(_ => services);
         services.AddSingleton<BotCallback>(_ => botCallback);
-        globalErrorHandlingFunc ??= provider => new GlobalErrorHandling(provider);
-        services.AddSingleton(globalErrorHandlingFunc);
+        errorHandlerFunc ??= provider => new BaseErrorHandler(provider);
+        services.AddSingleton(errorHandlerFunc);
         services.AddSingleton<ClientBotService>();
         return services;
     }

@@ -8,7 +8,6 @@ using NetCord.Services.Commands;
 using NetCord.Services.Interactions;
 using NetCordAddons.EventHandler.Extensions;
 using NetCordAddons.Examples.Services;
-using NetCordAddons.Services;
 using NetCordAddons.Services.ErrorHandling;
 using NetCordAddons.Services.Extensions;
 using NetCordAddons.Services.Models;
@@ -36,7 +35,7 @@ host
                 Console.WriteLine("Working");
                 return Task.CompletedTask;
             }
-        }, provider => new GlobalErrorHandling(provider, embedProperties: new[]
+        }, provider => new BaseErrorHandler(provider, embedsProperties: new[]
         {
             new EmbedProperties().WithColor(new Color(255, 0, 0)).WithTitle("Error!")
                 .WithDescription("Exception was thrown: %exception%")

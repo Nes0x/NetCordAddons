@@ -5,7 +5,7 @@ using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Services.Validators;
 
-public class ServiceValidator
+internal class ServiceValidator : IServiceValidator
 {
     public bool ShouldBeAddedAsModules(Type serviceType, bool areCommands)
     {

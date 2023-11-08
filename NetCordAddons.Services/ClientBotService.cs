@@ -9,19 +9,18 @@ using NetCordAddons.Services.Validators;
 
 namespace NetCordAddons.Services;
 
-public class ClientBotService
+internal class ClientBotService
 {
     private readonly bool _areCommands;
     private readonly BotCallback _botCallback;
     private readonly IServiceCollection _collection;
-
     private readonly IInteractionCreator _interactionCreator;
     private readonly IServiceProvider _provider;
-    private readonly ServiceValidator _serviceValidator;
+    private readonly IServiceValidator _serviceValidator;
 
 
     public ClientBotService(IServiceCollection collection, IServiceProvider provider, BotCallback botCallback,
-        IInteractionCreator interactionCreator, ServiceValidator serviceValidator)
+        IInteractionCreator interactionCreator, IServiceValidator serviceValidator)
     {
         _collection = collection;
         _provider = provider;
@@ -38,15 +37,16 @@ public class ClientBotService
         ConfigureBot();
         if (_botCallback.BeforeBotStart is not null) await _botCallback.BeforeBotStart.Invoke(_provider);
 
-        if (client is GatewayClient gatewayClient)
+        switch (client)
         {
-            await gatewayClient.StartAsync();
-            await RunBot(gatewayClient);
-        }
-        else if (client is ShardedGatewayClient shardedClient)
-        {
-            await shardedClient.StartAsync();
-            await RunBot(shardedClient[0]);
+            case GatewayClient gatewayClient:
+                await gatewayClient.StartAsync();
+                await RunBot(gatewayClient);
+                break;
+            case ShardedGatewayClient shardedClient:
+                await shardedClient.StartAsync();
+                await RunBot(shardedClient[0]);
+                break;
         }
 
         if (_botCallback.AfterBotStart is not null) await _botCallback.AfterBotStart.Invoke(_provider);
@@ -56,9 +56,16 @@ public class ClientBotService
     public async Task StopAsync(object client)
     {
         if (_botCallback.BeforeBotClose is not null) await _botCallback.BeforeBotClose.Invoke(_provider);
-        if (client is GatewayClient gatewayClient)
-            await gatewayClient.CloseAsync();
-        else if (client is ShardedGatewayClient shardedClient) await shardedClient.CloseAsync();
+        switch (client)
+        {
+            case GatewayClient gatewayClient:
+                await gatewayClient.CloseAsync();
+                break;
+            case ShardedGatewayClient shardedClient:
+                await shardedClient.CloseAsync();
+                break;
+        }
+
         if (_botCallback.AfterBotClose is not null) await _botCallback.AfterBotClose.Invoke(_provider);
     }
 

@@ -3,7 +3,7 @@ using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Services.Creators;
 
-public class GatewayInteractionCreator : IInteractionCreator
+internal class GatewayInteractionCreator : IInteractionCreator
 {
     private readonly GatewayClient _client;
     private readonly InteractionCreator _interactionCreator;

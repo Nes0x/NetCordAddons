@@ -1,24 +1,18 @@
 ﻿using NetCord;
 using NetCord.Rest;
 using NetCord.Services.ApplicationCommands;
+using NetCordAddons.Examples.Modals;
 
 namespace NetCordAddons.Examples.Modules;
 
 public class VerificationSlashCommand : ApplicationCommandModule<SlashCommandContext>
 {
-    [SlashCommand("verification", "Send message.", DMPermission = false,
+    [SlashCommand("verification", "Send a message.", DMPermission = false,
         DefaultGuildUserPermissions = Permissions.Administrator)]
     public async Task HandleAsync()
     {
-        await Context.Channel.SendMessageAsync(new MessageProperties()
-            .WithComponents(new[]
-            {
-                new ActionRowProperties(new[]
-                {
-                    new ActionButtonProperties("verification", "Verification", ButtonStyle.Success)
-                })
-            }));
-        await RespondAsync(InteractionCallback.ChannelMessageWithSource(
-            new InteractionMessageProperties().WithContent("Success").WithFlags(MessageFlags.Ephemeral)));
+        var exampleModal = new ExampleModal();
+        // exampleModal.AddParameterToId(29482949249249);
+        await RespondAsync(InteractionCallback.Modal(exampleModal.ToModalProperties(exampleModal.GetType())));
     }
 }

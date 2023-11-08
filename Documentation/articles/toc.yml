@@ -8,6 +8,10 @@
       href: services/bot_callback.md
     - name: Service provider
       href: services/service_provider.md
+    - name: Error handler
+      href: services/error_handler.md
+    - name: Modal Handler
+      href: services/modal_handler.md     
 - name: Event Handler
   items:
     - name: First steps

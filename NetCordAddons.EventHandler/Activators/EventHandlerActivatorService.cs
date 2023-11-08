@@ -4,7 +4,7 @@ using NetCordAddons.EventHandler.Common;
 
 namespace NetCordAddons.EventHandler.Activators;
 
-public class EventHandlerActivatorService
+internal class EventHandlerActivatorService
 {
     private readonly IEnumerable<EventModule> _eventModules;
     private readonly ILogger<EventHandlerActivatorService> _logger;
@@ -53,9 +53,10 @@ public class EventHandlerActivatorService
 
     private void ModifyEventModules()
     {
+        var eventModuleType = typeof(EventModule);
         foreach (var eventModule in _eventModules)
         {
-            var events = eventModule.GetType().GetMethods()
+            var events = eventModuleType.GetMethods()
                 .Where(m => m.GetCustomAttributes(typeof(EventAttribute), false).Length > 0)
                 .Select(m => new Event
                     { MethodInfo = m, EventType = m.GetCustomAttribute<EventAttribute>()!.EventType })

@@ -3,7 +3,7 @@ using NetCord.Gateway;
 
 namespace NetCordAddons.EventHandler.Activators;
 
-public class GatewayClientEventHandlerActivatorService : IHostedService
+internal class GatewayClientEventHandlerActivatorService : IHostedService
 {
     private readonly GatewayClient _client;
     private readonly EventHandlerActivatorService _handlerActivator;

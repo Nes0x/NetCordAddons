@@ -5,15 +5,15 @@ using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Services.Creators;
 
-public class InteractionCreator
+internal class InteractionCreator
 {
-    private readonly GlobalErrorHandling _globalErrorHandling;
+    private readonly IErrorHandler _errorHandler;
     private readonly IServiceProvider _provider;
 
-    public InteractionCreator(IServiceProvider provider, GlobalErrorHandling globalErrorHandling)
+    public InteractionCreator(IServiceProvider provider, IErrorHandler errorHandler)
     {
         _provider = provider;
-        _globalErrorHandling = globalErrorHandling;
+        _errorHandler = errorHandler;
     }
 
     public async Task CreateTextCommandInteraction(Message message, string prefix, Service service, object client)
@@ -28,7 +28,8 @@ public class InteractionCreator
         }
         catch (Exception e)
         {
-            _globalErrorHandling.SendAndLogError(message, e);
+            _errorHandler.LogError(e.Message);
+            _errorHandler.SendError(message, e);
         }
     }
 
@@ -44,7 +45,8 @@ public class InteractionCreator
         }
         catch (Exception e)
         {
-            _globalErrorHandling.SendAndLogError(interaction, e);
+            _errorHandler.LogError(e.Message);
+            _errorHandler.SendError(interaction, e);
         }
     }
 }

@@ -3,7 +3,7 @@ using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Services.Creators;
 
-public class ShardedGatewayInteractionCreator : IInteractionCreator
+internal class ShardedGatewayInteractionCreator : IInteractionCreator
 {
     private readonly ShardedGatewayClient _client;
     private readonly InteractionCreator _interactionCreator;

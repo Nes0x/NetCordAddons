@@ -9,7 +9,7 @@ public class UserProfileCommand : ApplicationCommandModule<UserCommandContext>
     [UserCommand("Profile")]
     public async Task HandleAsync()
     {
-        await RespondAsync(InteractionCallback.ChannelMessageWithSource(
+        await RespondAsync(InteractionCallback.Message(
             new InteractionMessageProperties().WithContent("Your profile").WithFlags(MessageFlags.Ephemeral)));
     }
 }

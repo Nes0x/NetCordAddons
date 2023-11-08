@@ -15,18 +15,20 @@ public static class HostingExtensions
         var types = assembly.GetTypes();
         var targetType = typeof(EventModule);
 
-
         hostBuilder.ConfigureServices(services =>
         {
+            var gatewayClient = services.FirstOrDefault(s => s.ServiceType.IsAssignableTo(typeof(GatewayClient)));
+            var shardedGatewayClient =
+                services.FirstOrDefault(s => s.ServiceType.IsAssignableTo(typeof(ShardedGatewayClient)));
+            if (gatewayClient is null && shardedGatewayClient is null) return;
             foreach (var type in types)
                 if (type.IsAssignableTo(targetType) && !type.IsAbstract)
-                    services.AddScoped(targetType, type);
+                    services.AddSingleton(targetType, type);
             services.AddSingleton<EventHandlerActivatorService>();
 
-            if (services.FirstOrDefault(s => s.ServiceType.IsAssignableTo(typeof(GatewayClient))) is not null)
+            if (gatewayClient is not null)
                 services.AddHostedService<GatewayClientEventHandlerActivatorService>();
-            else if (services.FirstOrDefault(s => s.ServiceType.IsAssignableTo(typeof(ShardedGatewayClient))) is not
-                     null)
+            else if (shardedGatewayClient is not null)
                 services.AddHostedService<ShardedGatewayClientEventHandlerActivatorService>();
         });
 
