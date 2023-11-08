@@ -42,6 +42,7 @@ host
         }))
     .AddEventHandler()
     .AddInteraction<StringMenuInteractionContext>()
+    .AddInteraction<ModalSubmitInteractionContext>()
     .AddCommand<CommandContext>(_ => new CommandSettings<CommandContext>("!"))
     .AddApplicationCommand<SlashCommandContext>()
     .AddApplicationCommand<UserCommandContext>();

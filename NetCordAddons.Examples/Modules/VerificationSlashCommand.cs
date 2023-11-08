@@ -13,6 +13,6 @@ public class VerificationSlashCommand : ApplicationCommandModule<SlashCommandCon
     {
         var exampleModal = new ExampleModal();
         // exampleModal.AddParameterToId(29482949249249);
-        await RespondAsync(InteractionCallback.Modal(exampleModal.ToModalProperties(exampleModal.GetType())));
+        await RespondAsync(InteractionCallback.Modal(exampleModal.ToModalProperties()));
     }
 }

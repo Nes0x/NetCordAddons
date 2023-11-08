@@ -9,5 +9,6 @@ public class ExampleModal : BaseModal
     protected override string Title => "Example";
 
     [ModalProperty("Example", TextInputStyle.Short, Placeholder = "a")]
+    [Required]
     public string ExampleProperty { get; init; }
 }

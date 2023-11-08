@@ -12,10 +12,7 @@ public class ModalPropertyAttribute : Attribute
     }
 
     public string Label { get; init; }
-    public string Value { get; init; }
-    public TextInputStyle TextInputStyle { get; init; }
-    // public int? MinLength { get; init; }
-    // public int? MaxLength { get; init; }
-    // public bool? Required { get; init; }
+    public string? Value { get; init; }
     public string? Placeholder { get; init; }
+    public TextInputStyle TextInputStyle { get; init; }
 }

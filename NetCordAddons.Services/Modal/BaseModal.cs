@@ -15,9 +15,9 @@ public abstract class BaseModal
         CustomId += $":{obj}";
     }
 
-    public ModalProperties ToModalProperties(Type createdModalType)
+    public ModalProperties ToModalProperties()
     {
-        var properties = GetPropertiesWithModalPropertyAttribute(createdModalType)
+        var properties = GetPropertiesWithModalPropertyAttribute()
             .Select(property =>
             {
                 var modalProperty = property.GetCustomAttribute<ModalPropertyAttribute>()!;
@@ -35,14 +35,12 @@ public abstract class BaseModal
             });
 
         var modalProperties = new ModalProperties(CustomId, Title, properties);
-        Console.WriteLine(modalProperties.CustomId);
         return modalProperties;
     }
 
     public void Load(IEnumerable<TextInput> textInputs, object customModal)
     {
-        var type = customModal.GetType();
-        var properties = GetPropertiesWithModalPropertyAttribute(type);
+        var properties = GetPropertiesWithModalPropertyAttribute();
         foreach (var textInput in textInputs)
         {
             var property = properties.FirstOrDefault(property => property.Name == textInput.CustomId);
@@ -51,9 +49,9 @@ public abstract class BaseModal
         }
     }
 
-    private IEnumerable<PropertyInfo> GetPropertiesWithModalPropertyAttribute(Type type)
+    private IEnumerable<PropertyInfo> GetPropertiesWithModalPropertyAttribute()
     {
-        return type.GetProperties()
+        return GetType().GetProperties()
             .Where(m => m.GetCustomAttributes(typeof(ModalPropertyAttribute), false).Length > 0);
     }
 }
