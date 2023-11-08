@@ -12,7 +12,7 @@ public class VerificationSlashCommand : ApplicationCommandModule<SlashCommandCon
     public async Task HandleAsync()
     {
         var exampleModal = new ExampleModal();
-        // exampleModal.AddParameterToId(29482949249249);
+        exampleModal.AddParameterToId(29482949249249);
         await RespondAsync(InteractionCallback.Modal(exampleModal.ToModalProperties()));
     }
 }

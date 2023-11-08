@@ -1,4 +1,4 @@
-namespace NetCordAddons.Services.Models;
+namespace NetCordAddons.Services.Modal;
 
 [AttributeUsage(AttributeTargets.Property)]
 public class MinLengthAttribute : Attribute

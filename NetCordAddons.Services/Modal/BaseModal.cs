@@ -1,8 +1,9 @@
 using System.Reflection;
 using NetCord;
 using NetCord.Rest;
+using NetCordAddons.Services.Models;
 
-namespace NetCordAddons.Services.Models;
+namespace NetCordAddons.Services.Modal;
 
 public abstract class BaseModal
 {
@@ -10,9 +11,10 @@ public abstract class BaseModal
     protected abstract string Title { get; }
 
 
-    public void AddParameterToId(object obj)
+    public BaseModal AddParameterToId(object obj)
     {
         CustomId += $":{obj}";
+        return this;
     }
 
     public ModalProperties ToModalProperties()

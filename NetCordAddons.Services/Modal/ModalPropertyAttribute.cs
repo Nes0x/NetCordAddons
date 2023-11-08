@@ -1,6 +1,6 @@
 using NetCord.Rest;
 
-namespace NetCordAddons.Services.Models;
+namespace NetCordAddons.Services.Modal;
 
 [AttributeUsage(AttributeTargets.Property)]
 public class ModalPropertyAttribute : Attribute

@@ -1,4 +1,5 @@
 using NetCord.Rest;
+using NetCordAddons.Services.Modal;
 using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Examples.Modals;
