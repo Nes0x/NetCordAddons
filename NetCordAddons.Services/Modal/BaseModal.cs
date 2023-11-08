@@ -38,14 +38,14 @@ public abstract class BaseModal
         return modalProperties;
     }
 
-    public void Load(IEnumerable<TextInput> textInputs, object customModal)
+    public void Load(IEnumerable<TextInput> textInputs)
     {
         var properties = GetPropertiesWithModalPropertyAttribute();
         foreach (var textInput in textInputs)
         {
             var property = properties.FirstOrDefault(property => property.Name == textInput.CustomId);
             if (string.IsNullOrEmpty(textInput.Value) || property is null) continue;
-            property.SetValue(customModal, textInput.Value);
+            property.SetValue(this, textInput.Value);
         }
     }
 

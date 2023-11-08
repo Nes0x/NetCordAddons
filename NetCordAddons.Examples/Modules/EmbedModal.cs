@@ -10,7 +10,7 @@ public class EmbedModal : InteractionModule<ModalSubmitInteractionContext>
     public async Task HandleAsync()
     {
         var modal = new ExampleModal();
-        modal.Load(Context.Components, modal);
+        modal.Load(Context.Components);
         await RespondAsync(InteractionCallback.Message($"You typed: {modal.ExampleProperty}"));
     }
 }
