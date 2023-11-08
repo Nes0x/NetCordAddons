@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class MinLengthAttribute
+      <title>Class ModalPropertyAttribute
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class MinLengthAttribute
+      <meta name="title" content="Class ModalPropertyAttribute
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -81,17 +81,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="NetCordAddons.Services.Models.MinLengthAttribute">
+        <article data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute">
 
 
 
-  <h1 id="NetCordAddons_Services_Models_MinLengthAttribute" data-uid="NetCordAddons.Services.Models.MinLengthAttribute" class="text-break">
-    Class MinLengthAttribute
+  <h1 id="NetCordAddons_Services_Modal_ModalPropertyAttribute" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute" class="text-break">
+    Class ModalPropertyAttribute
   
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="NetCordAddons.html">NetCordAddons</a>.<a class="xref" href="NetCordAddons.Services.html">Services</a>.<a class="xref" href="NetCordAddons.Services.Models.html">Models</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NetCordAddons.html">NetCordAddons</a>.<a class="xref" href="NetCordAddons.Services.html">Services</a>.<a class="xref" href="NetCordAddons.Services.Modal.html">Modal</a></dd></dl>
   <dl><dt>Assembly</dt><dd>NetCordAddons.Services.dll</dd></dl>
   </div>
 
@@ -100,7 +100,7 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Property)]
-public class MinLengthAttribute : Attribute</code></pre>
+public class ModalPropertyAttribute : Attribute</code></pre>
   </div>
 
 
@@ -111,7 +111,7 @@ public class MinLengthAttribute : Attribute</code></pre>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
-      <div><span class="xref">MinLengthAttribute</span></div>
+      <div><span class="xref">ModalPropertyAttribute</span></div>
     </dd>
   </dl>
 
@@ -257,10 +257,10 @@ public class MinLengthAttribute : Attribute</code></pre>
 </h2>
 
 
-  <a id="NetCordAddons_Services_Models_MinLengthAttribute__ctor_" data-uid="NetCordAddons.Services.Models.MinLengthAttribute.#ctor*"></a>
+  <a id="NetCordAddons_Services_Modal_ModalPropertyAttribute__ctor_" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.#ctor*"></a>
 
-  <h3 id="NetCordAddons_Services_Models_MinLengthAttribute__ctor_System_Nullable_System_Int32__" data-uid="NetCordAddons.Services.Models.MinLengthAttribute.#ctor(System.Nullable{System.Int32})">
-  MinLengthAttribute(int?)
+  <h3 id="NetCordAddons_Services_Modal_ModalPropertyAttribute__ctor_System_String_NetCord_Rest_TextInputStyle_" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.#ctor(System.String,NetCord.Rest.TextInputStyle)">
+  ModalPropertyAttribute(string, TextInputStyle)
   
   </h3>
 
@@ -268,12 +268,14 @@ public class MinLengthAttribute : Attribute</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MinLengthAttribute(int? min)</code></pre>
+    <pre><code class="lang-csharp hljs">public ModalPropertyAttribute(string label, TextInputStyle textInputStyle)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>textInputStyle</code> <span class="xref">TextInputStyle</span></dt>
     <dd></dd>
   </dl>
 
@@ -292,10 +294,10 @@ public class MinLengthAttribute : Attribute</code></pre>
 </h2>
 
 
-  <a id="NetCordAddons_Services_Models_MinLengthAttribute_Min_" data-uid="NetCordAddons.Services.Models.MinLengthAttribute.Min*"></a>
+  <a id="NetCordAddons_Services_Modal_ModalPropertyAttribute_Label_" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.Label*"></a>
 
-  <h3 id="NetCordAddons_Services_Models_MinLengthAttribute_Min" data-uid="NetCordAddons.Services.Models.MinLengthAttribute.Min">
-  Min
+  <h3 id="NetCordAddons_Services_Modal_ModalPropertyAttribute_Label" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.Label">
+  Label
   
   </h3>
 
@@ -303,7 +305,7 @@ public class MinLengthAttribute : Attribute</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? Min { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Label { get; init; }</code></pre>
   </div>
 
 
@@ -312,7 +314,100 @@ public class MinLengthAttribute : Attribute</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NetCordAddons_Services_Modal_ModalPropertyAttribute_Placeholder_" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.Placeholder*"></a>
+
+  <h3 id="NetCordAddons_Services_Modal_ModalPropertyAttribute_Placeholder" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.Placeholder">
+  Placeholder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Placeholder { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NetCordAddons_Services_Modal_ModalPropertyAttribute_TextInputStyle_" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle*"></a>
+
+  <h3 id="NetCordAddons_Services_Modal_ModalPropertyAttribute_TextInputStyle" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle">
+  TextInputStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextInputStyle TextInputStyle { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextInputStyle</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NetCordAddons_Services_Modal_ModalPropertyAttribute_Value_" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.Value*"></a>
+
+  <h3 id="NetCordAddons_Services_Modal_ModalPropertyAttribute_Value" data-uid="NetCordAddons.Services.Modal.ModalPropertyAttribute.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Value { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 

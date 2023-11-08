@@ -227,10 +227,60 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Models.BaseModal.yml",
+      "source_relative_path": "documentation/NetCordAddons.Services.Modal.BaseModal.yml",
       "output": {
         ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Models.BaseModal.html"
+          "relative_path": "documentation/NetCordAddons.Services.Modal.BaseModal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Modal.MinLengthAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Modal.MinLengthAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Modal.RequiredAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Modal.RequiredAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/NetCordAddons.Services.Modal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/NetCordAddons.Services.Modal.html"
         }
       },
       "version": ""
@@ -271,46 +321,6 @@
       "output": {
         ".html": {
           "relative_path": "documentation/NetCordAddons.Services.Models.IClientSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Models.MaxLengthAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Models.MaxLengthAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Models.MinLengthAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Models.MinLengthAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Models.ModalPropertyAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Models.RequiredAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Models.RequiredAttribute.html"
         }
       },
       "version": ""
