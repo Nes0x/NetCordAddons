@@ -17,11 +17,15 @@ public abstract class BaseModal
         return this;
     }
 
-    public ModalProperties ToModalProperties()
+    public ModalProperties ToModalProperties(IEnumerable<TextInputProperties>? toChange = null)
     {
         var properties = GetPropertiesWithModalPropertyAttribute()
             .Select(property =>
             {
+                var modifiedTextInputProperties = toChange?.FirstOrDefault(textInputProperties =>
+                    textInputProperties.CustomId == property.Name);
+                if (modifiedTextInputProperties is not null) return modifiedTextInputProperties;
+
                 var modalProperty = property.GetCustomAttribute<ModalPropertyAttribute>()!;
                 var maxLength = property.GetCustomAttribute<MaxLengthAttribute>();
                 var minLength = property.GetCustomAttribute<MinLengthAttribute>();
