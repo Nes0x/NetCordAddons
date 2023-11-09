@@ -237,40 +237,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Modal.MinLengthAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Modal.MinLengthAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "documentation/NetCordAddons.Services.Modal.RequiredAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "documentation/NetCordAddons.Services.Modal.RequiredAttribute.html"
         }
       },
       "version": ""

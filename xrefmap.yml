@@ -784,78 +784,6 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.BaseModal.ToModalProperties
   fullName: NetCordAddons.Services.Modal.BaseModal.ToModalProperties
   nameWithType: BaseModal.ToModalProperties
-- uid: NetCordAddons.Services.Modal.MaxLengthAttribute
-  name: MaxLengthAttribute
-  href: documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.html
-  commentId: T:NetCordAddons.Services.Modal.MaxLengthAttribute
-  fullName: NetCordAddons.Services.Modal.MaxLengthAttribute
-  nameWithType: MaxLengthAttribute
-- uid: NetCordAddons.Services.Modal.MaxLengthAttribute.#ctor(System.Nullable{System.Int32})
-  name: MaxLengthAttribute(int?)
-  href: documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.html#NetCordAddons_Services_Modal_MaxLengthAttribute__ctor_System_Nullable_System_Int32__
-  commentId: M:NetCordAddons.Services.Modal.MaxLengthAttribute.#ctor(System.Nullable{System.Int32})
-  name.vb: New(Integer?)
-  fullName: NetCordAddons.Services.Modal.MaxLengthAttribute.MaxLengthAttribute(int?)
-  fullName.vb: NetCordAddons.Services.Modal.MaxLengthAttribute.New(Integer?)
-  nameWithType: MaxLengthAttribute.MaxLengthAttribute(int?)
-  nameWithType.vb: MaxLengthAttribute.New(Integer?)
-- uid: NetCordAddons.Services.Modal.MaxLengthAttribute.#ctor*
-  name: MaxLengthAttribute
-  href: documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.html#NetCordAddons_Services_Modal_MaxLengthAttribute__ctor_
-  commentId: Overload:NetCordAddons.Services.Modal.MaxLengthAttribute.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.Modal.MaxLengthAttribute.MaxLengthAttribute
-  fullName.vb: NetCordAddons.Services.Modal.MaxLengthAttribute.New
-  nameWithType: MaxLengthAttribute.MaxLengthAttribute
-  nameWithType.vb: MaxLengthAttribute.New
-- uid: NetCordAddons.Services.Modal.MaxLengthAttribute.Max
-  name: Max
-  href: documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.html#NetCordAddons_Services_Modal_MaxLengthAttribute_Max
-  commentId: P:NetCordAddons.Services.Modal.MaxLengthAttribute.Max
-  fullName: NetCordAddons.Services.Modal.MaxLengthAttribute.Max
-  nameWithType: MaxLengthAttribute.Max
-- uid: NetCordAddons.Services.Modal.MaxLengthAttribute.Max*
-  name: Max
-  href: documentation/NetCordAddons.Services.Modal.MaxLengthAttribute.html#NetCordAddons_Services_Modal_MaxLengthAttribute_Max_
-  commentId: Overload:NetCordAddons.Services.Modal.MaxLengthAttribute.Max
-  fullName: NetCordAddons.Services.Modal.MaxLengthAttribute.Max
-  nameWithType: MaxLengthAttribute.Max
-- uid: NetCordAddons.Services.Modal.MinLengthAttribute
-  name: MinLengthAttribute
-  href: documentation/NetCordAddons.Services.Modal.MinLengthAttribute.html
-  commentId: T:NetCordAddons.Services.Modal.MinLengthAttribute
-  fullName: NetCordAddons.Services.Modal.MinLengthAttribute
-  nameWithType: MinLengthAttribute
-- uid: NetCordAddons.Services.Modal.MinLengthAttribute.#ctor(System.Nullable{System.Int32})
-  name: MinLengthAttribute(int?)
-  href: documentation/NetCordAddons.Services.Modal.MinLengthAttribute.html#NetCordAddons_Services_Modal_MinLengthAttribute__ctor_System_Nullable_System_Int32__
-  commentId: M:NetCordAddons.Services.Modal.MinLengthAttribute.#ctor(System.Nullable{System.Int32})
-  name.vb: New(Integer?)
-  fullName: NetCordAddons.Services.Modal.MinLengthAttribute.MinLengthAttribute(int?)
-  fullName.vb: NetCordAddons.Services.Modal.MinLengthAttribute.New(Integer?)
-  nameWithType: MinLengthAttribute.MinLengthAttribute(int?)
-  nameWithType.vb: MinLengthAttribute.New(Integer?)
-- uid: NetCordAddons.Services.Modal.MinLengthAttribute.#ctor*
-  name: MinLengthAttribute
-  href: documentation/NetCordAddons.Services.Modal.MinLengthAttribute.html#NetCordAddons_Services_Modal_MinLengthAttribute__ctor_
-  commentId: Overload:NetCordAddons.Services.Modal.MinLengthAttribute.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.Modal.MinLengthAttribute.MinLengthAttribute
-  fullName.vb: NetCordAddons.Services.Modal.MinLengthAttribute.New
-  nameWithType: MinLengthAttribute.MinLengthAttribute
-  nameWithType.vb: MinLengthAttribute.New
-- uid: NetCordAddons.Services.Modal.MinLengthAttribute.Min
-  name: Min
-  href: documentation/NetCordAddons.Services.Modal.MinLengthAttribute.html#NetCordAddons_Services_Modal_MinLengthAttribute_Min
-  commentId: P:NetCordAddons.Services.Modal.MinLengthAttribute.Min
-  fullName: NetCordAddons.Services.Modal.MinLengthAttribute.Min
-  nameWithType: MinLengthAttribute.Min
-- uid: NetCordAddons.Services.Modal.MinLengthAttribute.Min*
-  name: Min
-  href: documentation/NetCordAddons.Services.Modal.MinLengthAttribute.html#NetCordAddons_Services_Modal_MinLengthAttribute_Min_
-  commentId: Overload:NetCordAddons.Services.Modal.MinLengthAttribute.Min
-  fullName: NetCordAddons.Services.Modal.MinLengthAttribute.Min
-  nameWithType: MinLengthAttribute.Min
 - uid: NetCordAddons.Services.Modal.ModalPropertyAttribute
   name: ModalPropertyAttribute
   href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html
@@ -892,6 +820,30 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.Label
   fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Label
   nameWithType: ModalPropertyAttribute.Label
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.MaxLength
+  name: MaxLength
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_MaxLength
+  commentId: P:NetCordAddons.Services.Modal.ModalPropertyAttribute.MaxLength
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.MaxLength
+  nameWithType: ModalPropertyAttribute.MaxLength
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.MaxLength*
+  name: MaxLength
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_MaxLength_
+  commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.MaxLength
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.MaxLength
+  nameWithType: ModalPropertyAttribute.MaxLength
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.MinLength
+  name: MinLength
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_MinLength
+  commentId: P:NetCordAddons.Services.Modal.ModalPropertyAttribute.MinLength
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.MinLength
+  nameWithType: ModalPropertyAttribute.MinLength
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.MinLength*
+  name: MinLength
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_MinLength_
+  commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.MinLength
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.MinLength
+  nameWithType: ModalPropertyAttribute.MinLength
 - uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.Placeholder
   name: Placeholder
   href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_Placeholder
@@ -904,6 +856,18 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.Placeholder
   fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Placeholder
   nameWithType: ModalPropertyAttribute.Placeholder
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.Required
+  name: Required
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_Required
+  commentId: P:NetCordAddons.Services.Modal.ModalPropertyAttribute.Required
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Required
+  nameWithType: ModalPropertyAttribute.Required
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.Required*
+  name: Required
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_Required_
+  commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.Required
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Required
+  nameWithType: ModalPropertyAttribute.Required
 - uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle
   name: TextInputStyle
   href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_TextInputStyle
@@ -928,30 +892,6 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.Value
   fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Value
   nameWithType: ModalPropertyAttribute.Value
-- uid: NetCordAddons.Services.Modal.RequiredAttribute
-  name: RequiredAttribute
-  href: documentation/NetCordAddons.Services.Modal.RequiredAttribute.html
-  commentId: T:NetCordAddons.Services.Modal.RequiredAttribute
-  fullName: NetCordAddons.Services.Modal.RequiredAttribute
-  nameWithType: RequiredAttribute
-- uid: NetCordAddons.Services.Modal.RequiredAttribute.#ctor
-  name: RequiredAttribute()
-  href: documentation/NetCordAddons.Services.Modal.RequiredAttribute.html#NetCordAddons_Services_Modal_RequiredAttribute__ctor
-  commentId: M:NetCordAddons.Services.Modal.RequiredAttribute.#ctor
-  name.vb: New()
-  fullName: NetCordAddons.Services.Modal.RequiredAttribute.RequiredAttribute()
-  fullName.vb: NetCordAddons.Services.Modal.RequiredAttribute.New()
-  nameWithType: RequiredAttribute.RequiredAttribute()
-  nameWithType.vb: RequiredAttribute.New()
-- uid: NetCordAddons.Services.Modal.RequiredAttribute.#ctor*
-  name: RequiredAttribute
-  href: documentation/NetCordAddons.Services.Modal.RequiredAttribute.html#NetCordAddons_Services_Modal_RequiredAttribute__ctor_
-  commentId: Overload:NetCordAddons.Services.Modal.RequiredAttribute.#ctor
-  name.vb: New
-  fullName: NetCordAddons.Services.Modal.RequiredAttribute.RequiredAttribute
-  fullName.vb: NetCordAddons.Services.Modal.RequiredAttribute.New
-  nameWithType: RequiredAttribute.RequiredAttribute
-  nameWithType.vb: RequiredAttribute.New
 - uid: NetCordAddons.Services.Models
   name: NetCordAddons.Services.Models
   href: documentation/NetCordAddons.Services.Models.html
