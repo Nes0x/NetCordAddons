@@ -21,7 +21,7 @@ public class ExampleModalSlashCommand : ApplicationCommandModule<SlashCommandCon
     {
         var exampleModal = new ExampleModal();
         exampleModal.AddParameterToId(29482949249249);
-        await RespondAsync(InteractionCallback.Modal(exampleModal.ToModalProperties(exampleModal.GetType())));
+        await RespondAsync(InteractionCallback.Modal(exampleModal.ToModalProperties()));
     }
 }
 
@@ -31,7 +31,7 @@ public class ExampleModalHandler : InteractionModule<ModalSubmitInteractionConte
     public async Task HandleAsync(ulong id)
     {
         var modal = new ExampleModal();
-        modal.Load(Context.Components, modal);
+        modal.Load(Context.Components);
     }
 }
 ```
