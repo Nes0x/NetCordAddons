@@ -27,16 +27,13 @@ public abstract class BaseModal
                 if (modifiedTextInputProperties is not null) return modifiedTextInputProperties;
 
                 var modalProperty = property.GetCustomAttribute<ModalPropertyAttribute>()!;
-                var maxLength = property.GetCustomAttribute<MaxLengthAttribute>();
-                var minLength = property.GetCustomAttribute<MinLengthAttribute>();
-                var required = property.GetCustomAttribute<RequiredAttribute>();
                 return new TextInputProperties(property.Name, modalProperty.TextInputStyle, modalProperty.Label)
                 {
                     Value = modalProperty.Value,
                     Placeholder = modalProperty.Placeholder,
-                    Required = required is not null,
-                    MinLength = minLength?.Min,
-                    MaxLength = maxLength?.Max
+                    Required = modalProperty._required,
+                    MinLength = modalProperty.MinLength,
+                    MaxLength = modalProperty.MaxLength
                 };
             });
 
