@@ -715,15 +715,15 @@ references:
   fullName.vb: NetCordAddons.Services.Modal.BaseModal.New
   nameWithType: BaseModal.BaseModal
   nameWithType.vb: BaseModal.New
-- uid: NetCordAddons.Services.Modal.BaseModal.AddParameterToId(System.Object)
-  name: AddParameterToId(object)
-  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_AddParameterToId_System_Object_
-  commentId: M:NetCordAddons.Services.Modal.BaseModal.AddParameterToId(System.Object)
-  name.vb: AddParameterToId(Object)
-  fullName: NetCordAddons.Services.Modal.BaseModal.AddParameterToId(object)
-  fullName.vb: NetCordAddons.Services.Modal.BaseModal.AddParameterToId(Object)
-  nameWithType: BaseModal.AddParameterToId(object)
-  nameWithType.vb: BaseModal.AddParameterToId(Object)
+- uid: NetCordAddons.Services.Modal.BaseModal.AddParameterToId(System.Object[])
+  name: AddParameterToId(params object[])
+  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_AddParameterToId_System_Object___
+  commentId: M:NetCordAddons.Services.Modal.BaseModal.AddParameterToId(System.Object[])
+  name.vb: AddParameterToId(ParamArray Object())
+  fullName: NetCordAddons.Services.Modal.BaseModal.AddParameterToId(params object[])
+  fullName.vb: NetCordAddons.Services.Modal.BaseModal.AddParameterToId(ParamArray Object())
+  nameWithType: BaseModal.AddParameterToId(params object[])
+  nameWithType.vb: BaseModal.AddParameterToId(ParamArray Object())
 - uid: NetCordAddons.Services.Modal.BaseModal.AddParameterToId*
   name: AddParameterToId
   href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_AddParameterToId_
@@ -742,6 +742,18 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.BaseModal.CustomId
   fullName: NetCordAddons.Services.Modal.BaseModal.CustomId
   nameWithType: BaseModal.CustomId
+- uid: NetCordAddons.Services.Modal.BaseModal.EmbedTitle
+  name: EmbedTitle
+  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_EmbedTitle
+  commentId: P:NetCordAddons.Services.Modal.BaseModal.EmbedTitle
+  fullName: NetCordAddons.Services.Modal.BaseModal.EmbedTitle
+  nameWithType: BaseModal.EmbedTitle
+- uid: NetCordAddons.Services.Modal.BaseModal.EmbedTitle*
+  name: EmbedTitle
+  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_EmbedTitle_
+  commentId: Overload:NetCordAddons.Services.Modal.BaseModal.EmbedTitle
+  fullName: NetCordAddons.Services.Modal.BaseModal.EmbedTitle
+  nameWithType: BaseModal.EmbedTitle
 - uid: NetCordAddons.Services.Modal.BaseModal.Load(System.Collections.Generic.IEnumerable{NetCord.TextInput})
   name: Load(IEnumerable<TextInput>)
   href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_Load_System_Collections_Generic_IEnumerable_NetCord_TextInput__
@@ -757,27 +769,15 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.BaseModal.Load
   fullName: NetCordAddons.Services.Modal.BaseModal.Load
   nameWithType: BaseModal.Load
-- uid: NetCordAddons.Services.Modal.BaseModal.Title
-  name: Title
-  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_Title
-  commentId: P:NetCordAddons.Services.Modal.BaseModal.Title
-  fullName: NetCordAddons.Services.Modal.BaseModal.Title
-  nameWithType: BaseModal.Title
-- uid: NetCordAddons.Services.Modal.BaseModal.Title*
-  name: Title
-  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_Title_
-  commentId: Overload:NetCordAddons.Services.Modal.BaseModal.Title
-  fullName: NetCordAddons.Services.Modal.BaseModal.Title
-  nameWithType: BaseModal.Title
-- uid: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable{NetCord.Rest.TextInputProperties})
-  name: ToModalProperties(IEnumerable<TextInputProperties>?)
-  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_ToModalProperties_System_Collections_Generic_IEnumerable_NetCord_Rest_TextInputProperties__
-  commentId: M:NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable{NetCord.Rest.TextInputProperties})
-  name.vb: ToModalProperties(IEnumerable(Of TextInputProperties))
-  fullName: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable<NetCord.Rest.TextInputProperties>?)
-  fullName.vb: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(System.Collections.Generic.IEnumerable(Of NetCord.Rest.TextInputProperties))
-  nameWithType: BaseModal.ToModalProperties(IEnumerable<TextInputProperties>?)
-  nameWithType.vb: BaseModal.ToModalProperties(IEnumerable(Of TextInputProperties))
+- uid: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(NetCord.Rest.TextInputProperties[])
+  name: ToModalProperties(params TextInputProperties[])
+  href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_ToModalProperties_NetCord_Rest_TextInputProperties___
+  commentId: M:NetCordAddons.Services.Modal.BaseModal.ToModalProperties(NetCord.Rest.TextInputProperties[])
+  name.vb: ToModalProperties(ParamArray TextInputProperties())
+  fullName: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(params NetCord.Rest.TextInputProperties[])
+  fullName.vb: NetCordAddons.Services.Modal.BaseModal.ToModalProperties(ParamArray NetCord.Rest.TextInputProperties())
+  nameWithType: BaseModal.ToModalProperties(params TextInputProperties[])
+  nameWithType.vb: BaseModal.ToModalProperties(ParamArray TextInputProperties())
 - uid: NetCordAddons.Services.Modal.BaseModal.ToModalProperties*
   name: ToModalProperties
   href: documentation/NetCordAddons.Services.Modal.BaseModal.html#NetCordAddons_Services_Modal_BaseModal_ToModalProperties_
@@ -790,15 +790,15 @@ references:
   commentId: T:NetCordAddons.Services.Modal.ModalPropertyAttribute
   fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute
   nameWithType: ModalPropertyAttribute
-- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.#ctor(System.String,NetCord.Rest.TextInputStyle)
-  name: ModalPropertyAttribute(string, TextInputStyle)
-  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute__ctor_System_String_NetCord_Rest_TextInputStyle_
-  commentId: M:NetCordAddons.Services.Modal.ModalPropertyAttribute.#ctor(System.String,NetCord.Rest.TextInputStyle)
-  name.vb: New(String, TextInputStyle)
-  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.ModalPropertyAttribute(string, NetCord.Rest.TextInputStyle)
-  fullName.vb: NetCordAddons.Services.Modal.ModalPropertyAttribute.New(String, NetCord.Rest.TextInputStyle)
-  nameWithType: ModalPropertyAttribute.ModalPropertyAttribute(string, TextInputStyle)
-  nameWithType.vb: ModalPropertyAttribute.New(String, TextInputStyle)
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.#ctor(NetCord.Rest.TextInputStyle)
+  name: ModalPropertyAttribute(TextInputStyle)
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute__ctor_NetCord_Rest_TextInputStyle_
+  commentId: M:NetCordAddons.Services.Modal.ModalPropertyAttribute.#ctor(NetCord.Rest.TextInputStyle)
+  name.vb: New(TextInputStyle)
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.ModalPropertyAttribute(NetCord.Rest.TextInputStyle)
+  fullName.vb: NetCordAddons.Services.Modal.ModalPropertyAttribute.New(NetCord.Rest.TextInputStyle)
+  nameWithType: ModalPropertyAttribute.ModalPropertyAttribute(TextInputStyle)
+  nameWithType.vb: ModalPropertyAttribute.New(TextInputStyle)
 - uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.#ctor*
   name: ModalPropertyAttribute
   href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute__ctor_
@@ -868,18 +868,18 @@ references:
   commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.Required
   fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Required
   nameWithType: ModalPropertyAttribute.Required
-- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle
-  name: TextInputStyle
-  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_TextInputStyle
-  commentId: P:NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle
-  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle
-  nameWithType: ModalPropertyAttribute.TextInputStyle
-- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle*
-  name: TextInputStyle
-  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_TextInputStyle_
-  commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle
-  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.TextInputStyle
-  nameWithType: ModalPropertyAttribute.TextInputStyle
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.Style
+  name: Style
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_Style
+  commentId: P:NetCordAddons.Services.Modal.ModalPropertyAttribute.Style
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Style
+  nameWithType: ModalPropertyAttribute.Style
+- uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.Style*
+  name: Style
+  href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_Style_
+  commentId: Overload:NetCordAddons.Services.Modal.ModalPropertyAttribute.Style
+  fullName: NetCordAddons.Services.Modal.ModalPropertyAttribute.Style
+  nameWithType: ModalPropertyAttribute.Style
 - uid: NetCordAddons.Services.Modal.ModalPropertyAttribute.Value
   name: Value
   href: documentation/NetCordAddons.Services.Modal.ModalPropertyAttribute.html#NetCordAddons_Services_Modal_ModalPropertyAttribute_Value
