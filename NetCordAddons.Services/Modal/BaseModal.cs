@@ -7,7 +7,7 @@ namespace NetCordAddons.Services.Modal;
 public abstract class BaseModal
 {
     protected abstract string CustomId { get; set; }
-    protected abstract string EmbedTitle { get; }
+    protected abstract string ModalTitle { get; }
 
 
     public BaseModal AddParameterToId(params object[] objects)
@@ -38,7 +38,7 @@ public abstract class BaseModal
                 };
             });
 
-        var modalProperties = new ModalProperties(CustomId, EmbedTitle, properties);
+        var modalProperties = new ModalProperties(CustomId, ModalTitle, properties);
         return modalProperties;
     }
 
