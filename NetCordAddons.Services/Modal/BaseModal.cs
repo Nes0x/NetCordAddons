@@ -1,60 +1,62 @@
 using System.Reflection;
 using NetCord;
 using NetCord.Rest;
-using NetCordAddons.Services.Models;
 
 namespace NetCordAddons.Services.Modal;
 
 public abstract class BaseModal
 {
     protected abstract string CustomId { get; set; }
-    protected abstract string Title { get; }
+    protected abstract string EmbedTitle { get; }
 
 
-    public BaseModal AddParameterToId(object obj)
+    public BaseModal AddParameterToId(params object[] objects)
     {
-        CustomId += $":{obj}";
+        foreach (var obj in objects) CustomId += $":{obj}";
         return this;
     }
 
-    public ModalProperties ToModalProperties(IEnumerable<TextInputProperties>? toChange = null)
+    public ModalProperties ToModalProperties(params TextInputProperties[] toChange)
     {
         var properties = GetPropertiesWithModalPropertyAttribute()
             .Select(property =>
             {
-                var modifiedTextInputProperties = toChange?.FirstOrDefault(textInputProperties =>
+                var modifiedTextInputProperties = toChange.FirstOrDefault(textInputProperties =>
                     textInputProperties.CustomId == property.Name);
                 if (modifiedTextInputProperties is not null) return modifiedTextInputProperties;
 
+
                 var modalProperty = property.GetCustomAttribute<ModalPropertyAttribute>()!;
-                return new TextInputProperties(property.Name, modalProperty.TextInputStyle, modalProperty.Label)
+                var label = string.IsNullOrWhiteSpace(modalProperty.Label) ? property.Name : modalProperty.Label;
+                return new TextInputProperties(property.Name, modalProperty.Style, label)
                 {
                     Value = modalProperty.Value,
                     Placeholder = modalProperty.Placeholder,
                     Required = modalProperty._required,
-                    MinLength = modalProperty.MinLength,
-                    MaxLength = modalProperty.MaxLength
+                    MinLength = modalProperty._minLength,
+                    MaxLength = modalProperty._maxLength
                 };
             });
 
-        var modalProperties = new ModalProperties(CustomId, Title, properties);
+        var modalProperties = new ModalProperties(CustomId, EmbedTitle, properties);
         return modalProperties;
     }
 
     public void Load(IEnumerable<TextInput> textInputs)
     {
-        var properties = GetPropertiesWithModalPropertyAttribute();
-        foreach (var textInput in textInputs)
+        var textInputsAsArray = textInputs.ToArray();
+        var properties = GetPropertiesWithModalPropertyAttribute().Where(property =>
         {
-            var property = properties.FirstOrDefault(property => property.Name == textInput.CustomId);
-            if (string.IsNullOrEmpty(textInput.Value) || property is null) continue;
-            property.SetValue(this, textInput.Value);
-        }
+            var textInput = textInputsAsArray.FirstOrDefault(textInput => textInput.CustomId == property.Name);
+            return textInput is not null && property.Name == textInput.CustomId;
+        });
+        foreach (var property in properties)
+            property.SetValue(this, textInputsAsArray.First(textInput => textInput.CustomId == property.Name).Value);
     }
 
     private IEnumerable<PropertyInfo> GetPropertiesWithModalPropertyAttribute()
     {
         return GetType().GetProperties()
-            .Where(m => m.GetCustomAttributes(typeof(ModalPropertyAttribute), false).Length > 0);
+            .Where(property => property.GetCustomAttributes(typeof(ModalPropertyAttribute), false).Length > 0);
     }
 }
