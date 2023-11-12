@@ -25,11 +25,11 @@ internal class ShardedGatewayInteractionCreator : IInteractionCreator
 
     public void CreateInteractions(List<Service> services)
     {
-        services.ForEach(s =>
+        services.ForEach(service =>
         {
             _client.InteractionCreate += (client, interaction) =>
             {
-                _interactionCreator.CreateInteraction(interaction, s, client);
+                _interactionCreator.CreateInteraction(interaction, service, client);
                 return ValueTask.CompletedTask;
             };
         });

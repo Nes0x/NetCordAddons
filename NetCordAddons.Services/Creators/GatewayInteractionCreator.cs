@@ -25,11 +25,11 @@ internal class GatewayInteractionCreator : IInteractionCreator
 
     public void CreateInteractions(List<Service> services)
     {
-        services.ForEach(s =>
+        services.ForEach(service =>
         {
             _client.InteractionCreate += interaction =>
             {
-                _interactionCreator.CreateInteraction(interaction, s, _client);
+                _interactionCreator.CreateInteraction(interaction, service, _client);
                 return ValueTask.CompletedTask;
             };
         });

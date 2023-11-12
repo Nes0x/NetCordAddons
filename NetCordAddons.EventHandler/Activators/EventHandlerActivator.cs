@@ -4,13 +4,13 @@ using NetCordAddons.EventHandler.Common;
 
 namespace NetCordAddons.EventHandler.Activators;
 
-internal class EventHandlerActivatorService
+internal class EventHandlerActivator
 {
     private readonly IEnumerable<EventModule> _eventModules;
-    private readonly ILogger<EventHandlerActivatorService> _logger;
+    private readonly ILogger<EventHandlerActivator> _logger;
 
-    public EventHandlerActivatorService(IEnumerable<EventModule> eventModules,
-        ILogger<EventHandlerActivatorService> logger)
+    public EventHandlerActivator(IEnumerable<EventModule> eventModules,
+        ILogger<EventHandlerActivator> logger)
     {
         _eventModules = eventModules;
         _logger = logger;

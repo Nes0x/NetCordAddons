@@ -51,7 +51,10 @@ public abstract class BaseModal
             return textInput is not null && property.Name == textInput.CustomId;
         });
         foreach (var property in properties)
-            property.SetValue(this, textInputsAsArray.First(textInput => textInput.CustomId == property.Name).Value);
+        {
+            var value = textInputsAsArray.First(textInput => textInput.CustomId == property.Name).Value;
+            property.SetValue(this, value);
+        }
     }
 
     private IEnumerable<PropertyInfo> GetPropertiesWithModalPropertyAttribute()

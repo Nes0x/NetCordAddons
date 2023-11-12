@@ -5,6 +5,8 @@ using NetCord.Gateway;
 using NetCord.Services.ApplicationCommands;
 using NetCord.Services.Commands;
 using NetCord.Services.Interactions;
+using NetCordAddons.Services.Activators;
+using NetCordAddons.Services.Configuration;
 using NetCordAddons.Services.Creators;
 using NetCordAddons.Services.ErrorHandling;
 using NetCordAddons.Services.Models;
@@ -25,11 +27,12 @@ public static class HostingExtensions
         hostBuilder.ConfigureServices(services =>
         {
             var settings = settingsFactory(services.BuildServiceProvider());
-            services.AddClientServices(botCallback, errorHandler);
-            services.AddSingleton<GatewayClient>(_ =>
-                new GatewayClient(settings.Token, settings.GatewayClientConfiguration));
-            services.AddSingleton<IInteractionCreator, GatewayInteractionCreator>();
-            services.AddHostedService<GatewayClientBotService>();
+            services
+                .AddClientServices(botCallback, errorHandler)
+                .AddSingleton<GatewayClient>(_ =>
+                    new GatewayClient(settings.Token, settings.GatewayClientConfiguration))
+                .AddSingleton<IInteractionCreator, GatewayInteractionCreator>()
+                .AddHostedService<GatewayClientActivator>();
         });
 
         return hostBuilder;
@@ -44,11 +47,12 @@ public static class HostingExtensions
         hostBuilder.ConfigureServices(services =>
         {
             var settings = settingsFactory(services.BuildServiceProvider());
-            services.AddClientServices(botCallback, globalErrorHandling);
-            services.AddSingleton<ShardedGatewayClient>(_ =>
-                new ShardedGatewayClient(settings.Token, settings.ShardedGatewayClientConfiguration));
-            services.AddSingleton<IInteractionCreator, ShardedGatewayInteractionCreator>();
-            services.AddHostedService<ShardedGatewayClientBotService>();
+            services
+                .AddClientServices(botCallback, globalErrorHandling)
+                .AddSingleton<ShardedGatewayClient>(_ =>
+                    new ShardedGatewayClient(settings.Token, settings.ShardedGatewayClientConfiguration))
+                .AddSingleton<IInteractionCreator, ShardedGatewayInteractionCreator>()
+                .AddHostedService<ShardedGatewayClientActivator>();
         });
 
         return hostBuilder;
@@ -151,11 +155,13 @@ public static class HostingExtensions
         Func<IServiceProvider, IErrorHandler>? errorHandlerFunc)
     {
         botCallback ??= new BotCallback();
-        services.AddSingleton<IServiceCollection>(_ => services);
-        services.AddSingleton<BotCallback>(_ => botCallback);
         errorHandlerFunc ??= provider => new BaseErrorHandler(provider);
-        services.AddSingleton(errorHandlerFunc);
-        services.AddSingleton<ClientBotService>();
+        services
+            .AddSingleton<IServiceCollection>(_ => services)
+            .AddSingleton(botCallback)
+            .AddSingleton(errorHandlerFunc)
+            .AddSingleton<IClientConfiguration, ClientConfiguration>()
+            .AddSingleton<ClientActivator>();
         return services;
     }
 }

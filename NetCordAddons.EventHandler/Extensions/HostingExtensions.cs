@@ -24,12 +24,12 @@ public static class HostingExtensions
             foreach (var type in types)
                 if (type.IsAssignableTo(targetType) && !type.IsAbstract)
                     services.AddSingleton(targetType, type);
-            services.AddSingleton<EventHandlerActivatorService>();
+            services.AddSingleton<EventHandlerActivator>();
 
             if (gatewayClient is not null)
-                services.AddHostedService<GatewayClientEventHandlerActivatorService>();
+                services.AddHostedService<GatewayClientEventHandlerActivator>();
             else if (shardedGatewayClient is not null)
-                services.AddHostedService<ShardedGatewayClientEventHandlerActivatorService>();
+                services.AddHostedService<ShardedGatewayClientEventHandlerActivator>();
         });
 
         return hostBuilder;

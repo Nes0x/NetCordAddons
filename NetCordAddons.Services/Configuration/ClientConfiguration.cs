@@ -7,24 +7,22 @@ using NetCordAddons.Services.Creators;
 using NetCordAddons.Services.Models;
 using NetCordAddons.Services.Validators;
 
-namespace NetCordAddons.Services;
+namespace NetCordAddons.Services.Configuration;
 
-internal class ClientBotService
+internal class ClientConfiguration : IClientConfiguration
 {
     private readonly bool _areCommands;
-    private readonly BotCallback _botCallback;
     private readonly IServiceCollection _collection;
     private readonly IInteractionCreator _interactionCreator;
     private readonly IServiceProvider _provider;
     private readonly IServiceValidator _serviceValidator;
 
 
-    public ClientBotService(IServiceCollection collection, IServiceProvider provider, BotCallback botCallback,
+    public ClientConfiguration(IServiceCollection collection, IServiceProvider provider,
         IInteractionCreator interactionCreator, IServiceValidator serviceValidator)
     {
         _collection = collection;
         _provider = provider;
-        _botCallback = botCallback;
         _interactionCreator = interactionCreator;
         _serviceValidator = serviceValidator;
         _areCommands =
@@ -32,44 +30,7 @@ internal class ClientBotService
                 not null;
     }
 
-    public async Task StartAsync(object client)
-    {
-        ConfigureBot();
-        if (_botCallback.BeforeBotStart is not null) await _botCallback.BeforeBotStart.Invoke(_provider);
-
-        switch (client)
-        {
-            case GatewayClient gatewayClient:
-                await gatewayClient.StartAsync();
-                await RunBot(gatewayClient);
-                break;
-            case ShardedGatewayClient shardedClient:
-                await shardedClient.StartAsync();
-                await RunBot(shardedClient[0]);
-                break;
-        }
-
-        if (_botCallback.AfterBotStart is not null) await _botCallback.AfterBotStart.Invoke(_provider);
-    }
-
-
-    public async Task StopAsync(object client)
-    {
-        if (_botCallback.BeforeBotClose is not null) await _botCallback.BeforeBotClose.Invoke(_provider);
-        switch (client)
-        {
-            case GatewayClient gatewayClient:
-                await gatewayClient.CloseAsync();
-                break;
-            case ShardedGatewayClient shardedClient:
-                await shardedClient.CloseAsync();
-                break;
-        }
-
-        if (_botCallback.AfterBotClose is not null) await _botCallback.AfterBotClose.Invoke(_provider);
-    }
-
-    private void ConfigureBot()
+    public void ConfigureBot()
     {
         var services = new List<Service>();
         var assembly = Assembly.GetEntryAssembly()!;
@@ -94,6 +55,14 @@ internal class ClientBotService
         _interactionCreator.CreateInteractions(services);
     }
 
+    public async Task AddCommandsIfAdded(GatewayClient client)
+    {
+        if (!_areCommands) return;
+        await client.ReadyAsync;
+        var applicationCommandServiceManager = _provider.GetRequiredService<ApplicationCommandServiceManager>();
+        await applicationCommandServiceManager.CreateCommandsAsync(client.Rest, client.ApplicationId);
+    }
+
     private void UpdateCommandData(Type serviceType, ref string? textCommandPrefix, ref Service? textCommandService)
     {
         var genericTypeDefinition = serviceType.GetGenericTypeDefinition();
@@ -116,16 +85,6 @@ internal class ClientBotService
             typeof(ApplicationCommandServiceManager).GetMethod("AddService")!
                 .MakeGenericMethod(serviceType.GenericTypeArguments).Invoke(applicationCommandServiceManager,
                     new[] { _provider.GetRequiredService(serviceType) });
-        }
-    }
-
-    private async Task RunBot(GatewayClient client)
-    {
-        await client.ReadyAsync;
-        if (_areCommands)
-        {
-            var applicationCommandServiceManager = _provider.GetRequiredService<ApplicationCommandServiceManager>();
-            await applicationCommandServiceManager.CreateCommandsAsync(client.Rest, client.ApplicationId);
         }
     }
 }

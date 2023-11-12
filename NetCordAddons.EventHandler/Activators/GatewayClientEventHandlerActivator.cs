@@ -3,13 +3,13 @@ using NetCord.Gateway;
 
 namespace NetCordAddons.EventHandler.Activators;
 
-internal class GatewayClientEventHandlerActivatorService : IHostedService
+internal class GatewayClientEventHandlerActivator : IHostedService
 {
     private readonly GatewayClient _client;
-    private readonly EventHandlerActivatorService _handlerActivator;
+    private readonly EventHandlerActivator _handlerActivator;
 
-    public GatewayClientEventHandlerActivatorService(GatewayClient client,
-        EventHandlerActivatorService handlerActivator)
+    public GatewayClientEventHandlerActivator(GatewayClient client,
+        EventHandlerActivator handlerActivator)
     {
         _client = client;
         _handlerActivator = handlerActivator;

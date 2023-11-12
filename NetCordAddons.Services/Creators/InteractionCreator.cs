@@ -26,10 +26,10 @@ internal class InteractionCreator
                 prefix.Length, Activator.CreateInstance(service.GenericType, message, client), _provider
             });
         }
-        catch (Exception e)
+        catch (Exception exception)
         {
-            _errorHandler.LogError(e.Message);
-            _errorHandler.SendError(message, e);
+            _errorHandler.LogError(exception.Message);
+            _errorHandler.SendError(message, exception);
         }
     }
 
@@ -43,10 +43,10 @@ internal class InteractionCreator
                 Activator.CreateInstance(service.GenericType, interaction, client), _provider
             });
         }
-        catch (Exception e)
+        catch (Exception exception)
         {
-            _errorHandler.LogError(e.Message);
-            _errorHandler.SendError(interaction, e);
+            _errorHandler.LogError(exception.Message);
+            _errorHandler.SendError(interaction, exception);
         }
     }
 }
